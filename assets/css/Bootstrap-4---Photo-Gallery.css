@@ -1,0 +1,28 @@
+.img-fluid {
+  width: 100%;
+  padding-bottom: 20px;
+  object-fit: cover;
+}
+
+.album-title {
+  font-family: 'Cabin';
+  text-align: center;
+  color: #ffffff;
+}
+
+.container-fluid {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(0,0,0,0);
+  text-decoration: none;
+}
+
