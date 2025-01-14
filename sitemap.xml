@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://kaifathers.me/biography/</loc>
+        <loc>https://kaifathers.me/releases/lp-ep/lautia.html</loc>
     </url>
     <url>
-        <loc>https://kaifathers.me/discography/</loc>
+        <loc>https://kaifathers.me/releases/lp-ep/lp1.html</loc>
     </url>
     <url>
-        <loc>https://kaifathers.me/home/</loc>
+        <loc>https://kaifathers.me/releases/singles/butterflies-that-bite.html</loc>
     </url>
     <url>
-        <loc>https://kaifathers.me/releases/lp-ep/lautia/</loc>
+        <loc>https://kaifathers.me/releases/singles/cactus-car-crash-party.html</loc>
     </url>
     <url>
-        <loc>https://kaifathers.me/releases/lp-ep/lp1/</loc>
+        <loc>https://kaifathers.me/releases/singles/chlorine.html</loc>
     </url>
     <url>
-        <loc>https://kaifathers.me/releases/singles/butterflies-that-bite/</loc>
+        <loc>https://kaifathers.me/releases/singles/coils.html</loc>
     </url>
     <url>
-        <loc>https://kaifathers.me/releases/singles/cactus-car-crash-party/</loc>
+        <loc>https://kaifathers.me/releases/singles/halo.html</loc>
     </url>
     <url>
-        <loc>https://kaifathers.me/releases/singles/chlorine/</loc>
+        <loc>https://kaifathers.me/releases/singles/lilacs-please.html</loc>
     </url>
     <url>
-        <loc>https://kaifathers.me/releases/singles/coils/</loc>
+        <loc>https://kaifathers.me/biography.html</loc>
     </url>
     <url>
-        <loc>https://kaifathers.me/releases/singles/halo/</loc>
+        <loc>https://kaifathers.me/discography.html</loc>
     </url>
     <url>
-        <loc>https://kaifathers.me/releases/singles/lilacs-please/</loc>
-    </url>
-    <url>
-        <loc>https://kaifathers.me/side-projects/</loc>
+        <loc>https://kaifathers.me/home.html</loc>
     </url>
     <url>
         <loc>https://kaifathers.me/</loc>
+    </url>
+    <url>
+        <loc>https://kaifathers.me/side-projects.html</loc>
     </url>
 </urlset>
