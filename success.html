@@ -43,18 +43,16 @@
 <i id="birdIcon" class="bi bi-twitter" style="font-size: 8rem; cursor: pointer;"></i>
 
 <!-- Audio -->
-<audio id="birdSound" src="bird.mp3" preload="auto"></audio>
+<audio id="birdSound" src="assets/bird.mp3" preload="auto"></audio>
 
 <!-- Script -->
 <script>
-  const birdIcon = document.getElementById("birdIcon");
-  const birdSound = document.getElementById("birdSound");
-
-  birdIcon.addEventListener("click", () => {
-    birdSound.currentTime = 0; // rewind if already playing
-    birdSound.play();
+  document.getElementById("birdIcon").addEventListener("click", function () {
+    const sound = document.getElementById("birdSound");
+    sound.play().catch(e => console.log("Playback failed:", e));
   });
 </script>
+
 </header>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
