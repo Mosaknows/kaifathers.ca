@@ -11,7 +11,6 @@
 }
 
 .container-fluid {
-  padding: 100px;
   display: flex;
   justify-content: center;
 }
