@@ -1,3 +1,79 @@
+/* --- Responsive and alignment fixes for all screens --- */
+
+/* Make all paragraphs left-aligned by default for readability */
+p {
+  text-align: left;
+}
+
+/* Center headings but keep paragraphs left-aligned */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+/* Responsive images */
+img, .img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive containers */
+.container, .container-fluid {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Responsive padding for sections */
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+  /* styles for screens 992px wide or less */
+  .container, .container-fluid {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container, .container-fluid {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  p, li, a, span {
+    font-size: 0.98rem;
+  }
+}
+
+/* Fix for biography page: force left alignment for main bio paragraph */
+.col-lg-8 > p {
+  text-align: left !important;
+}
 .masthead {
   background-image: url("caca.png");
   background-size: cover;
@@ -170,13 +246,14 @@ body {
     background-size: cover;
   }
 }
-
-(min-width:992px) {
-  background-color: #000000;
-  background-image: url("bruhh.jpg");
-  background-size: cover;
-  padding-top: 400px;
-  padding-bottom: 450px;
+@media (min-width:992px) {
+  body {
+    background-color: #000000;
+    background-image: url("bruhh.jpg");
+    background-size: cover;
+    padding-top: 400px;
+    padding-bottom: 450px;
+  }
 }
 
 @media (max-width: 411px) {
