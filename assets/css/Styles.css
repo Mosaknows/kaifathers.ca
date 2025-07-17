@@ -56,6 +56,37 @@ section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+/* Responsive side padding for sections that use large padding */
+.discography-wide-padding {
+  padding-right: 200px;
+  padding-left: 200px;
+  padding-top: 100px;
+}
+
+@media (max-width: 1200px) {
+  .discography-wide-padding {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+@media (max-width: 991.98px) {
+  .discography-wide-padding {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .discography-wide-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .discography-wide-padding {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
 
 @media (max-width: 992px) {
   /* styles for screens 992px wide or less */
