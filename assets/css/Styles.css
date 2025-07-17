@@ -25,8 +25,30 @@ img, .img-fluid {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: padding 0.2s;
+}
+
+@media (max-width: 991.98px) {
+  .container, .container-fluid {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container, .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container, .container-fluid {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
 }
 
 /* Responsive padding for sections */
