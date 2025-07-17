@@ -1,3 +1,8 @@
+/* Remove container-fluid padding inside discography-wide-padding for edge-to-edge gallery */
+.discography-wide-padding .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 /* --- Responsive and alignment fixes for all screens --- */
 
 /* Make all paragraphs left-aligned by default for readability */
