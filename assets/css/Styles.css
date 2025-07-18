@@ -343,22 +343,14 @@ html, body {
     width: calc(100vw - clamp(200px, 28vw, 480px));
     max-width: clamp(750px, 62.5vw, 1000px);
     margin: 0 auto;
-    background: #333 url('../img/bandcampbg.gif') center center;
+    background: url('../img/bandcampbg.gif');
     background-size: cover;
     background-position: center;
     background-attachment: local;
-    background-repeat: no-repeat;
     border-radius: 12px;
     transition: all 0.3s ease;
     padding: clamp(120px, 12vh, 180px) clamp(40px, 4vw, 80px);
-    min-height: 900px;
-    height: 900px;
-}
-
-/* Bandcamp iframe styling */
-.bandcamp-section iframe {
-    border-radius: 12px;
-    border: none;
+    min-height: clamp(750px, 60vh, 900px);
 }
 
 @media (max-width: 767px) {
@@ -366,8 +358,7 @@ html, body {
         width: calc(100vw - clamp(160px, 24vw, 300px));
         max-width: clamp(700px, 87.5vw, 875px);
         padding: clamp(90px, 9vh, 150px) clamp(80px, 12vw, 120px);
-        min-height: 900px;
-        height: 900px;
+        min-height: clamp(675px, 52.5vh, 825px);
     }
 }
 
@@ -376,8 +367,7 @@ html, body {
         width: calc(100vw - clamp(100px, 20vw, 160px));
         max-width: clamp(625px, 112.5vw, 800px);
         padding: clamp(75px, 7.5vh, 120px) clamp(60px, 10vw, 80px);
-        min-height: 900px;
-        height: 900px;
+        min-height: clamp(600px, 45vh, 750px);
         border-radius: 8px;
     }
 }
