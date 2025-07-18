@@ -1,6 +1,13 @@
 RewriteEngine On
+
+# Redirect index.html to home
+RewriteRule ^index\.html$ /home [R=301,L]
+
+# Redirect root directory to home
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\s/+\sHTTP [NC]
-RewriteRule ^$ /home [R=302,L]
+RewriteRule ^$ /home [R=301,L]
+
+# Clean URLs - remove .html extension and add it back internally
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^.]+)$ $1.html [NC, L] 
