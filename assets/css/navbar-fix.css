@@ -1,0 +1,42 @@
+/* Bootstrap Studio Export Fix - No Navbar Spacing */
+
+/* Remove body padding - content starts at top */
+body {
+    padding-top: 0 !important;
+}
+
+/* Remove responsive padding adjustments */
+@media (max-width: 767px) {
+    body {
+        padding-top: 0 !important;
+    }
+}
+
+/* Remove section scroll margin */
+section {
+    scroll-margin-top: 0;
+}
+
+/* Remove navbar shrink padding */
+body.navbar-shrink {
+    padding-top: 0 !important;
+}
+
+@media (max-width: 767px) {
+    body.navbar-shrink {
+        padding-top: 0 !important;
+    }
+}
+
+/* Remove header margin/padding adjustments */
+header {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+@media (max-width: 767px) {
+    header {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+}
