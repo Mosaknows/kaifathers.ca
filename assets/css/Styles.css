@@ -444,3 +444,25 @@ body {
   }
 }
 
+/* Fix for unwanted top spacing on GitHub Pages */
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body::before {
+  content: none !important;
+}
+
+/* Reset any unwanted top margins/padding */
+html, body {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Ensure nav stays at top */
+#mainNav {
+  top: 0 !important;
+  z-index: 9999 !important;
+}
+
