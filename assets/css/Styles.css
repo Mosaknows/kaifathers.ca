@@ -171,14 +171,6 @@ body {
   }
 }
 
-(min-width:992px) {
-  background-color: #000000;
-  background-image: url("bruhh.jpg");
-  background-size: cover;
-  padding-top: 400px;
-  padding-bottom: 450px;
-}
-
 @media (max-width: 411px) {
   .clip-text {
     position: relative;
@@ -284,166 +276,6 @@ body {
   list-style: none;
 }
 
-.loading::after {
-  content: "Loading";
-  animation: loading-dots 5s infinite steps(1);
-}
-
-@keyframes loading-dots {
-  0% {
-    content: "Loading";
-  }
-  2% {
-    content: "Loading.";
-  }
-  4% {
-    content: "Loading..";
-  }
-  6% {
-    content: "Loading...";
-  }
-  8% {
-    content: "Loading....";
-  }
-  10% {
-    content: "Loading.....";
-  }
-  12% {
-    content: "Loading......";
-  }
-  14% {
-    content: "Loading.......";
-  }
-  16% {
-    content: "Loading........";
-  }
-  18% {
-    content: "Loading.........";
-  }
-  20% {
-    content: "Loading..........";
-  }
-  22% {
-    content: "Loading...........";
-  }
-  24% {
-    content: "Loading............";
-  }
-  26% {
-    content: "Loading.............";
-  }
-  28% {
-    content: "Loading..............";
-  }
-  30% {
-    content: "Loading...............";
-  }
-  32% {
-    content: "Loading................";
-  }
-  34% {
-    content: "Loading.................";
-  }
-  36% {
-    content: "Loading..................";
-  }
-  38% {
-    content: "Loading...................";
-  }
-  40% {
-    content: "Loading....................";
-  }
-  42% {
-    content: "Loading.....................";
-  }
-  44% {
-    content: "Loading......................";
-  }
-  46% {
-    content: "Loading.......................";
-  }
-  48% {
-    content: "Loading........................";
-  }
-  50% {
-    content: "Loading..........................";
-  }
-  52% {
-    content: "Loading...........................";
-  }
-  54% {
-    content: "Loading............................";
-  }
-  56% {
-    content: "Loading.............................";
-  }
-  58% {
-    content: "Loading..............................";
-  }
-  60% {
-    content: "Loading...............................";
-  }
-  62% {
-    content: "Loading................................";
-  }
-  64% {
-    content: "Loading.................................";
-  }
-  66% {
-    content: "Loading..................................";
-  }
-  68% {
-    content: "Loading..................................w";
-  }
-  70% {
-    content: "Loading..................................wo";
-  }
-  72% {
-    content: "Loading..................................wow";
-  }
-  74% {
-    content: "Loading..................................wow.";
-  }
-  76% {
-    content: "Loading..................................wow.t";
-  }
-  78% {
-    content: "Loading..................................wow.th";
-  }
-  80% {
-    content: "Loading..................................wow.thi";
-  }
-  82% {
-    content: "Loading..................................wow.this";
-  }
-  84% {
-    content: "Loading..................................wow.this.";
-  }
-  86% {
-    content: "Loading..................................wow.this.i";
-  }
-  88% {
-    content: "Loading..................................wow.this.is";
-  }
-  90% {
-    content: "Loading..................................wow.this.is.";
-  }
-  92% {
-    content: "Loading..................................wow.this.is.t";
-  }
-  94% {
-    content: "Loading..................................wow.this.is.ta";
-  }
-  96% {
-    content: "Loading..................................wow.this.is.tak";
-  }
-  98% {
-    content: "Loading..................................wow.this.is.taki";
-  }
-  100% {
-  }
-}
-
 /* Fix for unwanted top spacing on GitHub Pages */
 body {
   margin: 0 !important;
@@ -464,5 +296,129 @@ html, body {
 #mainNav {
   top: 0 !important;
   z-index: 9999 !important;
+}
+
+/* Arrow animations for home page */
+@keyframes arrowPulseLeft {
+    0%, 100% {
+        transform: translateX(-20px);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes arrowPulseRight {
+    0%, 100% {
+        transform: translateX(20px);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.arrow-container {
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 1199px) {
+    .arrow-container {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .arrow-container {
+        display: block;
+        opacity: 1;
+    }
+}
+
+/* Bandcamp section with smooth scaling, gif background and proper centering */
+.bandcamp-section {
+    width: calc(100vw - clamp(200px, 28vw, 480px));
+    max-width: clamp(750px, 62.5vw, 1000px);
+    margin: 0 auto;
+    background: #333 url('../img/bandcampbg.gif') center center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    padding: clamp(120px, 12vh, 180px) clamp(40px, 4vw, 80px);
+    min-height: 900px;
+    height: 900px;
+}
+
+/* Bandcamp iframe styling */
+.bandcamp-section iframe {
+    border-radius: 12px;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .bandcamp-section {
+        width: calc(100vw - clamp(160px, 24vw, 300px));
+        max-width: clamp(700px, 87.5vw, 875px);
+        padding: clamp(90px, 9vh, 150px) clamp(80px, 12vw, 120px);
+        min-height: 900px;
+        height: 900px;
+    }
+}
+
+@media (max-width: 575px) {
+    .bandcamp-section {
+        width: calc(100vw - clamp(100px, 20vw, 160px));
+        max-width: clamp(625px, 112.5vw, 800px);
+        padding: clamp(75px, 7.5vh, 120px) clamp(60px, 10vw, 80px);
+        min-height: 900px;
+        height: 900px;
+        border-radius: 8px;
+    }
+}
+
+/* Arrow animations for home page Bandcamp section */
+@keyframes arrowPulseLeft {
+    0%, 100% {
+        transform: translateX(-20px);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes arrowPulseRight {
+    0%, 100% {
+        transform: translateX(20px);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.arrow-container {
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 1199px) {
+    .arrow-container {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .arrow-container {
+        display: block;
+        opacity: 1;
+    }
 }
 
