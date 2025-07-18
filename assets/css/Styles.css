@@ -379,30 +379,44 @@ html, body {
 /* Track ticker behind the LATEST PROJECT section */
 .track-ticker {
     position: fixed;
-    top: calc(50% + 100px);
+    top: 0;
     left: 0;
     width: 100vw;
-    height: 40vh;
+    height: 100vh;
     z-index: 0;
     pointer-events: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    transform: translateY(-50%);
+    justify-content: center;
+    overflow: hidden;
 }
 
 .track-row {
     white-space: nowrap;
     overflow: hidden;
-    font-family: 'Futura Md BT', Arial, sans-serif;
-    font-weight: bold;
+    font-family: cursive;
+    font-weight: 300;
     font-size: 48px;
     color: #000000;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    height: 20%;
+    letter-spacing: 2px;
+    flex: 1;
     display: flex;
     align-items: center;
+    min-height: 0;
+    transform: scaleY(1.5);
+    line-height: 0.8;
+    margin: -10px 0;
+}
+
+/* Upside down rows */
+.track-row.upside-down {
+    transform: rotate(180deg);
+}
+
+/* Backwards rows */
+.track-row.backwards {
+    transform: scaleX(-1);
 }
 
 .track-scroll {
@@ -411,33 +425,123 @@ html, body {
     animation-fill-mode: both;
 }
 
-/* Row 1: Left to right, slower and closer speeds */
+/* Row 1: Left to right */
 .track-row:nth-child(1) .track-scroll {
     animation: scroll-seamless-left 300s linear infinite;
 }
 
-/* Row 2: Right to left, slower and closer speeds */
+/* Row 2: Right to left */
 .track-row:nth-child(2) .track-scroll {
     animation: scroll-seamless-right 320s linear infinite;
-    animation-delay: -160s; /* -duration/2 for offset */
+    animation-delay: -160s;
 }
 
-/* Row 3: Left to right, slower and closer speeds */
+/* Row 3: Left to right */
 .track-row:nth-child(3) .track-scroll {
     animation: scroll-seamless-left 340s linear infinite;
-    animation-delay: -170s; /* -duration/2 for offset */
+    animation-delay: -170s;
 }
 
-/* Row 4: Right to left, slower and closer speeds */
+/* Row 4: Right to left */
 .track-row:nth-child(4) .track-scroll {
     animation: scroll-seamless-right 360s linear infinite;
-    animation-delay: -180s; /* -duration/2 for offset */
+    animation-delay: -180s;
 }
 
-/* Row 5: Left to right, slower and closer speeds */
+/* Row 5: Left to right */
 .track-row:nth-child(5) .track-scroll {
     animation: scroll-seamless-left 380s linear infinite;
-    animation-delay: -190s; /* -duration/2 for offset */
+    animation-delay: -190s;
+}
+
+/* Row 6: Right to left */
+.track-row:nth-child(6) .track-scroll {
+    animation: scroll-seamless-right 400s linear infinite;
+    animation-delay: -200s;
+}
+
+/* Row 7: Left to right */
+.track-row:nth-child(7) .track-scroll {
+    animation: scroll-seamless-left 420s linear infinite;
+    animation-delay: -210s;
+}
+
+/* Row 8: Right to left */
+.track-row:nth-child(8) .track-scroll {
+    animation: scroll-seamless-right 440s linear infinite;
+    animation-delay: -220s;
+}
+
+/* Row 9: Left to right */
+.track-row:nth-child(9) .track-scroll {
+    animation: scroll-seamless-left 460s linear infinite;
+    animation-delay: -230s;
+}
+
+/* Row 10: Right to left */
+.track-row:nth-child(10) .track-scroll {
+    animation: scroll-seamless-right 480s linear infinite;
+    animation-delay: -240s;
+}
+
+/* Row 11: Left to right */
+.track-row:nth-child(11) .track-scroll {
+    animation: scroll-seamless-left 500s linear infinite;
+    animation-delay: -250s;
+}
+
+/* Row 12: Right to left (backwards) */
+.track-row:nth-child(12) .track-scroll {
+    animation: scroll-seamless-right 520s linear infinite;
+    animation-delay: -260s;
+}
+
+/* Row 13: Left to right (upside down) */
+.track-row:nth-child(13) .track-scroll {
+    animation: scroll-seamless-left 540s linear infinite;
+    animation-delay: -270s;
+}
+
+/* Row 14: Right to left */
+.track-row:nth-child(14) .track-scroll {
+    animation: scroll-seamless-right 560s linear infinite;
+    animation-delay: -280s;
+}
+
+/* Row 15: Left to right (backwards) */
+.track-row:nth-child(15) .track-scroll {
+    animation: scroll-seamless-left 580s linear infinite;
+    animation-delay: -290s;
+}
+
+/* Row 16: Right to left (upside down) */
+.track-row:nth-child(16) .track-scroll {
+    animation: scroll-seamless-right 600s linear infinite;
+    animation-delay: -300s;
+}
+
+/* Row 17: Left to right */
+.track-row:nth-child(17) .track-scroll {
+    animation: scroll-seamless-left 620s linear infinite;
+    animation-delay: -310s;
+}
+
+/* Row 18: Right to left (backwards) */
+.track-row:nth-child(18) .track-scroll {
+    animation: scroll-seamless-right 640s linear infinite;
+    animation-delay: -320s;
+}
+
+/* Row 19: Left to right (upside down) */
+.track-row:nth-child(19) .track-scroll {
+    animation: scroll-seamless-left 660s linear infinite;
+    animation-delay: -330s;
+}
+
+/* Row 20: Right to left */
+.track-row:nth-child(20) .track-scroll {
+    animation: scroll-seamless-right 680s linear infinite;
+    animation-delay: -340s;
 }
 
 @keyframes scroll-seamless-left {
@@ -460,64 +564,75 @@ html, body {
 
 /* Responsive adjustments for track ticker */
 @media (max-width: 767px) {
-    .track-ticker {
-        top: calc(50% + 80px);
-        height: 35vh;
+    .track-row {
+        font-size: 22px;
+        letter-spacing: 1px;
     }
 }
 
 @media (max-width: 575px) {
-    .track-ticker {
-        top: calc(50% + 60px);
-        height: 30vh;
+    .track-row {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 400px) {
+    .track-row {
+        font-size: 16px;
     }
 }
 
 /* Z-index layering for sections to hide ticker behind everything except white background */
 
-/* Gif overlay in music and socials section */
-.gif-overlay {
-    z-index: 10 !important;
+/* Navigation */
+#mainNav {
+    z-index: 9999 !important;
 }
 
 /* Music and socials section (gif background) - more specific selector */
 section.text-center.content-section {
     position: relative;
-    z-index: 10;
+    z-index: 10 !important;
     background: transparent;
+}
+
+/* Gif overlay in music and socials section */
+.gif-overlay {
+    z-index: 1 !important;
 }
 
 /* General content sections */
 .content-section {
     position: relative;
-    z-index: 10;
-}
-
-/* Navigation */
-#mainNav {
-    z-index: 9999;
+    z-index: 10 !important;
 }
 
 /* Spotify section and other sections */
 section {
     position: relative;
-    z-index: 10;
+    z-index: 10 !important;
     background-color: inherit;
 }
 
 /* Black section with music notes */
 #hi2 {
     position: relative;
-    z-index: 10;
+    z-index: 10 !important;
 }
 
 /* Footer */
 footer {
     position: relative;
-    z-index: 10;
+    z-index: 10 !important;
 }
 
-/* White latest project section should NOT have z-index so ticker shows through */
+/* White latest project section should have lower z-index so ticker shows through */
+section[style*="background:#ffffff"] {
+    z-index: 1 !important;
+}
+
+/* White latest project section should have lower z-index so ticker shows through */
 section[style*="background:#ffffff"] {
     z-index: auto !important;
 }
