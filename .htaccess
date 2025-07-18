@@ -1,6 +1,9 @@
 RewriteEngine On
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\s/+\sHTTP [NC]
-RewriteRule ^$ /home [R=302,L]
+
+# Redirect root to home.html
+RewriteRule ^$ /home.html [R=302,L]
+
+# Add .html extension to URLs without extension
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^.]+)$ $1.html [NC, L] 
+RewriteRule ^([^.]+)$ $1.html [NC,L] 
