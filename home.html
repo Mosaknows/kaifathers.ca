@@ -13,8 +13,11 @@
             </div>
         </div>
     </nav>
-    <section class="text-center content-section" style="padding: 10vh 0; min-height: 100vh; display: flex; align-items: center; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/img/tumblr_ou12oewZub1u9c8vro1_500.gif'); background-size: cover; background-position: center; filter: hue-rotate(270deg); position: relative;">
-        <div class="container">
+    <section class="text-center content-section" style="padding: 10vh 0; min-height: 100vh; display: flex; align-items: center; position: relative;">
+        <!-- Gif background overlay -->
+        <div class="gif-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/img/tumblr_ou12oewZub1u9c8vro1_500.gif'); background-size: cover; background-position: center; filter: hue-rotate(270deg); z-index: 1;"></div>
+        
+        <div class="container" style="position: relative; z-index: 10;">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <h2 data-aos="zoom-out-down" data-aos-duration="800" data-aos-once="true" style="font-family:'Futura Md BT';font-weight:normal;font-size:32px;">MUSIC AND SOCIALS</h2>
@@ -27,27 +30,45 @@
             </div>
         </div>
         <!-- Separated smiley face positioned at bottom of section -->
-        <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); width: 100%;">
+        <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); width: 100%; z-index: 10;">
             <p style="text-align:center; color: white; font-size: 18px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin: 0;">:D</p>
         </div>
     </section>
     <section style="width:100%;background:#ffffff;">
-        <div class="container" style="padding:80px 0;">
+        <div class="container" style="padding:80px 0;position:relative;">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" style="position:relative;">
                     <h2 data-aos="slide-down" data-aos-duration="1050" data-aos-once="true" style="font-family:'Futura Md BT';font-weight:normal;font-size:32px;text-align:center;color:rgb(0,0,0);padding:0px;margin-bottom:0px;padding-bottom:50px;">LATEST PROJECT</h2>
+                    
+                    <!-- Scrolling track ticker behind this section -->
+                    <div class="track-ticker">
+                        <div class="track-row">
+                            <div class="track-scroll">NAILWURM • Take a walk with me • And everything in between • gesture • tri-tip dagger • whisper • Chispas • HALO • Bodies fall on bodies • NAILWURM • Take a walk with me • And everything in between • gesture • tri-tip dagger • whisper • Chispas • HALO • Bodies fall on bodies</div>
+                        </div>
+                        <div class="track-row">
+                            <div class="track-scroll">count your sheep • Lush with Decay • NEIGHBORHOOD SPEED CAMERA • I saw the streetlights turn on again, but now it's the middle of winter and I'm cold • COLLATERAL (bonus) • Happy Thursday (bonus) • ediose douse • semaphore • Loom • count your sheep • Lush with Decay • NEIGHBORHOOD SPEED CAMERA • I saw the streetlights turn on again, but now it's the middle of winter and I'm cold • COLLATERAL (bonus) • Happy Thursday (bonus) • ediose douse • semaphore • Loom</div>
+                        </div>
+                        <div class="track-row">
+                            <div class="track-scroll">Panopticism • Does anyone notice when the streetlights turn on? • HALLOWEEN • Harvester • What's wrong? • silver pitch ornament • Tem • room from above the basement • Panopticism • Does anyone notice when the streetlights turn on? • HALLOWEEN • Harvester • What's wrong? • silver pitch ornament • Tem • room from above the basement</div>
+                        </div>
+                        <div class="track-row">
+                            <div class="track-scroll">NAILWURM • Chispas • gesture • HALO • Bodies fall on bodies • whisper • tri-tip dagger • Take a walk with me • And everything in between • NAILWURM • Chispas • gesture • HALO • Bodies fall on bodies • whisper • tri-tip dagger • Take a walk with me • And everything in between</div>
+                        </div>
+                        <div class="track-row">
+                            <div class="track-scroll">Loom • semaphore • ediose douse • count your sheep • Lush with Decay • NEIGHBORHOOD SPEED CAMERA • Happy Thursday (bonus) • COLLATERAL (bonus) • Loom • semaphore • ediose douse • count your sheep • Lush with Decay • NEIGHBORHOOD SPEED CAMERA • Happy Thursday (bonus) • COLLATERAL (bonus)</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row justify-content-center bandcamp-section">
-                <div class="col-12 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1050" data-aos-once="true" style="padding: 40px 20px;">
-                    <div style="display:flex;justify-content:center;"><iframe style="width: 400px; height:455px;border-radius:12px;" src="https://bandcamp.com/EmbeddedPlayer/album=227642243/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless="">
-    </iframe></div>
+            <div class="bandcamp-section">
+                <div data-aos="fade-up" data-aos-duration="1050" data-aos-once="true">
+                    <iframe style="width: 400px; height:455px;border-radius:12px;" src="https://bandcamp.com/EmbeddedPlayer/album=227642243/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless="">
+    </iframe>
                 </div>
             </div>
         </div>
     </section>
-    <section id="music" style="padding-top:200px;background:#ffffff;"></section>
-    <section style="height:400px;">
+    <section style="height:400px;position:relative;z-index:2;">
         <div class="container" style="padding:50px;">
             <div class="col-lg-8 mx-auto">
                 <h2 data-aos="slide-down" data-aos-duration="1050" data-aos-once="true" style="font-family:'Futura Md BT';font-weight:normal;font-size:32px;text-align:center;padding-bottom:50px;">SPOTIFY</h2>
