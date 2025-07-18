@@ -1,4 +1,6 @@
 RewriteEngine On
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\s/+\sHTTP [NC]
+RewriteRule ^$ /home [R=302,L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^.]+)$ $1.html [NC, L] 
