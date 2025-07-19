@@ -1,7 +1,3 @@
-.no-x-scroll {
-  overflow-x: hidden !important;
-}
-/* Social icon-only buttons for music/socials */
 .social-icon-btn {
   display: inline-flex;
   align-items: center;
@@ -10,30 +6,50 @@
   height: 56px;
   border-radius: 50%;
   background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
   font-size: 2.1rem;
   transition: color 0.2s, background 0.2s, border-color 0.2s;
   margin: 0 6px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
-.social-icon-btn:hover, .social-icon-btn:focus {
+
+/* White outline, white icon, fills to white bg/black icon on hover */
+.outline-white {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.outline-white img {
+  filter: invert(1);
+  transition: filter 0.2s;
+}
+.outline-white:hover, .outline-white:focus {
   background: #fff;
-  color: #222222;
+  color: #000;
   border-color: #fff;
 }
-.social-icon-btn:hover img, .social-icon-btn:focus img {
+.outline-white:hover img, .outline-white:focus img {
   filter: invert(0) !important;
 }
-.social-icon-btn.spotify:hover img, .social-icon-btn.spotify:focus img {
-  filter: invert(0) sepia(1) saturate(5) hue-rotate(85deg) brightness(1.1) !important;
+
+/* Black outline, black icon, fills to black bg/white icon on hover */
+.outline-black {
+  border: 2px solid #000;
+  color: #000;
 }
-.social-icon-btn.bandcamp:hover img, .social-icon-btn.bandcamp:focus img {
-  filter: invert(0) sepia(1) saturate(5) hue-rotate(170deg) brightness(1.1) !important;
+.outline-black img {
+  filter: invert(0);
+  transition: filter 0.2s;
 }
-.social-icon-btn.instagram:hover img, .social-icon-btn.instagram:focus img {
-  filter: invert(0) sepia(1) saturate(8) hue-rotate(-40deg) brightness(1.1) !important;
+.outline-black:hover, .outline-black:focus {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+.outline-black:hover img, .outline-black:focus img {
+  filter: invert(1) !important;
+}
+.no-x-scroll {
+  overflow-x: hidden !important;
 }
 html {
   scroll-behavior: smooth;
