@@ -1,4 +1,7 @@
 /* Custom scroll-triggered off-screen slide-in animations */
+body {
+  overflow-x: hidden;
+}
 .slide-in-from-top {
   opacity: 0;
   transform: translateY(-120vh);
