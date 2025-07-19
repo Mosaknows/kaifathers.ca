@@ -1,3 +1,17 @@
+/* Difference blend effect for nav text */
+.blend-difference {
+  mix-blend-mode: difference !important;
+  color: #fff !important;
+  background: none !important;
+  border: none !important;
+  font-family: 'Cabin', Arial, sans-serif !important;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  z-index: 10;
+  position: relative;
+}
 /* Custom scroll-triggered off-screen slide-in animations */
 .slide-in-from-top {
   opacity: 0;

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .half-section {
+      width: 100vw;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+    .white-bg {
+      background: #fff;
+      color: #000;
+    }
+    .black-bg {
+      background: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <filter id="invert-text">
+        <feColorMatrix type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0"/>
+      </filter>
+    </defs>
+  </svg>
+  <div class="half-section white-bg">White Section</div>
+  <div class="half-section black-bg">Black Section</div>
+  <div id="hello-text">HELLO</div>
+  <button id="blend-toggle" style="position:fixed;top:10px;right:10px;z-index:2000;">Toggle Blend Mode</button>
+  <style>
+    #hello-text {
+      position: fixed;
+      left: 50vw;
+      top: 50vh;
+      transform: translate(-50%, -50%);
+      font-family: Impact, Charcoal, 'Arial Black', sans-serif;
+      font-size: 4rem;
+      font-weight: bold;
+      font-style: italic;
+      color: #fff;
+      mix-blend-mode: difference;
+      pointer-events: none;
+      z-index: 1000;
+      user-select: none;
+      transition: none;
+    }
+  </style>
+  <script>
+    const hello = document.getElementById('hello-text');
+    document.addEventListener('mousemove', (e) => {
+      hello.style.left = e.clientX + 'px';
+      hello.style.top = e.clientY + 'px';
+    });
+    // Blend mode toggle
+    const blendToggle = document.getElementById('blend-toggle');
+    let mode = 'difference';
+    blendToggle.addEventListener('click', () => {
+      mode = mode === 'difference' ? 'exclusion' : 'difference';
+      hello.style.mixBlendMode = mode;
+      blendToggle.textContent = 'Toggle Blend Mode (' + mode + ')';
+    });
+    blendToggle.textContent = 'Toggle Blend Mode (' + mode + ')';
+  </script>
+</body>
+</html>
+
