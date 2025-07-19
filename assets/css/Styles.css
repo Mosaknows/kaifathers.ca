@@ -923,8 +923,8 @@ section[style*="background:#000000"] .gesture-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 32px;
-  height: 110px;
+  padding: 0 24px;
+  height: 82px;
   width: 100%;
   max-width: 100vw;
   box-sizing: border-box;
@@ -933,7 +933,7 @@ section[style*="background:#000000"] .gesture-text {
 
 .brand a {
   color: var(--white);
-  font-size: 2.7rem;
+  font-size: 2.025rem;
   font-weight: bold;
   text-decoration: none;
   letter-spacing: 2px;
@@ -945,8 +945,8 @@ section[style*="background:#000000"] .gesture-text {
 
 .nav-logo-desktop, .nav-title-desktop {
   display: inline-block;
-  height: 96px;
-  width: 96px;
+  height: 72px;
+  width: 72px;
   object-fit: contain;
 }
 
@@ -977,10 +977,10 @@ nav {
 
 .nav-list li a {
   display: block;
-  padding: 18px 32px;
+  padding: 13px 24px;
   color: var(--white);
   text-decoration: none;
-  font-size: 1.35rem;
+  font-size: 1.0125rem;
   margin: 0 8px;
   border-radius: 2.5rem;
   border: 2px solid var(--border-color);
@@ -1081,7 +1081,7 @@ nav {
   top: 10px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .nav-logo-desktop, .nav-title-desktop {
     display: none !important;
   }
