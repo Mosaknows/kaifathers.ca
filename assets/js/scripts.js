@@ -95,4 +95,3 @@ $(function() {  /* this is the jQuery equivalent of document.ready */
     AOS.init({
     });
 });
-
