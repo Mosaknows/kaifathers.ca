@@ -2,6 +2,10 @@
 // Toggle mobile menu
 const navToggle = document.getElementById('nav-toggle');
 const navList = document.querySelector('.nav-list');
+// Ensure nav-list is collapsed by default
+if (navList && navList.classList.contains('active')) {
+  navList.classList.remove('active');
+}
 if (navToggle && navList) {
   navToggle.addEventListener('click', function(e) {
     e.preventDefault();

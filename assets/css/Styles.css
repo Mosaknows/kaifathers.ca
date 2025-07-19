@@ -1,3 +1,37 @@
+/* Social icon-only buttons for music/socials */
+.social-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 2.1rem;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+  margin: 0 6px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.social-icon-btn:hover, .social-icon-btn:focus {
+  background: #fff;
+  color: #222222;
+  border-color: #fff;
+}
+.social-icon-btn:hover img, .social-icon-btn:focus img {
+  filter: invert(0) !important;
+}
+.social-icon-btn.spotify:hover img, .social-icon-btn.spotify:focus img {
+  filter: invert(0) sepia(1) saturate(5) hue-rotate(85deg) brightness(1.1) !important;
+}
+.social-icon-btn.bandcamp:hover img, .social-icon-btn.bandcamp:focus img {
+  filter: invert(0) sepia(1) saturate(5) hue-rotate(170deg) brightness(1.1) !important;
+}
+.social-icon-btn.instagram:hover img, .social-icon-btn.instagram:focus img {
+  filter: invert(0) sepia(1) saturate(8) hue-rotate(-40deg) brightness(1.1) !important;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -378,22 +412,6 @@ html, body {
 #mainNav {
   top: 0 !important;
   z-index: 9999 !important;
-}
-
-
-
-
-@media (max-width: 1199px) {
-    .arrow-container {
-        display: none;
-    }
-}
-
-@media (min-width: 1200px) {
-    .arrow-container {
-        display: block;
-        opacity: 1;
-    }
 }
 
 /* Bandcamp section (gif container) sits inside wrapper */
@@ -1110,14 +1128,15 @@ nav {
     flex-direction: column;
     position: absolute;
     width: 100vw;
-    left: -100vw;
+    left: 0px !important;
     top: 450px;
     background: transparent;
     transition: left 0.3s;
+    z-index: 1000;
   }
 
   .nav-list.active {
-    left: 0;
+    left: -100vw !important;
   }
 
   .nav-list li {
