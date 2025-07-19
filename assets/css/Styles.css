@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /* Ensure AOS-animated headers are always perfectly centered */
 h1[data-aos], h2[data-aos] {
   display: flex;
