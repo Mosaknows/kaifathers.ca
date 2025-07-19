@@ -1,3 +1,41 @@
+/* Custom scroll-triggered off-screen slide-in animations */
+.slide-in-from-top {
+  opacity: 0;
+  transform: translateY(-120vh);
+  transition: opacity 4s cubic-bezier(.77,0,.18,1), transform 4s cubic-bezier(.77,0,.18,1);
+}
+.slide-in-from-bottom {
+  opacity: 0;
+  transform: translateY(120vh);
+  transition: opacity 4s cubic-bezier(.77,0,.18,1), transform 4s cubic-bezier(.77,0,.18,1);
+}
+.slide-in-from-left {
+  opacity: 0;
+  transform: translateX(-120vw);
+  transition: opacity 4s cubic-bezier(.77,0,.18,1), transform 4s cubic-bezier(.77,0,.18,1);
+}
+.slide-in-from-right {
+  opacity: 0;
+  transform: translateX(120vw);
+  transition: opacity 4s cubic-bezier(.77,0,.18,1), transform 4s cubic-bezier(.77,0,.18,1);
+}
+.slide-in-animate {
+  opacity: 1 !important;
+  transform: translateX(0) translateY(0) !important;
+}
+
+/* Custom AOS animations for dramatic off-screen entrance */
+/* ...existing code... */
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInFromLeft 1.5s cubic-bezier(.77,0,.18,1) both;
+}
+.slide-in-right {
+  animation: slideInFromRight 1.5s cubic-bezier(.77,0,.18,1) both;
+}
 .masthead {
   background-image: url("caca.png");
   background-size: cover;
@@ -56,6 +94,10 @@ header {
   }
 }
 
+.btn-default, .side-btn-black, .side-btn-white {
+  transition: color 0.4s cubic-bezier(.4,0,.2,1), background-color 0.4s cubic-bezier(.4,0,.2,1), border-color 0.4s cubic-bezier(.4,0,.2,1);
+}
+
 .btn-default:focus, .btn-default:hover {
   color: #4a4242;
   border: 1px solid rgba(255,0,230,0);
@@ -64,15 +106,35 @@ header {
 }
 
 .btn-default {
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: #fff;
+  border: 1px solid #fff;
   background-color: transparent;
+}
+
+.btn-default:focus, .btn-default:hover {
+  color: #4a4242;
+  border: 1px solid rgba(255,0,230,0);
+  outline: 0;
+  background-color: #fff;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: #eac2df;
   border-color: #00c2ff;
+}
+
+.btn-primary {
+  background: transparent;
+  border: none;
+  color: inherit;
+  box-shadow: none;
+}
+
+.btn-primary:focus, .btn-primary:hover {
+  background: #fff;
+  color: #222;
+  border: 1.5px solid #fff;
 }
 
 body {
@@ -139,7 +201,7 @@ header .overlay {
 }
 
 body {
-  font-family: Lora,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: Georgia, serif;
   position: relative;
   color: #fff;
   background-color: #000000;
@@ -174,7 +236,7 @@ body {
 @media (max-width: 411px) {
   .clip-text {
     position: relative;
-    font-family: 'streamsterregular';
+    font-family: Impact, "Arial Black", Arial, sans-serif;
     font-size: 45px;
     letter-spacing: 20px;
     overflow: hidden;
@@ -190,7 +252,7 @@ body {
 @media (max-width: 576px) {
   .clip-text {
     position: relative;
-    font-family: 'streamsterregular';
+    font-family: Impact, "Arial Black", Arial, sans-serif;
     font-size: 45px;
     letter-spacing: 24px;
     overflow: hidden;
@@ -213,7 +275,7 @@ body {
 }
 
 #mainNav {
-  font-family: Cabin,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: Cabin, Arial, Helvetica, sans-serif;
   margin-bottom: 0;
   text-transform: uppercase;
   border-bottom: 1px solid hsla(0,0%,100%,.3);
@@ -237,7 +299,7 @@ body {
     color: #ffffff;
     padding-bottom: 17px;
     padding-top: 30px;
-    font-family: 'streamsterregular';
+    font-family: Impact, "Arial Black", Arial, sans-serif;
   }
 }
 
@@ -394,8 +456,8 @@ html, body {
 .track-row {
     white-space: nowrap;
     overflow: hidden;
-    font-family: cursive;
-    font-weight: 300;
+    font-family: 'Coral Pixels', monospace;
+    font-weight: 400;
     font-size: 48px;
     color: #000000;
     text-transform: uppercase;
@@ -635,5 +697,255 @@ section[style*="background:#ffffff"] {
 /* White latest project section should have lower z-index so ticker shows through */
 section[style*="background:#ffffff"] {
     z-index: auto !important;
+}
+
+/* Global heading styles */
+h1, h2 {
+    font-family: Impact, "Arial Black", Arial, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    color: rgb(0,0,0);
+    text-transform: uppercase;
+}
+
+/* White text variant for dark backgrounds */
+h1.white-text, h2.white-text {
+    color: rgb(255,255,255);
+}
+
+/* General text centering */
+.text-center {
+    text-align: center;
+}
+
+p, .content {
+    text-align: center;
+}
+
+/* Side Projects special font styling */
+.side-projects-text {
+    font-family: 'DM Serif Text', Georgia, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Side Projects gradual stroke effect - each row gets progressively thicker stroke */
+.side-projects-text.row-1 {
+    font-weight: 400;
+    -webkit-text-stroke: 0.5px currentColor;
+}
+
+.side-projects-text.row-2 {
+    font-weight: 400;
+    -webkit-text-stroke: 1px currentColor;
+}
+
+.side-projects-text.row-3 {
+    font-weight: 400;
+    -webkit-text-stroke: 1.5px currentColor;
+}
+
+.side-projects-text.row-4 {
+    font-weight: 400;
+    -webkit-text-stroke: 2px currentColor;
+}
+
+.side-projects-text.row-5 {
+    font-weight: 400;
+    -webkit-text-stroke: 2.5px currentColor;
+}
+
+.side-projects-text.row-6 {
+    font-weight: 400;
+    -webkit-text-stroke: 3px currentColor;
+}
+
+/* Gesture-specific classes - thick to thin progression */
+.gesture-text.row-1 {
+    font-weight: 400;
+    -webkit-text-stroke: 3px currentColor;
+}
+
+.gesture-text.row-2 {
+    font-weight: 400;
+    -webkit-text-stroke: 2.5px currentColor;
+}
+
+.gesture-text.row-3 {
+    font-weight: 400;
+    -webkit-text-stroke: 2px currentColor;
+}
+
+.gesture-text.row-4 {
+    font-weight: 400;
+    -webkit-text-stroke: 1.5px currentColor;
+}
+
+.gesture-text.row-5 {
+    font-weight: 400;
+    -webkit-text-stroke: 1px currentColor;
+}
+
+.gesture-text.row-6 {
+    font-weight: 400;
+    -webkit-text-stroke: 0.5px currentColor;
+}
+
+.side-projects-page .btn-default {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #000;
+}
+.side-projects-page .btn-default:focus,
+.side-projects-page .btn-default:hover {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+}
+
+.side-btn-black {
+  color: #fff !important;
+  background: #000 !important;
+  border: 1.5px solid currentColor !important;
+  transition: background-color 0.4s cubic-bezier(.4,0,.2,1), color 0.4s cubic-bezier(.4,0,.2,1), border-color 0.4s cubic-bezier(.4,0,.2,1);
+}
+.side-btn-black:focus,
+.side-btn-black:hover {
+  color: #000 !important;
+  background: #fff !important;
+  border: 1.5px solid currentColor !important;
+}
+
+.side-btn-white {
+  color: #000 !important;
+  background: #fff !important;
+  border: 1.5px solid currentColor !important;
+  transition: background-color 0.4s cubic-bezier(.4,0,.2,1), color 0.4s cubic-bezier(.4,0,.2,1), border-color 0.4s cubic-bezier(.4,0,.2,1);
+}
+.side-btn-white:focus,
+.side-btn-white:hover {
+  color: #fff !important;
+  background: #000 !important;
+  border: 1.5px solid currentColor !important;
+}
+
+/* Home page: always show white border on .btn-default */
+body:not(.side-projects-page) .btn-default {
+  border: 1.5px solid #fff;
+}
+
+/* --- Responsive Side Projects Page --- */
+@media (max-width: 991px) {
+  .side-projects-page .row {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .side-projects-page .col {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 0;
+    flex: 1 1 100%;
+    min-width: 0;
+    display: block;
+  }
+  .side-projects-page img {
+    width: 60vw !important;
+    max-width: 220px !important;
+    min-width: 60px !important;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  .side-projects-text, .gesture-text {
+    font-size: 1.1rem !important;
+    -webkit-text-stroke-width: 0.5px !important;
+    word-break: break-word;
+  }
+  .banner-social-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    flex-wrap: wrap;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    gap: 6px;
+  }
+  .banner-social-buttons .btn {
+    font-size: 0.95rem !important;
+    padding: 7px 10px !important;
+    margin: 0 4px !important;
+    min-width: 90px;
+  }
+}
+
+/* --- Remove conflicting img rules and ensure fluid scaling --- */
+@media (max-width: 991px) {
+  .side-projects-page img.album-cover-scale {
+    width: clamp(80px, 22vw, 340px) !important;
+    min-width: 60px !important;
+    max-width: 340px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  /* Remove conflicting .side-projects-page img rules by setting them to initial for .album-cover-scale */
+  .side-projects-page img.album-cover-scale {
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+@media (max-width: 600px) {
+  .side-projects-page img.album-cover-scale {
+    width: clamp(60px, 38vw, 180px) !important;
+    min-width: 40px !important;
+    max-width: 180px !important;
+  }
+}
+
+/* --- Fluid scaling for album covers and text, no jumps, no disappearing --- */
+.album-cover-scale {
+  width: clamp(80px, 22vw, 340px);
+  min-width: 60px;
+  max-width: 340px;
+  height: auto;
+  transition: width 0.4s cubic-bezier(.4,0,.2,1), max-width 0.4s cubic-bezier(.4,0,.2,1);
+  display: block;
+  margin: 0 auto;
+}
+.side-projects-text, .gesture-text {
+  font-size: clamp(1.1rem, 2.5vw, 2.8rem);
+  min-width: 1ch;
+  min-height: 1em;
+  transition: font-size 0.4s cubic-bezier(.4,0,.2,1);
+  color: #000 !important;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.12);
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+@media (max-width: 991px) {
+  .side-projects-text, .gesture-text {
+    color: #000 !important;
+    text-shadow: 0 2px 8px rgba(255,255,255,0.12);
+  }
+}
+
+/* Always black text for gesture section (white bg) */
+section[style*="background:#ffffff"] .side-projects-text,
+section[style*="background:#ffffff"] .gesture-text {
+  color: #000 !important;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.12);
+}
+
+/* Always white text for irreparably fixed section (black bg) */
+section[style*="background:#000000"] .side-projects-text,
+section[style*="background:#000000"] .gesture-text {
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.45);
 }
 

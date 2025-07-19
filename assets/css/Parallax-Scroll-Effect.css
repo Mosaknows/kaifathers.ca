@@ -7,13 +7,16 @@
   background-attachment: fixed;
 }
 
-h1 {
-  font-family: arial black;
+#box-2 h1 {
+  font-family: Impact, "Arial Black", Arial, sans-serif;
+  font-weight: 900;
+  font-style: italic;
   font-size: 50px;
   color: white;
   margin: 0px;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
+  text-transform: uppercase;
 }
 

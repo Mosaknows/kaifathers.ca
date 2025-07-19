@@ -1,8 +1,0 @@
-@font-face {
-	font-family: 'Futura Md BT';
-	src: url(../../assets/fonts/FuturaBT-BoldItalic.woff2) format('woff2'),
-	url(../../assets/fonts/FuturaBT-BoldItalic.woff) format('woff');
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
-}
