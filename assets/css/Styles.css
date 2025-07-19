@@ -1,3 +1,6 @@
+.no-x-scroll {
+  overflow-x: hidden !important;
+}
 /* Social icon-only buttons for music/socials */
 .social-icon-btn {
   display: inline-flex;
