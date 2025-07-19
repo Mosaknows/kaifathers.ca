@@ -691,12 +691,9 @@ footer {
 
 /* White latest project section should have lower z-index so ticker shows through */
 section[style*="background:#ffffff"] {
-    z-index: 1 !important;
-}
-
-/* White latest project section should have lower z-index so ticker shows through */
-section[style*="background:#ffffff"] {
     z-index: auto !important;
+    padding-top: clamp(40px, 18vw, 200px) !important;
+    padding-bottom: clamp(40px, 36vw, 400px) !important;
 }
 
 /* Global heading styles */
@@ -836,89 +833,25 @@ body:not(.side-projects-page) .btn-default {
 }
 
 /* --- Responsive Side Projects Page --- */
-@media (max-width: 991px) {
-  .side-projects-page .row {
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  .side-projects-page .col {
-    width: 100% !important;
-    max-width: 100% !important;
-    text-align: center !important;
-    margin-bottom: 0;
-    flex: 1 1 100%;
-    min-width: 0;
-    display: block;
-  }
-  .side-projects-page img {
-    width: 60vw !important;
-    max-width: 220px !important;
-    min-width: 60px !important;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-  }
-  .side-projects-text, .gesture-text {
-    font-size: 1.1rem !important;
-    -webkit-text-stroke-width: 0.5px !important;
-    word-break: break-word;
-  }
-  .banner-social-buttons {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    flex-wrap: wrap;
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
-    gap: 6px;
-  }
-  .banner-social-buttons .btn {
-    font-size: 0.95rem !important;
-    padding: 7px 10px !important;
-    margin: 0 4px !important;
-    min-width: 90px;
-  }
-}
-
-/* --- Remove conflicting img rules and ensure fluid scaling --- */
-@media (max-width: 991px) {
-  .side-projects-page img.album-cover-scale {
-    width: clamp(80px, 22vw, 340px) !important;
-    min-width: 60px !important;
-    max-width: 340px !important;
-    height: auto !important;
-    margin: 0 auto !important;
-    display: block !important;
-  }
-  /* Remove conflicting .side-projects-page img rules by setting them to initial for .album-cover-scale */
-  .side-projects-page img.album-cover-scale {
-    padding: 0 !important;
-    border: none !important;
-    box-shadow: none !important;
-  }
-}
-@media (max-width: 600px) {
-  .side-projects-page img.album-cover-scale {
-    width: clamp(60px, 38vw, 180px) !important;
-    min-width: 40px !important;
-    max-width: 180px !important;
-  }
-}
 
 /* --- Fluid scaling for album covers and text, no jumps, no disappearing --- */
+
 .album-cover-scale {
-  width: clamp(80px, 22vw, 340px);
-  min-width: 60px;
-  max-width: 340px;
+  width: clamp(180px, 30vw, 480px);
+  max-width: 480px;
+  min-width: 150px;
   height: auto;
   transition: width 0.4s cubic-bezier(.4,0,.2,1), max-width 0.4s cubic-bezier(.4,0,.2,1);
   display: block;
   margin: 0 auto;
+  padding: 0;
+  border: none;
+  box-shadow: none;
 }
+
+/* Always keep gesture-text and side-projects-text styles at all breakpoints */
 .side-projects-text, .gesture-text {
-  font-size: clamp(1.1rem, 2.5vw, 2.8rem);
+  font-size: clamp(1rem, 2.5vw, 2.8rem);
   min-width: 1ch;
   min-height: 1em;
   transition: font-size 0.4s cubic-bezier(.4,0,.2,1);
@@ -928,11 +861,25 @@ body:not(.side-projects-page) .btn-default {
   word-break: break-word;
   overflow-wrap: break-word;
 }
-@media (max-width: 991px) {
-  .side-projects-text, .gesture-text {
-    color: #000 !important;
-    text-shadow: 0 2px 8px rgba(255,255,255,0.12);
-  }
+section[style*="background:#ffffff"] .side-projects-text,
+section[style*="background:#ffffff"] .gesture-text {
+  color: #000 !important;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.12);
+}
+section[style*="background:#000000"] .side-projects-text,
+section[style*="background:#000000"] .gesture-text {
+  color: #fff !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.45);
+}
+
+.side-projects-text, .gesture-text {
+  font-size: clamp(1.3rem, 2.5vw, 5rem);
+  min-width: 1ch;
+  min-height: 1em;
+  transition: font-size 0.4s cubic-bezier(.4,0,.2,1);
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Always black text for gesture section (white bg) */
