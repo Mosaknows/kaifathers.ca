@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.half-section {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.white-bg {
+  background: #fff;
+  color: #000;
+}
+.black-bg {
+  background: #000;
+  color: #fff;
+}
+#hello-text {
+  position: fixed;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  font-family: Impact, Charcoal, 'Arial Black', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 80px;
+  color: #fff;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 1000;
+  user-select: none;
+  transition: none;
+}

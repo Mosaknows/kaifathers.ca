@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Page</title>
+  <link rel="stylesheet" href="assets/css/Styles2.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap">
+</head>
+<body>
+  <!-- Top SVG bar removed -->
+  <div class="half-section white-bg">White Section</div>
+  <div class="half-section black-bg"><span class="invert-text">Black Section</span></div>
+  <div id="hello-text"><span class="pill-invert-text">HELLO</span></div>
+  <!-- Blend mode toggle button removed -->
+  <style>
+    #hello-text {
+      position: fixed;
+      width: 400px;
+      height: 160px;
+      background: #fff;
+      border-radius: 999px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+      pointer-events: none;
+      z-index: 1000;
+      transition: background 0.2s, box-shadow 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pill-invert-text {
+      filter: invert(1);
+      font-size: 5vw;
+      font-family: Impact, Charcoal, 'Arial Black', sans-serif;
+      font-style: italic;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+    .half-section {
+      font-size: 8vw;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      font-family: 'Coral Pixels', monospace;
+    }
+    .black-bg {
+      /* no filter here, only on text */
+    }
+    .invert-text {
+      filter: invert(1);
+      display: inline-block;
+    }
+  </style>
+  <script>
+    const hello = document.getElementById('hello-text');
+    document.addEventListener('mousemove', (e) => {
+      hello.style.left = e.clientX + 'px';
+      hello.style.top = e.clientY + 'px';
+    });
+    // Blend mode toggle
+    const blendToggle = document.getElementById('blend-toggle');
+    let mode = 'difference';
+    blendToggle.addEventListener('click', () => {
+      mode = mode === 'difference' ? 'exclusion' : 'difference';
+      hello.style.mixBlendMode = mode;
+      blendToggle.textContent = 'Toggle Blend Mode (' + mode + ')';
+    });
+    blendToggle.textContent = 'Toggle Blend Mode (' + mode + ')';
+  </script>
+</body>
+</html>
