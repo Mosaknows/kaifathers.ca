@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Sections - White and Black</title>
+    <link rel="stylesheet" href="assets/css/Styles3.css">
+</head>
+<body>
+    <section class="section white-section">
+        <div class="centered-text">White Page</div>
+    </section>
+    <section class="section black-section">
+        <div class="centered-text">Black Page</div>
+    </section>
+    <a href="./home#socials" class="pill-link"><div class="mouse-pill" id="pill-socials"><span class="pill-text">MUSIC & SOCIALS</span></div></a>
+    <a href="./home#proj" class="pill-link"><div class="mouse-pill" id="pill-latest"><span class="pill-text">LATEST</span></div></a>
+    <a href="./home#music" class="pill-link"><div class="mouse-pill" id="pill-stream"><span class="pill-text">STREAM</span></div></a>
+    <a href="./discography" class="pill-link"><div class="mouse-pill" id="pill-discography"><span class="pill-text">DISCOGRAPHY</span></div></a>
+    <a href="./biography" class="pill-link"><div class="mouse-pill" id="pill-bio"><span class="pill-text">BIO</span></div></a>
+    <a href="./side-projects" class="pill-link"><div class="mouse-pill" id="pill-side-projects"><span class="pill-text">SIDE PROJECTS</span></div></a>
+    <script>
+      // Dynamically space pills at the top right
+      const pills = [
+        document.getElementById('pill-socials'),
+        document.getElementById('pill-latest'),
+        document.getElementById('pill-stream'),
+        document.getElementById('pill-discography'),
+        document.getElementById('pill-bio'),
+        document.getElementById('pill-side-projects')
+      ];
+      function positionPills() {
+        const gap = 32; // px
+        const top = 32; // px
+        let right = 32;
+        for (let i = pills.length - 1; i >= 0; i--) {
+          const pill = pills[i];
+          pill.style.position = 'fixed';
+          pill.style.top = top + 'px';
+          pill.style.right = right + 'px';
+          pill.style.zIndex = 2000;
+          pill.style.margin = 0;
+          right += pill.offsetWidth + gap;
+        }
+      }
+      window.addEventListener('resize', positionPills);
+      window.addEventListener('DOMContentLoaded', positionPills);
+    </script>
+</body>
+</html>
