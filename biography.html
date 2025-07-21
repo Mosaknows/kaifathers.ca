@@ -1,21 +1,49 @@
-<!DOCTYPE html><html data-bs-theme="light" data-bss-forced-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><title>Kai Fathers</title><meta property="og:title" content="Kai Fathers"><meta property="og:type" content="website"><meta name="description" content="A WEBSITE OF SORTS"><link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png"><link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png"><link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png"><link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap"><link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css"><link rel="stylesheet" href="assets/css/styles.min.css"><link rel="stylesheet" href="assets/css/Styles.css"><link rel="stylesheet" href="navbar.css">
+<!DOCTYPE html>
+<html data-bs-theme="light" data-bss-forced-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Kai Fathers</title>
+    <meta property="og:title" content="Kai Fathers">
+    <meta property="og:type" content="website">
+    <meta name="description" content="A WEBSITE OF SORTS">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coral+Pixels&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/Styles.css">
+    <link rel="stylesheet" href="assets/css/navbar2.css">
 </head>
 <body id="page-top" style="background-color:rgb(0,0,0);">
+    <!-- Burger menu button -->
+    <button class="burger-btn" onclick="toggleMobileMenu()">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+    </button>
+    <!-- Single Navbar for both desktop and mobile -->
+    <nav class="navbar" id="mainNavbar">
+        <a href="./home#socials" class="nav-pill"><span class="nav-pill-text">MUSIC & SOCIALS</span></a>
+        <a href="./home#proj" class="nav-pill"><span class="nav-pill-text">LATEST</span></a>
+        <a href="./home#music" class="nav-pill"><span class="nav-pill-text">STREAM</span></a>
+        <a href="./discography" class="nav-pill"><span class="nav-pill-text">DISCOGRAPHY</span></a>
+        <a href="./biography" class="nav-pill"><span class="nav-pill-text">BIO</span></a>
+        <a href="./side-projects" class="nav-pill"><span class="nav-pill-text">SIDE PROJECTS</span></a>
+    </nav>
     <a href="/home" class="pill-logo-link" style="position:fixed;top:32px;left:32px;z-index:2000;display:inline-block;height:54px;">
       <img src="assets/img/apple-touch-icon.png" alt="Kai Fathers Logo" style="border-radius:12px;vertical-align:middle;width:64px;height:64px;object-fit:cover;display:block;margin-top:-5px;">
     </a>
-    <svg id="pill-burger" aria-label="Open navigation" width="56" height="56" viewBox="0 0 56 56" style="position:fixed;top:28px;right:28px;z-index:3000;display:none;cursor:pointer;mix-blend-mode:difference;filter:invert(1);">
-      <rect x="8" y="14" width="40" height="5" rx="2.5" fill="#000"/>
-      <rect x="8" y="26" width="40" height="5" rx="2.5" fill="#000"/>
-      <rect x="8" y="38" width="40" height="5" rx="2.5" fill="#000"/>
-    </svg>
-    <a href="./home#socials" class="pill-link"><div class="mouse-pill" id="pill-socials"><span class="pill-text">MUSIC & SOCIALS</span></div></a>
-    <a href="./home#proj" class="pill-link"><div class="mouse-pill" id="pill-latest"><span class="pill-text">LATEST</span></div></a>
-    <a href="./home#music" class="pill-link"><div class="mouse-pill" id="pill-stream"><span class="pill-text">STREAM</span></div></a>
-    <a href="./discography" class="pill-link"><div class="mouse-pill" id="pill-discography"><span class="pill-text">DISCOGRAPHY</span></div></a>
-    <a href="./biography" class="pill-link"><div class="mouse-pill" id="pill-bio"><span class="pill-text">BIO</span></div></a>
-    <a href="./side-projects" class="pill-link"><div class="mouse-pill" id="pill-side-projects"><span class="pill-text">SIDE PROJECTS</span></div></a>
-    <script src="navbar.js"></script>
     <section style="height:300px;">
         <section>
             <p class="text-center" style="margin:0px;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;padding:50px;color:white;"><br>Yeah i make music sometimes<br><br></p>
@@ -49,4 +77,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/navbar2.js"></script>
     <script src="assets/js/gesture.js"></script><script src="assets/js/jquery.min.js"></script><script src="assets/bootstrap/js/bootstrap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script src="assets/js/script.min.js"></script><script src="assets/js/navbar-faraz.js"></script></body></html>
