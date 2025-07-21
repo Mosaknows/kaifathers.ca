@@ -1,28 +1,20 @@
-<!DOCTYPE html><html data-bs-theme="light" data-bss-forced-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><title>Kai Fathers</title><meta property="og:title" content="Kai Fathers"><meta property="og:type" content="website"><meta name="description" content="A WEBSITE OF SORTS"><link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png"><link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png"><link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png"><link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coral+Pixels&amp;display=swap"><link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css"><link rel="stylesheet" href="assets/fonts/font-awesome.min.css"><link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css"><link rel="stylesheet" href="assets/css/styles.min.css"><link rel="stylesheet" href="assets/css/Styles.css">
+<!DOCTYPE html><html data-bs-theme="light" data-bss-forced-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><title>Kai Fathers</title><meta property="og:title" content="Kai Fathers"><meta property="og:type" content="website"><meta name="description" content="A WEBSITE OF SORTS"><link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png"><link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png"><link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" media="(prefers-color-scheme: dark)"><link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png"><link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png"><link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coral+Pixels&amp;display=swap"><link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css"><link rel="stylesheet" href="assets/fonts/font-awesome.min.css"><link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css"><link rel="stylesheet" href="assets/css/styles.min.css"><link rel="stylesheet" href="assets/css/Styles.css"><link rel="stylesheet" href="navbar.css">
 </head><body id="page-top" style="background-color:rgb(0,0,0);">
-<!-- Define this ONCE at the top of your HTML, outside content -->
-    <svg width="0" height="0" style="position: absolute;">
-    <defs>
-        <filter id="invert-text">
-        <feColorMatrix type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0"/>
-        </filter>
-    </defs>
-    </svg>
-<div class="nav-bar nav-bar-simple">
-  <div class="nav-container nav-container-simple">
-    <a href="/home" class="brand-simple">
-      <img src="assets/img/apple-touch-icon.png" alt="Kai Fathers Logo" style="border-radius:12px;vertical-align:middle;width:48px;height:48px;">
+    <a href="/home" class="pill-logo-link" style="position:fixed;top:32px;left:32px;z-index:2000;display:inline-block;height:54px;">
+      <img src="assets/img/apple-touch-icon.png" alt="Kai Fathers Logo" style="border-radius:12px;vertical-align:middle;width:64px;height:64px;object-fit:cover;display:block;margin-top:-5px;">
     </a>
-    <ul class="nav-list-simple">
-      <li><a href="./home#socials"><span class="nav-invert-text">MUSIC & SOCIALS</span></a></li>
-      <li><a href="./home#proj"><span class="nav-invert-text">LATEST</span></a></li>
-      <li><a href="./home#music"><span class="nav-invert-text">STREAM</span></a></li>
-      <li><a href="./discography"><span class="nav-invert-text">DISCOGRAPHY</span></a></li>
-      <li><a href="./biography"><span class="nav-invert-text">BIO</span></a></li>
-      <li><a href="./side-projects"><span class="nav-invert-text">SIDE PROJECTS</span></a></li>
-    </ul>
-  </div>
-</div>
+    <svg id="pill-burger" aria-label="Open navigation" width="56" height="56" viewBox="0 0 56 56" style="position:fixed;top:28px;right:28px;z-index:3000;display:none;cursor:pointer;mix-blend-mode:difference;filter:invert(1);">
+      <rect x="8" y="14" width="40" height="5" rx="2.5" fill="#000"/>
+      <rect x="8" y="26" width="40" height="5" rx="2.5" fill="#000"/>
+      <rect x="8" y="38" width="40" height="5" rx="2.5" fill="#000"/>
+    </svg>
+    <a href="./home#socials" class="pill-link"><div class="mouse-pill" id="pill-socials"><span class="pill-text">MUSIC & SOCIALS</span></div></a>
+    <a href="./home#proj" class="pill-link"><div class="mouse-pill" id="pill-latest"><span class="pill-text">LATEST</span></div></a>
+    <a href="./home#music" class="pill-link"><div class="mouse-pill" id="pill-stream"><span class="pill-text">STREAM</span></div></a>
+    <a href="./discography" class="pill-link"><div class="mouse-pill" id="pill-discography"><span class="pill-text">DISCOGRAPHY</span></div></a>
+    <a href="./biography" class="pill-link"><div class="mouse-pill" id="pill-bio"><span class="pill-text">BIO</span></div></a>
+    <a href="./side-projects" class="pill-link"><div class="mouse-pill" id="pill-side-projects"><span class="pill-text">SIDE PROJECTS</span></div></a>
+    <script src="navbar.js"></script>
 <section id="socials" class="text-center content-section"
   style="padding: 0; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <!-- Gif background -->

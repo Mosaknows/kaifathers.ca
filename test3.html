@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Two Sections - White and Black</title>
     <link rel="stylesheet" href="assets/css/Styles3.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
     <section class="section white-section">
@@ -27,65 +28,6 @@
     <a href="./discography" class="pill-link"><div class="mouse-pill" id="pill-discography"><span class="pill-text">DISCOGRAPHY</span></div></a>
     <a href="./biography" class="pill-link"><div class="mouse-pill" id="pill-bio"><span class="pill-text">BIO</span></div></a>
     <a href="./side-projects" class="pill-link"><div class="mouse-pill" id="pill-side-projects"><span class="pill-text">SIDE PROJECTS</span></div></a>
-    <script>
-      // Dynamically space pills at the top right
-      const pills = [
-        document.getElementById('pill-socials'),
-        document.getElementById('pill-latest'),
-        document.getElementById('pill-stream'),
-        document.getElementById('pill-discography'),
-        document.getElementById('pill-bio'),
-        document.getElementById('pill-side-projects')
-      ];
-      const burger = document.getElementById('pill-burger');
-      let pillsVisible = true;
-      function positionPills() {
-        const gap = 32; // px
-        const mobileGap = 80; // px
-        const top = 32; // px
-        const isMobile = window.innerWidth < 1150;
-        let right = 32;
-        // Show/hide burger
-        burger.style.display = isMobile ? 'block' : 'none';
-        if (isMobile) {
-          // Instantly position pills, no animation
-          for (let i = 0; i < pills.length; i++) {
-            const pill = pills[i];
-            pill.style.position = 'fixed';
-            pill.style.visibility = 'visible';
-            pill.style.opacity = '1';
-            pill.style.pointerEvents = pillsVisible ? 'auto' : 'none';
-            pill.style.transition = 'none';
-            // Align first pill's center with burger center
-            const burgerCenter = 28 + 56/2; // burger top + half its height
-            const pillHeight = pill.offsetHeight;
-            const firstPillTop = burgerCenter - pillHeight/2;
-            const pillWidth = pill.offsetWidth;
-            pill.style.top = (firstPillTop + i * (pillHeight + gap)) + 'px';
-            pill.style.left = pillsVisible ? `calc(50vw - ${pillWidth/2}px)` : '110vw';
-            pill.style.right = '';
-          }
-        } else {
-          for (let i = pills.length - 1; i >= 0; i--) {
-            const pill = pills[i];
-            pill.style.position = 'fixed';
-            pill.style.top = top + 'px';
-            pill.style.left = '';
-            pill.style.right = right + 'px';
-            pill.style.opacity = '1';
-            pill.style.pointerEvents = 'auto';
-            pill.style.transition = 'none';
-            pill.style.visibility = 'visible';
-            right += pill.offsetWidth + gap;
-          }
-        }
-      }
-      burger.addEventListener('click', function() {
-        pillsVisible = !pillsVisible;
-        positionPills();
-      });
-      window.addEventListener('resize', positionPills);
-      window.addEventListener('DOMContentLoaded', positionPills);
-    </script>
+    <script src="navbar.js"></script>
 </body>
 </html>
