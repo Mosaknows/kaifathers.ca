@@ -13,6 +13,14 @@
     <section class="section black-section">
         <div class="centered-text">Black Page</div>
     </section>
+    <a href="/home" class="pill-logo-link" style="position:fixed;top:32px;left:32px;z-index:2000;display:inline-block;height:54px;">
+      <img src="assets/img/apple-touch-icon.png" alt="Kai Fathers Logo" style="border-radius:12px;vertical-align:middle;width:64px;height:64px;object-fit:cover;display:block;margin-top:-5px;">
+    </a>
+    <svg id="pill-burger" aria-label="Open navigation" width="56" height="56" viewBox="0 0 56 56" style="position:fixed;top:28px;right:28px;z-index:3000;display:none;cursor:pointer;mix-blend-mode:difference;filter:invert(1);">
+      <rect x="8" y="14" width="40" height="5" rx="2.5" fill="#000"/>
+      <rect x="8" y="26" width="40" height="5" rx="2.5" fill="#000"/>
+      <rect x="8" y="38" width="40" height="5" rx="2.5" fill="#000"/>
+    </svg>
     <a href="./home#socials" class="pill-link"><div class="mouse-pill" id="pill-socials"><span class="pill-text">MUSIC & SOCIALS</span></div></a>
     <a href="./home#proj" class="pill-link"><div class="mouse-pill" id="pill-latest"><span class="pill-text">LATEST</span></div></a>
     <a href="./home#music" class="pill-link"><div class="mouse-pill" id="pill-stream"><span class="pill-text">STREAM</span></div></a>
@@ -29,20 +37,53 @@
         document.getElementById('pill-bio'),
         document.getElementById('pill-side-projects')
       ];
+      const burger = document.getElementById('pill-burger');
+      let pillsVisible = true;
       function positionPills() {
         const gap = 32; // px
+        const mobileGap = 80; // px
         const top = 32; // px
+        const isMobile = window.innerWidth < 1150;
         let right = 32;
-        for (let i = pills.length - 1; i >= 0; i--) {
-          const pill = pills[i];
-          pill.style.position = 'fixed';
-          pill.style.top = top + 'px';
-          pill.style.right = right + 'px';
-          pill.style.zIndex = 2000;
-          pill.style.margin = 0;
-          right += pill.offsetWidth + gap;
+        // Show/hide burger
+        burger.style.display = isMobile ? 'block' : 'none';
+        if (isMobile) {
+          // Instantly position pills, no animation
+          for (let i = 0; i < pills.length; i++) {
+            const pill = pills[i];
+            pill.style.position = 'fixed';
+            pill.style.visibility = 'visible';
+            pill.style.opacity = '1';
+            pill.style.pointerEvents = pillsVisible ? 'auto' : 'none';
+            pill.style.transition = 'none';
+            // Align first pill's center with burger center
+            const burgerCenter = 28 + 56/2; // burger top + half its height
+            const pillHeight = pill.offsetHeight;
+            const firstPillTop = burgerCenter - pillHeight/2;
+            const pillWidth = pill.offsetWidth;
+            pill.style.top = (firstPillTop + i * (pillHeight + gap)) + 'px';
+            pill.style.left = pillsVisible ? `calc(50vw - ${pillWidth/2}px)` : '110vw';
+            pill.style.right = '';
+          }
+        } else {
+          for (let i = pills.length - 1; i >= 0; i--) {
+            const pill = pills[i];
+            pill.style.position = 'fixed';
+            pill.style.top = top + 'px';
+            pill.style.left = '';
+            pill.style.right = right + 'px';
+            pill.style.opacity = '1';
+            pill.style.pointerEvents = 'auto';
+            pill.style.transition = 'none';
+            pill.style.visibility = 'visible';
+            right += pill.offsetWidth + gap;
+          }
         }
       }
+      burger.addEventListener('click', function() {
+        pillsVisible = !pillsVisible;
+        positionPills();
+      });
       window.addEventListener('resize', positionPills);
       window.addEventListener('DOMContentLoaded', positionPills);
     </script>
