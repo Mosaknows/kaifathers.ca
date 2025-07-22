@@ -1,8 +1,8 @@
 /* Navbar */
 .navbar {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 22px;
+    right: 22px;
     z-index: 1000;
     display: flex;
     gap: 15px;
@@ -24,9 +24,9 @@
     0 1px 1px rgb(255, 255, 255) inset;
     cursor: pointer;
     transition: all 0.3s ease;
-    backdrop-filter: invert(1) blur(3px) saturate(120%) brightness(80%);
-    -webkit-backdrop-filter: invert(1) blur(3px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: invert(1) blur(3px) saturate(120%) brightness(70%);
+    -webkit-backdrop-filter: invert(1) blur(3px) saturate(120%) brightness(70%);
+    border: 1px solid rgba(255, 255, 255, 0);
 }
 
 .nav-pill .nav-pill-text {
@@ -40,8 +40,6 @@
 }
 
 .nav-pill:hover {
-    backdrop-filter: invert(1) blur(3px);
-    -webkit-backdrop-filter: invert(1) blur(3px);
     transform: scale(1.05);
     box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
 }
@@ -50,8 +48,8 @@
 .burger-btn {
     display: none;
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 33px;
+    right: 22px;
     z-index: 1001;
     width: 60px;
     height: 50px;
@@ -97,8 +95,8 @@
         flex-direction: column;
         align-items: center;
         gap: 0;
-        top: 10px;
-        left: 0px;
+        top: 20px;
+        left: 25px;
         border-radius: 20px;
         display: none;
     }
@@ -110,6 +108,9 @@
     }
     .burger-btn {
         display: flex;
+    }
+    .nav-pill .nav-pill-text {
+        font-size: 15px !important;
     }
 } 
 
