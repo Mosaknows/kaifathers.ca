@@ -112,7 +112,24 @@ h1[data-aos], h2[data-aos] {
 }
 
 /* Custom AOS animations for dramatic off-screen entrance */
-/* ...existing code... */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -420,25 +437,20 @@ html, body {
     z-index: 2;
     width: clamp(600px, 60vw, 800px);
     margin: 0 auto;
-    height: auto;
+    height: 50h;
 }
 
 @media (max-width: 767px) {
     .bandcamp-section {
         width: calc(100vw - clamp(160px, 24vw, 300px));
-        max-width: clamp(700px, 87.5vw, 875px);
-        padding: clamp(62px, 6.2vh, 104px) clamp(80px, 12vw, 120px);
-        min-height: clamp(675px, 52.5vh, 825px);
+
     }
 }
 
 @media (max-width: 575px) {
     .bandcamp-section {
         width: calc(100vw - clamp(100px, 20vw, 160px));
-        max-width: clamp(625px, 112.5vw, 800px);
-        padding: clamp(52px, 5.2vh, 84px) clamp(60px, 10vw, 80px);
-        min-height: clamp(600px, 45vh, 750px);
-        border-radius: 8px;
+
     }
 }
 
@@ -447,7 +459,7 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 1920px;
     height: 100vh;
     z-index: 0;
     pointer-events: none;
@@ -625,27 +637,6 @@ html, body {
     }
     100% {
         transform: translateX(0);
-    }
-}
-
-/* Responsive adjustments for track ticker */
-@media (max-width: 767px) {
-    .track-row {
-        font-size: 22px;
-        letter-spacing: 1px;
-    }
-}
-
-@media (max-width: 575px) {
-    .track-row {
-        font-size: 18px;
-        letter-spacing: 1px;
-    }
-}
-
-@media (max-width: 400px) {
-    .track-row {
-        font-size: 16px;
     }
 }
 
