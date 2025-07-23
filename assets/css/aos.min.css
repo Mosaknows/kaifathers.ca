@@ -953,7 +953,3 @@
   transform: perspective(2500px) rotateX(0);
 }
 
-[data-aos] {
-  overflow: hidden;
-}
-

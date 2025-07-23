@@ -667,6 +667,7 @@ section {
     position: relative;
     z-index: 10 !important;
     background-color: inherit;
+    overflow: hidden;
 }
 
 /* Black section with music notes */
