@@ -54,12 +54,6 @@
 .outline-black:hover img, .outline-black:focus img {
   filter: invert(1) !important;
 }
-html, body, .no-x-scroll, .content-section, .container {
-  overflow-x: hidden !important;
-}
-.container {
-  overflow: hidden !important;
-}
 html {
   scroll-behavior: smooth;
 }
