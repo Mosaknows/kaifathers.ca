@@ -3,3 +3,8 @@ RewriteRule ^$ /home [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^.]+)$ $1.html [NC,L]
+
+# Redirect index.html to home.html (SEO-friendly 301 redirect)
+Redirect 301 /index /home
+# Optionally, redirect root to home.html as well
+Redirect 301 / /home
