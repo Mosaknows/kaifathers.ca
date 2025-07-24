@@ -163,7 +163,13 @@ def main():
     with open('releases.txt', 'w', encoding='utf-8') as f:
         for release in all_releases:
             f.write(f"{release['type'].upper()}: {release['title']}\n")
-            f.write(f"  Tracks: {', '.join(release['tracks'])}\n")
+            f.write(f"  Tracks:\n")
+            # Try to get track lengths if available, else N/A
+            tracks = release.get('tracks', [])
+            track_lengths = release.get('track_lengths', [])
+            for i, track in enumerate(tracks):
+                length = track_lengths[i] if i < len(track_lengths) else 'N/A'
+                f.write(f"    - {track} [{length}]\n")
             if 'spotify_url' in release:
                 f.write(f"  Spotify: {release['spotify_url']}\n")
             if 'bandcamp_url' in release:
