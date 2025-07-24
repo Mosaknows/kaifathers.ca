@@ -46,6 +46,12 @@ permalink: /discography/
             font-weight: 700 !important;
             font-size: 20px !important;
         }
+        .album-title img {
+            max-width: 90%;
+            height: auto;
+            filter: invert(1);
+            display: inline-block;
+        }
 
         .gallery-grid {
             display: grid;
@@ -131,7 +137,7 @@ permalink: /discography/
     </a></div>
 <div class="gallery-item"><a href="/releases/lp-ep/lautia.html">
       <div class="img-container"><img src="https://f4.bcbits.com/img/a3768468221_2.jpg" alt="Lautia Cover"></div>
-      <p class="album-title">Lautia</p>
+      <p class="album-title"><img src="/assets/img/titles/lautia.png" alt="Lautia Title" style="max-width:100%;height:auto;"></p>
     </a></div>
 <div class="gallery-item"><a href="/releases/singles/halo-demo.html">
       <div class="img-container"><img src="https://i.scdn.co/image/ab67616d0000b2735040c7abd402e912d6a419b6" alt="HALO (Demo) Cover"></div>
@@ -147,7 +153,7 @@ permalink: /discography/
     </a></div>
 <div class="gallery-item"><a href="/releases/singles/butterflies-that-bite.html">
       <div class="img-container"><img src="https://i.scdn.co/image/ab67616d0000b2732e0a4464bfc4e85f40d04ad3" alt="butterflies that bite Cover"></div>
-      <p class="album-title">butterflies that bite</p>
+      <p class="album-title"><img src="/assets/img/titles/butterflies-that-bite.png" alt="butterflies that bite Title" style="max-width:100%;height:auto;"></p>
     </a></div>
 <div class="gallery-item"><a href="/releases/singles/reminiscing-the-tall-field-coils.html">
       <div class="img-container"><img src="https://i.scdn.co/image/ab67616d0000b273c15ab8f237ba3136973d4da2" alt="Reminiscing the Tall Field Coils Cover"></div>
@@ -155,7 +161,7 @@ permalink: /discography/
     </a></div>
 <div class="gallery-item"><a href="/releases/singles/chlorine.html">
       <div class="img-container"><img src="https://i.scdn.co/image/ab67616d0000b27375252e6d37715b57ec5aff0a" alt="Chlorine Cover"></div>
-      <p class="album-title">Chlorine</p>
+      <p class="album-title"><img src="/assets/img/titles/chlorine.png" alt="Chlorine Title" style="max-width:100%;height:auto;"></p>
     </a></div>
 <!-- DISC_END -->
             </div>
@@ -180,4 +186,26 @@ permalink: /discography/
     <script src="/assets/js/scripts.js"></script>
     <script src="/assets/js/script.min.js"></script>
     <script src="/assets/js/navbar2.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('.album-title img').forEach(function(img) {
+    function setMaxWidth() {
+      if (img.naturalWidth && img.naturalHeight) {
+        var aspect = img.naturalWidth / img.naturalHeight;
+        // Clamp aspect between 0.5 and 1.1 for scaling
+        var clamped = Math.max(0.5, Math.min(aspect, 1.1));
+        // Linear interpolation: 0.5 -> 20%, 1.1 -> 100%
+        var maxWidth = ((clamped - 0.5) / (1.1 - 0.5)) * (100 - 20) + 20;
+        img.style.maxWidth = maxWidth + '%';
+        img.style.height = 'auto';
+      }
+    }
+    if (img.complete) {
+      setMaxWidth();
+    } else {
+      img.addEventListener('load', setMaxWidth);
+    }
+  });
+});
+</script>
 </body></html>

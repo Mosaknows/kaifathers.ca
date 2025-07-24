@@ -83,24 +83,15 @@ function fetchBandcampReleases(callback) {
           if (albumInfo.raw && albumInfo.raw.current) {
             if (albumInfo.raw.current.featured_track_id) {
               trackId = albumInfo.raw.current.featured_track_id;
-              console.log(`[DEBUG] ${albumInfo.title} | Using featured_track_id:`, trackId);
             } else if (Array.isArray(albumInfo.raw.current.trackinfo) && albumInfo.raw.current.trackinfo.length > 0 && albumInfo.raw.current.trackinfo[0].id) {
               trackId = albumInfo.raw.current.trackinfo[0].id;
-              console.log(`[DEBUG] ${albumInfo.title} | Using first track id:`, trackId);
-            } else {
-              console.log(`[DEBUG] ${albumInfo.title} | No valid track id found.`);
             }
           }
-          console.log(`[DEBUG] ${albumInfo.title} | albumId:`, albumId);
           if (albumId && trackId && albumInfo.url) {
             embed = `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=${albumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=${trackId}/transparent=true/" seamless><a href="${albumInfo.url}">${albumInfo.title} by Kai Fathers</a></iframe>`;
-            console.log(`[DEBUG] ${albumInfo.title} | Bandcamp embed generated with trackId:`, trackId);
           } else if (albumId && albumInfo.url) {
             // fallback: album embed without track
             embed = `<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=${albumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/\" seamless><a href=\"${albumInfo.url}\">${albumInfo.title} by Kai Fathers</a></iframe>`;
-            console.log(`[DEBUG] ${albumInfo.title} | Bandcamp album embed generated (no trackId)`);
-          } else {
-            console.log(`[DEBUG] ${albumInfo.title} | No Bandcamp embed generated.`);
           }
           let release_date = '';
           if (albumInfo.raw && albumInfo.raw.current && albumInfo.raw.current.release_date) {
@@ -203,10 +194,16 @@ function generateReleasePages(releases) {
         embed = `<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/${spotifyId}?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>`;
       }
     }
-    // Debug: print embed value for each release
-    console.log(`[DEBUG] ${rel.title} | embed:`, embed);
+    // Use PNG title image if it exists
+    const titleImgPath = path.join(__dirname, `../assets/img/titles/${slug}.png`);
+    let titleHtml;
+    if (fs.existsSync(titleImgPath)) {
+      titleHtml = `<img src="/assets/img/titles/${slug}.png" alt="${rel.title} Title" style="max-width:100%;height:auto;">`;
+    } else {
+      titleHtml = rel.title;
+    }
     const html = fillTemplate(template, {
-      title: rel.title,
+      title: titleHtml,
       cover_url: rel.cover_url,
       spotify_url: rel.spotify_url,
       bandcamp_url: rel.bandcamp_url,
@@ -318,10 +315,15 @@ function updateDiscographyHtml(releases) {
     const slug = slugifyForFile(rel.title);
     const isAlbum = rel.tracks.length > 3;
     const link = isAlbum ? `/releases/lp-ep/${slug}.html` : `/releases/singles/${slug}.html`;
-    return `<div class="gallery-item"><a href="${link}">
-      <div class="img-container"><img src="${rel.cover_url}" alt="${rel.title} Cover"></div>
-      <p class="album-title">${rel.title}</p>
-    </a></div>`;
+    // Use PNG title image if it exists
+    const titleImgPath = path.join(__dirname, `../assets/img/titles/${slug}.png`);
+    let titleHtml;
+    if (fs.existsSync(titleImgPath)) {
+      titleHtml = `<img src="/assets/img/titles/${slug}.png" alt="${rel.title} Title" style="max-width:100%;height:auto;">`;
+    } else {
+      titleHtml = rel.title;
+    }
+    return `<div class=\"gallery-item\"><a href=\"${link}\">\n      <div class=\"img-container\"><img src=\"${rel.cover_url}\" alt=\"${rel.title} Cover\"></div>\n      <p class=\"album-title\">${titleHtml}</p>\n    </a></div>`;
   }).join('\n');
   const newHtml = before + '\n' + gallery + '\n' + after;
   try {

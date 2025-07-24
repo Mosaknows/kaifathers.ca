@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>{{title}}</title>
+    <style>
+      .title-img-container {
+        display: inline-block;
+      }
+      .title-img-container img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
 </head>
 <body>
-    <h1>{{title}}</h1>
+    <h1><span class="title-img-container">{{title}}</span></h1>
     <img src="{{cover_url}}" alt="Cover art" style="width:300px;">
     <p>Type: {{type}}</p>
     <p>Release Date: {{release_date}}</p>
