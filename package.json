@@ -8,8 +8,9 @@
     "start": "node update_discography.js"
   },
   "dependencies": {
+    "@alexjorgef/bandcamp-scraper": "^1.4.2-1",
     "bandcamp-fetch": "^2.0.0",
-    "node-fetch": "^3.3.2",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "node-fetch": "^3.3.2"
   }
 }

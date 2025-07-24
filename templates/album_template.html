@@ -2,17 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ release.title }}</title>
+    <title>{{title}}</title>
 </head>
 <body>
-    <h1>{{ release.title }}</h1>
-    <img src="{{ release.cover_url }}" alt="Cover art" style="width:300px;">
-    <p>{{ release.description }}</p>
+    <h1>{{title}}</h1>
+    <img src="{{cover_url}}" alt="Cover art" style="width:300px;">
+    <p>Type: {{type}}</p>
+    <p>Release Date: {{release_date}}</p>
+    <p>
+      <a href="{{spotify_url}}">Listen on Spotify</a> |
+      <a href="{{bandcamp_url}}">Listen on Bandcamp</a>
+    </p>
+    <p>{{description}}</p>
+    {{embed}}
     <h2>Tracks</h2>
     <ul>
-    {% for track in release.tracks %}
-        <li>{{ track }}</li>
-    {% endfor %}
+      {{tracks}}
     </ul>
 </body>
 </html> 
