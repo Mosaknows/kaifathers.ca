@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton:wght@400&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -691,7 +692,7 @@ section[style*="background:#ffffff"] {
 
 /* Global heading styles */
 h1, h2 {
-    font-family: Impact, "Arial Black", Arial, sans-serif;
+    font-family: 'Anton', Arial, sans-serif;
     font-weight: 900;
     font-style: italic;
     text-align: center;
