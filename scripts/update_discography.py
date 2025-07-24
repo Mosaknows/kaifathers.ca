@@ -185,9 +185,9 @@ def main():
                 break
         if not found:
             all_releases.append(bc)
-    # Instead of generating HTML, write all unique releases to releases.txt
-    with open('releases.txt', 'w', encoding='utf-8') as f:
-        for release in all_releases:
+    # Write Spotify releases to releases_spotify.txt
+    with open('releases_spotify.txt', 'w', encoding='utf-8') as f:
+        for release in spotify_releases:
             f.write(f"{release['type'].upper()}: {release['title']}\n")
             f.write(f"  Tracks:\n")
             tracks = release.get('tracks', [])
@@ -200,7 +200,21 @@ def main():
             if release.get('bandcamp_url'):
                 f.write(f"  Bandcamp: {release['bandcamp_url']}\n")
             f.write('\n')
-    print('Wrote all unique releases to releases.txt.')
+    # Write Bandcamp releases to releases_bandcamp.txt
+    with open('releases_bandcamp.txt', 'w', encoding='utf-8') as f:
+        for release in bandcamp_releases:
+            f.write(f"{release['type'].upper()}: {release['title']}\n")
+            f.write(f"  Tracks:\n")
+            tracks = release.get('tracks', [])
+            track_lengths = release.get('track_lengths', [])
+            for i, track in enumerate(tracks):
+                length = track_lengths[i] if i < len(track_lengths) else 'N/A'
+                f.write(f"    - {track} [{length}]\n")
+            if release.get('spotify_url'):
+                f.write(f"  Spotify: {release['spotify_url']}\n")
+            if release.get('bandcamp_url'):
+                f.write(f"  Bandcamp: {release['bandcamp_url']}\n")
+            f.write('\n')
 
 if __name__ == '__main__':
     main() 
