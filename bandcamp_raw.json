@@ -94,7 +94,7 @@
       "art_id": 3768468221,
       "packages": null,
       "defaultPrice": 9,
-      "freeDownloadPage": "https://bandcamp.com/download?fsig=aa8dc8267dbbd54af11bd837bef81317&id=3109297062&ts=1753384367.4105275035&type=album",
+      "freeDownloadPage": "https://bandcamp.com/download?fsig=4c1014b9793193af2595bef6fc2bc37e&id=3109297062&ts=1753386162.2997909155&type=album",
       "FREE": 1,
       "PAID": 2,
       "artist": "Kai Fathers",
@@ -122,7 +122,7 @@
           "id": 1404180976,
           "track_id": 1404180976,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/7c9ea801b2e350acecbaa719d7347aec/mp3-128/1404180976?p=0&ts=1753470767&t=f6080bcca57075f3ff0abbee64f76d73e4962660&token=1753470767_3699a4432fb16b5044a9926a8850683b9f211a60"
+            "mp3-128": "https://t4.bcbits.com/stream/7c9ea801b2e350acecbaa719d7347aec/mp3-128/1404180976?p=0&ts=1753472562&t=90d45ac6d66a620dcb6620e27832f2052c576264&token=1753472562_8995e5d4f5c633ba911e8b8156b5207d6cf919de"
           },
           "artist": null,
           "title": "Lilacs, Please",
@@ -161,7 +161,7 @@
           "id": 3831335912,
           "track_id": 3831335912,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/7bde40199c13b21726557f277dce520d/mp3-128/3831335912?p=0&ts=1753470767&t=19ae83e61109913193a7b4db412b9ae1fcf50d3c&token=1753470767_a355fd5f79fcca7dfa8991f42668403b8123a87c"
+            "mp3-128": "https://t4.bcbits.com/stream/7bde40199c13b21726557f277dce520d/mp3-128/3831335912?p=0&ts=1753472562&t=0e0ba178f3141edfa92e5c5544c588d5d9d6f5d5&token=1753472562_c11ad37b8d75592580123ff62b4e5a3243d9bd35"
           },
           "artist": null,
           "title": "Wailing a Thousand Voices (Demo)",
@@ -200,7 +200,7 @@
           "id": 3024471028,
           "track_id": 3024471028,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/e2c2487449cab2c9ed0accc89e6efd57/mp3-128/3024471028?p=0&ts=1753470767&t=0f9fa5f6dff1d9b7292e9553793c2cebd60d31e6&token=1753470767_dd387c2ec6754aec8c45fc8e92df10131ad7e6f5"
+            "mp3-128": "https://t4.bcbits.com/stream/e2c2487449cab2c9ed0accc89e6efd57/mp3-128/3024471028?p=0&ts=1753472562&t=7c025aeace4f9d5fc46a3792fe394d730314ad82&token=1753472562_91d8a697d4ffe2fba6a214d2f347c797550f7dc4"
           },
           "artist": null,
           "title": "Green Heartache (Demo)",
@@ -239,7 +239,7 @@
           "id": 1157872399,
           "track_id": 1157872399,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/5d98dcbf3e91185e1aa917b4b6b2a5d0/mp3-128/1157872399?p=0&ts=1753470767&t=e8f1b6e7c5ca8bf05717203797985c7fc366d3d1&token=1753470767_3effbf8d43ea57d93c100b16f55b5c8c08b7c3bb"
+            "mp3-128": "https://t4.bcbits.com/stream/5d98dcbf3e91185e1aa917b4b6b2a5d0/mp3-128/1157872399?p=0&ts=1753472562&t=46464802a4fb93c24c81a9474e8219ee90f4fc95&token=1753472562_275b81baaf76372a548e3440a368309e78245149"
           },
           "artist": null,
           "title": "Untidal (Demo)",
@@ -278,7 +278,7 @@
           "id": 3664214384,
           "track_id": 3664214384,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/c37eb7aab95cb35ea06c168ee280a237/mp3-128/3664214384?p=0&ts=1753470767&t=d2a6f6baad1aae8b2e6f9d12b8ef3f8fa2e64c77&token=1753470767_abcdd86af4c3eeabe23b450130072d13d66cf853"
+            "mp3-128": "https://t4.bcbits.com/stream/c37eb7aab95cb35ea06c168ee280a237/mp3-128/3664214384?p=0&ts=1753472562&t=50d1131a8a1742d06d32737488da7b30f6ad2344&token=1753472562_855b426b587082dd2e30f1fada23f79cf6257bd5"
           },
           "artist": null,
           "title": "Cactus Car Crash Party",
@@ -317,7 +317,7 @@
           "id": 637501655,
           "track_id": 637501655,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/63633df21b52b6a1cca718158ac589d6/mp3-128/637501655?p=0&ts=1753470767&t=69de5232c5511ee00db7904a21be9dfe47a61c1d&token=1753470767_552fa17a6262771b8e9d284c0ce770bf3c6ca5ca"
+            "mp3-128": "https://t4.bcbits.com/stream/63633df21b52b6a1cca718158ac589d6/mp3-128/637501655?p=0&ts=1753472562&t=9af06ebce1404a1545435ccfbe99c8735f0de602&token=1753472562_f7a59a5187071643b0dedf9d4a26a4b16e4a5fb1"
           },
           "artist": null,
           "title": "Memento",
@@ -358,475 +358,6 @@
       "use_expando_lyrics": false
     },
     "url": "https://kaifathers.bandcamp.com/album/lautia"
-  },
-  {
-    "tags": [
-      {
-        "name": "alternative"
-      },
-      {
-        "name": "alternative metal"
-      },
-      {
-        "name": "alternative rock"
-      },
-      {
-        "name": "indie rock"
-      },
-      {
-        "name": "shoegaze"
-      },
-      {
-        "name": "Ottawa"
-      }
-    ],
-    "artist": "Kai Fathers",
-    "title": "Reminiscing the Tall Field Coils",
-    "imageUrl": "https://f4.bcbits.com/img/a1429915257_2.jpg",
-    "tracks": [],
-    "raw": {
-      "for the curious": "https://bandcamp.com/help/audio_basics#steal https://bandcamp.com/terms_of_use",
-      "current": {
-        "audit": 2,
-        "title": "Reminiscing the Tall Field Coils",
-        "new_date": "14 Dec 2024 04:36:01 GMT",
-        "mod_date": "14 Dec 2024 04:36:02 GMT",
-        "publish_date": "14 Dec 2024 04:36:03 GMT",
-        "private": null,
-        "killed": null,
-        "download_pref": 2,
-        "require_email": null,
-        "is_set_price": null,
-        "set_price": 1.5,
-        "minimum_price": 1,
-        "minimum_price_nonzero": 1,
-        "require_email_0": null,
-        "artist": null,
-        "about": null,
-        "credits": null,
-        "auto_repriced": null,
-        "new_desc_format": 1,
-        "band_id": 221792175,
-        "selling_band_id": 221792175,
-        "art_id": 1429915257,
-        "download_desc_id": null,
-        "track_number": null,
-        "release_date": "07 May 2023 00:00:00 GMT",
-        "file_name": null,
-        "lyrics": null,
-        "album_id": null,
-        "encodings_id": 475314754,
-        "pending_encodings_id": null,
-        "license_type": 1,
-        "isrc": "QZK6P2395283",
-        "preorder_download": null,
-        "streaming": 1,
-        "id": 1154323800,
-        "type": "track"
-      },
-      "preorder_count": null,
-      "hasAudio": true,
-      "art_id": 1429915257,
-      "packages": null,
-      "defaultPrice": 1.5,
-      "freeDownloadPage": null,
-      "FREE": 1,
-      "PAID": 2,
-      "artist": "Kai Fathers",
-      "item_type": "track",
-      "id": 1154323800,
-      "last_subscription_item": null,
-      "has_discounts": false,
-      "is_bonus": null,
-      "play_cap_data": {
-        "streaming_limits_enabled": false,
-        "streaming_limit": 3
-      },
-      "is_purchased": null,
-      "items_purchased": null,
-      "is_private_stream": null,
-      "is_band_member": null,
-      "licensed_version_ids": null,
-      "package_associated_license_id": null,
-      "has_video": null,
-      "tralbum_subscriber_only": null,
-      "album_is_preorder": null,
-      "album_release_date": null,
-      "trackinfo": [
-        {
-          "id": 1154323800,
-          "track_id": 1154323800,
-          "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/81e85b882c4954ae31feb1670adefffb/mp3-128/1154323800?p=0&ts=1753470767&t=fce06030e03e2d3a76dfed5e123b054fa3304e1d&token=1753470767_e18ebef3f0bf5af90dbdd3f9d3a4d94f29af85cd"
-          },
-          "artist": null,
-          "title": "Reminiscing the Tall Field Coils",
-          "encodings_id": 475314754,
-          "license_type": 1,
-          "private": null,
-          "track_num": null,
-          "album_preorder": false,
-          "unreleased_track": false,
-          "title_link": "/track/reminiscing-the-tall-field-coils",
-          "has_lyrics": false,
-          "has_info": false,
-          "streaming": 1,
-          "is_downloadable": true,
-          "has_free_download": null,
-          "free_album_download": false,
-          "duration": 126.593,
-          "lyrics": null,
-          "sizeof_lyrics": 0,
-          "is_draft": false,
-          "video_source_type": null,
-          "video_source_id": null,
-          "video_mobile_url": null,
-          "video_poster_url": null,
-          "video_id": null,
-          "video_caption": null,
-          "video_featured": null,
-          "alt_link": null,
-          "encoding_error": null,
-          "encoding_pending": null,
-          "play_count": null,
-          "is_capped": null,
-          "track_license_id": null
-        }
-      ],
-      "playing_from": "track page",
-      "album_url": null,
-      "album_upsell_url": null,
-      "url": "https://kaifathers.bandcamp.com/track/reminiscing-the-tall-field-coils"
-    },
-    "url": "https://kaifathers.bandcamp.com/track/reminiscing-the-tall-field-coils"
-  },
-  {
-    "tags": [
-      {
-        "name": "alternative"
-      },
-      {
-        "name": "alternative metal"
-      },
-      {
-        "name": "alternative rock"
-      },
-      {
-        "name": "indie rock"
-      },
-      {
-        "name": "shoegaze"
-      },
-      {
-        "name": "Ottawa"
-      }
-    ],
-    "artist": "Kai Fathers",
-    "title": "Chlorine",
-    "imageUrl": "https://f4.bcbits.com/img/a3358963300_2.jpg",
-    "tracks": [
-      {
-        "name": "Chlorine",
-        "url": "https://kaifathers.bandcamp.com/track/chlorine",
-        "duration": "03:43"
-      },
-      {
-        "name": "Cobalt",
-        "url": "https://kaifathers.bandcamp.com/track/cobalt",
-        "duration": "02:30"
-      }
-    ],
-    "raw": {
-      "for the curious": "https://bandcamp.com/help/audio_basics#steal https://bandcamp.com/terms_of_use",
-      "current": {
-        "audit": 10,
-        "title": "Chlorine",
-        "new_date": "14 Dec 2024 04:34:54 GMT",
-        "mod_date": "14 Dec 2024 04:40:08 GMT",
-        "publish_date": "14 Dec 2024 04:38:19 GMT",
-        "private": null,
-        "killed": null,
-        "download_pref": 2,
-        "require_email": null,
-        "is_set_price": null,
-        "set_price": 9,
-        "minimum_price": 7,
-        "minimum_price_nonzero": 7,
-        "require_email_0": null,
-        "artist": null,
-        "about": null,
-        "credits": null,
-        "auto_repriced": null,
-        "new_desc_format": 1,
-        "band_id": 221792175,
-        "selling_band_id": 221792175,
-        "art_id": 3358963300,
-        "download_desc_id": null,
-        "release_date": "05 May 2023 00:00:00 GMT",
-        "upc": "197813944178",
-        "purchase_url": null,
-        "purchase_title": null,
-        "featured_track_id": 1795237802,
-        "id": 2672584357,
-        "type": "album"
-      },
-      "preorder_count": null,
-      "hasAudio": true,
-      "art_id": 3358963300,
-      "packages": null,
-      "defaultPrice": 9,
-      "freeDownloadPage": null,
-      "FREE": 1,
-      "PAID": 2,
-      "artist": "Kai Fathers",
-      "item_type": "album",
-      "id": 2672584357,
-      "last_subscription_item": null,
-      "has_discounts": false,
-      "is_bonus": null,
-      "play_cap_data": {
-        "streaming_limits_enabled": false,
-        "streaming_limit": 3
-      },
-      "is_purchased": null,
-      "items_purchased": null,
-      "is_private_stream": null,
-      "is_band_member": null,
-      "licensed_version_ids": null,
-      "package_associated_license_id": null,
-      "has_video": null,
-      "tralbum_subscriber_only": false,
-      "featured_track_id": 1795237802,
-      "initial_track_num": null,
-      "is_preorder": false,
-      "album_is_preorder": false,
-      "album_release_date": "05 May 2023 00:00:00 GMT",
-      "trackinfo": [
-        {
-          "id": 1641792595,
-          "track_id": 1641792595,
-          "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/6f14e531cf3b8d9be8c36244b1b9d081/mp3-128/1641792595?p=0&ts=1753470767&t=df07c2350f00961b1e280547f789247b418e89d9&token=1753470767_908476d9fcc5835a90f20578fe858663a9c3ccb3"
-          },
-          "artist": null,
-          "title": "Chlorine",
-          "encodings_id": 1218571652,
-          "license_type": 1,
-          "private": null,
-          "track_num": 1,
-          "album_preorder": false,
-          "unreleased_track": false,
-          "title_link": "/track/chlorine",
-          "has_lyrics": false,
-          "has_info": false,
-          "streaming": 1,
-          "is_downloadable": true,
-          "has_free_download": null,
-          "free_album_download": false,
-          "duration": 223.2,
-          "lyrics": null,
-          "sizeof_lyrics": 0,
-          "is_draft": false,
-          "video_source_type": null,
-          "video_source_id": null,
-          "video_mobile_url": null,
-          "video_poster_url": null,
-          "video_id": null,
-          "video_caption": null,
-          "video_featured": null,
-          "alt_link": null,
-          "encoding_error": null,
-          "encoding_pending": null,
-          "play_count": null,
-          "is_capped": null,
-          "track_license_id": null
-        },
-        {
-          "id": 1795237802,
-          "track_id": 1795237802,
-          "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/c83fb334b1eddd859664108d6e0e3f14/mp3-128/1795237802?p=0&ts=1753470767&t=eb8e501a1f43460a9702b02039efdffe5cc6f05a&token=1753470767_71690d1b35895bc46b541b4977ae6ab812c67df5"
-          },
-          "artist": null,
-          "title": "Cobalt",
-          "encodings_id": 880717474,
-          "license_type": 1,
-          "private": null,
-          "track_num": 2,
-          "album_preorder": false,
-          "unreleased_track": false,
-          "title_link": "/track/cobalt",
-          "has_lyrics": false,
-          "has_info": false,
-          "streaming": 1,
-          "is_downloadable": true,
-          "has_free_download": null,
-          "free_album_download": false,
-          "duration": 150.391,
-          "lyrics": null,
-          "sizeof_lyrics": 0,
-          "is_draft": false,
-          "video_source_type": null,
-          "video_source_id": null,
-          "video_mobile_url": null,
-          "video_poster_url": null,
-          "video_id": null,
-          "video_caption": null,
-          "video_featured": null,
-          "alt_link": null,
-          "encoding_error": null,
-          "encoding_pending": null,
-          "play_count": null,
-          "is_capped": null,
-          "track_license_id": null
-        }
-      ],
-      "playing_from": "album page",
-      "url": "https://kaifathers.bandcamp.com/album/chlorine",
-      "use_expando_lyrics": false
-    },
-    "url": "https://kaifathers.bandcamp.com/album/chlorine"
-  },
-  {
-    "tags": [
-      {
-        "name": "alternative"
-      },
-      {
-        "name": "alternative metal"
-      },
-      {
-        "name": "alternative rock"
-      },
-      {
-        "name": "indie rock"
-      },
-      {
-        "name": "shoegaze"
-      },
-      {
-        "name": "Ottawa"
-      }
-    ],
-    "artist": "Kai Fathers",
-    "title": "butterflies that bite",
-    "imageUrl": "https://f4.bcbits.com/img/a2098158222_2.jpg",
-    "tracks": [],
-    "raw": {
-      "for the curious": "https://bandcamp.com/help/audio_basics#steal https://bandcamp.com/terms_of_use",
-      "current": {
-        "audit": 2,
-        "title": "butterflies that bite",
-        "new_date": "14 Dec 2024 04:33:35 GMT",
-        "mod_date": "14 Dec 2024 04:33:36 GMT",
-        "publish_date": "14 Dec 2024 04:33:36 GMT",
-        "private": null,
-        "killed": null,
-        "download_pref": 2,
-        "require_email": null,
-        "is_set_price": null,
-        "set_price": 1.5,
-        "minimum_price": 1,
-        "minimum_price_nonzero": 1,
-        "require_email_0": null,
-        "artist": null,
-        "about": null,
-        "credits": null,
-        "auto_repriced": null,
-        "new_desc_format": 1,
-        "band_id": 221792175,
-        "selling_band_id": 221792175,
-        "art_id": 2098158222,
-        "download_desc_id": null,
-        "track_number": null,
-        "release_date": "17 Jul 2023 00:00:00 GMT",
-        "file_name": null,
-        "lyrics": null,
-        "album_id": null,
-        "encodings_id": 2595127586,
-        "pending_encodings_id": null,
-        "license_type": 1,
-        "isrc": "QZNWU2337958",
-        "preorder_download": null,
-        "streaming": 1,
-        "id": 3599731491,
-        "type": "track"
-      },
-      "preorder_count": null,
-      "hasAudio": true,
-      "art_id": 2098158222,
-      "packages": null,
-      "defaultPrice": 1.5,
-      "freeDownloadPage": null,
-      "FREE": 1,
-      "PAID": 2,
-      "artist": "Kai Fathers",
-      "item_type": "track",
-      "id": 3599731491,
-      "last_subscription_item": null,
-      "has_discounts": false,
-      "is_bonus": null,
-      "play_cap_data": {
-        "streaming_limits_enabled": false,
-        "streaming_limit": 3
-      },
-      "is_purchased": null,
-      "items_purchased": null,
-      "is_private_stream": null,
-      "is_band_member": null,
-      "licensed_version_ids": null,
-      "package_associated_license_id": null,
-      "has_video": null,
-      "tralbum_subscriber_only": null,
-      "album_is_preorder": null,
-      "album_release_date": null,
-      "trackinfo": [
-        {
-          "id": 3599731491,
-          "track_id": 3599731491,
-          "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/8dfcb1450fed5110679819acd5e37b25/mp3-128/3599731491?p=0&ts=1753470767&t=7c90e3c8c279a8ca6070a31112071aae4330924c&token=1753470767_1291e5cd787993e7bd24cd17ae6dbfb354fe16dd"
-          },
-          "artist": null,
-          "title": "butterflies that bite",
-          "encodings_id": 2595127586,
-          "license_type": 1,
-          "private": null,
-          "track_num": null,
-          "album_preorder": false,
-          "unreleased_track": false,
-          "title_link": "/track/butterflies-that-bite",
-          "has_lyrics": false,
-          "has_info": false,
-          "streaming": 1,
-          "is_downloadable": true,
-          "has_free_download": null,
-          "free_album_download": false,
-          "duration": 206.808,
-          "lyrics": null,
-          "sizeof_lyrics": 0,
-          "is_draft": false,
-          "video_source_type": null,
-          "video_source_id": null,
-          "video_mobile_url": null,
-          "video_poster_url": null,
-          "video_id": null,
-          "video_caption": null,
-          "video_featured": null,
-          "alt_link": null,
-          "encoding_error": null,
-          "encoding_pending": null,
-          "play_count": null,
-          "is_capped": null,
-          "track_license_id": null
-        }
-      ],
-      "playing_from": "track page",
-      "album_url": null,
-      "album_upsell_url": null,
-      "url": "https://kaifathers.bandcamp.com/track/butterflies-that-bite"
-    },
-    "url": "https://kaifathers.bandcamp.com/track/butterflies-that-bite"
   },
   {
     "tags": [
@@ -1044,7 +575,7 @@
           "id": 1437977513,
           "track_id": 1437977513,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/18a708d06e7fb749fb0a8b9092d83889/mp3-128/1437977513?p=0&ts=1753470767&t=e389532b8a73045e1796b8b267ba2f024b2fc431&token=1753470767_d4d0a0e8b063d9f598344e2175b2c9801c96db6d"
+            "mp3-128": "https://t4.bcbits.com/stream/18a708d06e7fb749fb0a8b9092d83889/mp3-128/1437977513?p=0&ts=1753472562&t=84b41da12f3360793242f0354678e965b4c1be48&token=1753472562_35fc5463a973b822e5f0e75c0e16cad2adf62550"
           },
           "artist": null,
           "title": "NAILWURM",
@@ -1083,7 +614,7 @@
           "id": 796030408,
           "track_id": 796030408,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/a32f0b8cbcb9b1add9b3678c1586d904/mp3-128/796030408?p=0&ts=1753470767&t=6d94c8a20984d7ca7cc8eb3a7f416cb89183ff9c&token=1753470767_18365263c770218413113ada3dd91d6392053a42"
+            "mp3-128": "https://t4.bcbits.com/stream/a32f0b8cbcb9b1add9b3678c1586d904/mp3-128/796030408?p=0&ts=1753472562&t=e119d42fe535318d453199fe0f4d00ac781b1715&token=1753472562_0088cb8dbdab216ded103203b898815ee82a2bb5"
           },
           "artist": null,
           "title": "Take a walk with me",
@@ -1122,7 +653,7 @@
           "id": 893698693,
           "track_id": 893698693,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/32bc67ce95ac9b62709ce01823b79722/mp3-128/893698693?p=0&ts=1753470767&t=df43f8ceb01e4439eb818fe9b8cbc51802061a94&token=1753470767_9a893b73a6d0e4275e4671cf5129c4ccddb7d9f9"
+            "mp3-128": "https://t4.bcbits.com/stream/32bc67ce95ac9b62709ce01823b79722/mp3-128/893698693?p=0&ts=1753472562&t=201bbab142c703919957b7ab4337cbb36133914a&token=1753472562_1451d9842d16c47d23b31ca209a91ba2392c9d9a"
           },
           "artist": null,
           "title": "And everything in between",
@@ -1161,7 +692,7 @@
           "id": 1446648215,
           "track_id": 1446648215,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/d90ad98e042f5fd904c83a0ae6f6d060/mp3-128/1446648215?p=0&ts=1753470767&t=016040d30c731c4c62b0facb49e052b6a91d6bc2&token=1753470767_17a9266adb12607fe38fee8574359a5af479ca1a"
+            "mp3-128": "https://t4.bcbits.com/stream/d90ad98e042f5fd904c83a0ae6f6d060/mp3-128/1446648215?p=0&ts=1753472562&t=292bbefc63985fda577eea59b44e00b764ee1277&token=1753472562_e1864461e3770211b6940e661d5a589f014539ee"
           },
           "artist": null,
           "title": "gesture",
@@ -1200,7 +731,7 @@
           "id": 603513338,
           "track_id": 603513338,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/cbab5e8ee61f8ad9de4daed0520f5777/mp3-128/603513338?p=0&ts=1753470767&t=6cde19c62b9b3e7b1169456a8ca3d1a25f08cb16&token=1753470767_ff3062885886129d699b7fc7ae707f35c826498b"
+            "mp3-128": "https://t4.bcbits.com/stream/cbab5e8ee61f8ad9de4daed0520f5777/mp3-128/603513338?p=0&ts=1753472562&t=0ab35958aa9a2284c6b2f4658b43b7f700dfd2fb&token=1753472562_79302585043852f7867b3d5cab86a0a82788bf84"
           },
           "artist": null,
           "title": "tri-tip dagger",
@@ -1239,7 +770,7 @@
           "id": 4035409151,
           "track_id": 4035409151,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/b1fdedd49de804ba20ed61ebfa0a02a1/mp3-128/4035409151?p=0&ts=1753470767&t=1fd3e6709edc70dc791f082234bc54de53901baf&token=1753470767_da0244605a5708063e9e2c66d0a7af80d67b5bfb"
+            "mp3-128": "https://t4.bcbits.com/stream/b1fdedd49de804ba20ed61ebfa0a02a1/mp3-128/4035409151?p=0&ts=1753472562&t=4a5d2680d3324276b131a4e70ff5be81f3102332&token=1753472562_3d7244eff27aafdcf82ac43f7d5d40feb3a2f271"
           },
           "artist": null,
           "title": "whisper",
@@ -1278,7 +809,7 @@
           "id": 751979722,
           "track_id": 751979722,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/a842addf32432c89a1ac55ce97e29de3/mp3-128/751979722?p=0&ts=1753470767&t=74fd86ee2af7362fe83b44e9f997890ad8ec33bb&token=1753470767_fb083246b59b3bfe3a6013d7a8fc367a3698a7da"
+            "mp3-128": "https://t4.bcbits.com/stream/a842addf32432c89a1ac55ce97e29de3/mp3-128/751979722?p=0&ts=1753472562&t=2a9c266590f3817903b4472e59aa95be3c2525ba&token=1753472562_45cbbbc7501de5b52689f417e61f9ce86bd6157a"
           },
           "artist": null,
           "title": "Chispas",
@@ -1317,7 +848,7 @@
           "id": 862931378,
           "track_id": 862931378,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/5b1c5db05bb8bc8a4ee03d7c3dc2c4d4/mp3-128/862931378?p=0&ts=1753470767&t=120436bd0037840ea70b64d7a2c620caeed0314b&token=1753470767_75a2216320d6ba44fb3338095a28173353f76bd6"
+            "mp3-128": "https://t4.bcbits.com/stream/5b1c5db05bb8bc8a4ee03d7c3dc2c4d4/mp3-128/862931378?p=0&ts=1753472562&t=898b3f4accf25207d76ce0dc70d2cfc5b03a7b76&token=1753472562_2e6e998657fb85b19b4e1e0e668994b8c24bf6d8"
           },
           "artist": null,
           "title": "HALO",
@@ -1356,7 +887,7 @@
           "id": 4251723901,
           "track_id": 4251723901,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/b837ae2fc286023117ae275abad58cba/mp3-128/4251723901?p=0&ts=1753470767&t=6c7eb741fed82b5ccf040b1ddc8c63193ce38335&token=1753470767_c1165e5d49fab6105e377159a59207f75c8bb736"
+            "mp3-128": "https://t4.bcbits.com/stream/b837ae2fc286023117ae275abad58cba/mp3-128/4251723901?p=0&ts=1753472562&t=d8fc98303dafa4d47b77be5b67021cc64ba0e09f&token=1753472562_3e03b7e6d36b34288192eb1b8e2c17db397bb7af"
           },
           "artist": null,
           "title": "Bodies fall on bodies",
@@ -1395,7 +926,7 @@
           "id": 1113942406,
           "track_id": 1113942406,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/d15b653d0e9831b026d113edae5d25a1/mp3-128/1113942406?p=0&ts=1753470767&t=2444380ca1d2abfc4d67bcc8e600833cd7d5252c&token=1753470767_2741269fbbe780edca9153209706b4ebe9488f66"
+            "mp3-128": "https://t4.bcbits.com/stream/d15b653d0e9831b026d113edae5d25a1/mp3-128/1113942406?p=0&ts=1753472562&t=7b0335193009342234ad6d1e11048b34d47cdb24&token=1753472562_89c2cbafe6d61282b1580a0df42b30780310bef6"
           },
           "artist": null,
           "title": "count your sheep",
@@ -1434,7 +965,7 @@
           "id": 686313781,
           "track_id": 686313781,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/81a25eaa9c0431f5818e2f62a2ecc9eb/mp3-128/686313781?p=0&ts=1753470767&t=ed9a1288d44b7d9f6c957c8d1f99bf24313478c8&token=1753470767_3646565dd035f386b6082683c808410b5453a920"
+            "mp3-128": "https://t4.bcbits.com/stream/81a25eaa9c0431f5818e2f62a2ecc9eb/mp3-128/686313781?p=0&ts=1753472562&t=1cb34dbdd8366f5b36c16868a581f046d8784f7e&token=1753472562_4494438a35e6a7fb9a513b15ce59b43f7e85ec16"
           },
           "artist": null,
           "title": "Lush with Decay",
@@ -1473,7 +1004,7 @@
           "id": 1117770658,
           "track_id": 1117770658,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/02bd211c1c61843fa727c9b6a010dabe/mp3-128/1117770658?p=0&ts=1753470767&t=9ff16e7294179fe648fc45940857228ed6ce9536&token=1753470767_1e37d8fdaeabc0dbf2fd849557911bceaf437052"
+            "mp3-128": "https://t4.bcbits.com/stream/02bd211c1c61843fa727c9b6a010dabe/mp3-128/1117770658?p=0&ts=1753472562&t=ac270fc6fa5883d7b887dffdc65ef050a5104451&token=1753472562_8fb49bd2e8433327d125b82bc8fdc92f07a3478e"
           },
           "artist": null,
           "title": "NEIGHBORHOOD SPEED CAMERA",
@@ -1512,7 +1043,7 @@
           "id": 1426262123,
           "track_id": 1426262123,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/85b0bf0754196598f893943c6b444cce/mp3-128/1426262123?p=0&ts=1753470767&t=c010341b06386604b530e310f672f24de95d181d&token=1753470767_5ce9fce215a36df81bf8162e996e14ae85f344eb"
+            "mp3-128": "https://t4.bcbits.com/stream/85b0bf0754196598f893943c6b444cce/mp3-128/1426262123?p=0&ts=1753472562&t=76999c167879a850770a5933521088c63b409ffa&token=1753472562_e5ec255c6c641023b2d55cd36ad6722138d984bd"
           },
           "artist": null,
           "title": "I saw the streetlights turn on again, but now it's the middle of winter and I'm cold",
@@ -1551,7 +1082,7 @@
           "id": 2738693029,
           "track_id": 2738693029,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/442f7012663acc87cfbf883dc6ac8fee/mp3-128/2738693029?p=0&ts=1753470767&t=b2d913e4fe372b50ba46813d1238e82041e2fc94&token=1753470767_d167625e9de37580753eb3f172184ebc0e7da440"
+            "mp3-128": "https://t4.bcbits.com/stream/442f7012663acc87cfbf883dc6ac8fee/mp3-128/2738693029?p=0&ts=1753472562&t=19ade56c000b742fa2084a11b7ae264d8631e757&token=1753472562_3287ce6ff33fc098484369780c5bf50b77b0795f"
           },
           "artist": null,
           "title": "ediose douse",
@@ -1590,7 +1121,7 @@
           "id": 370216831,
           "track_id": 370216831,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/ba7d7b8961b32463f4aab12909169d0c/mp3-128/370216831?p=0&ts=1753470767&t=dabe734a5b887d68d6ce233b706f3a5e806f251a&token=1753470767_4bfa2f68731ca9cb47848f33cc1b9f5752cef56b"
+            "mp3-128": "https://t4.bcbits.com/stream/ba7d7b8961b32463f4aab12909169d0c/mp3-128/370216831?p=0&ts=1753472562&t=16cb2e4e122f7ad231e85eb1bcb54af10e18d1c5&token=1753472562_33c5c5298086fdc341064aa39c582160188dafbb"
           },
           "artist": null,
           "title": "semaphore",
@@ -1629,7 +1160,7 @@
           "id": 3322303,
           "track_id": 3322303,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/6a038089f035443baa7a63fb64324d8b/mp3-128/3322303?p=0&ts=1753470767&t=c117354121993be65268492467318dd72be38249&token=1753470767_58a33863b662cedc8ee3f687a669f08623b05743"
+            "mp3-128": "https://t4.bcbits.com/stream/6a038089f035443baa7a63fb64324d8b/mp3-128/3322303?p=0&ts=1753472562&t=ff0ad6f868c4f1343b18e21e549081aa87866d7f&token=1753472562_fae38c1cfc43e2f48f25fadfe714aed1c70ce484"
           },
           "artist": null,
           "title": "Loom",
@@ -1668,7 +1199,7 @@
           "id": 2107078615,
           "track_id": 2107078615,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/8c3587005fbb8f026c5c543adaeac81a/mp3-128/2107078615?p=0&ts=1753470767&t=8946c12832dc305f1b2acd5a44898ea052fc879b&token=1753470767_33ee38444b76b6d2dd10da842c2d3e14a4e34577"
+            "mp3-128": "https://t4.bcbits.com/stream/8c3587005fbb8f026c5c543adaeac81a/mp3-128/2107078615?p=0&ts=1753472562&t=672ec733c581504c9698f9bdc67cdb0d52ae3405&token=1753472562_24d7564d91a7a25f180e2ddcd30f484a8604ef90"
           },
           "artist": null,
           "title": "Panopticism",
@@ -1707,7 +1238,7 @@
           "id": 2659330880,
           "track_id": 2659330880,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/f38f6aade9c6dfe855a8c726d2908c0c/mp3-128/2659330880?p=0&ts=1753470767&t=4e8998f7b1b883da4e615f97579b96af3b52da1c&token=1753470767_620d904ca732faf21a2549bc011e307b3a5d1f49"
+            "mp3-128": "https://t4.bcbits.com/stream/f38f6aade9c6dfe855a8c726d2908c0c/mp3-128/2659330880?p=0&ts=1753472562&t=c9ed152553404984987e1c554435b7f7e65149ac&token=1753472562_4f7feaecdd4d1e1a04050a3c506e8e6b8b8a18a3"
           },
           "artist": null,
           "title": "Does anyone notice when the streetlights turn on?",
@@ -1746,7 +1277,7 @@
           "id": 613520785,
           "track_id": 613520785,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/5516c25793b1cd5a70877d7ea23d060d/mp3-128/613520785?p=0&ts=1753470767&t=8792443c28dbad995e2c07692afb2965b90b5d28&token=1753470767_5d919774842e69a18247a6a9639f65bde30f189a"
+            "mp3-128": "https://t4.bcbits.com/stream/5516c25793b1cd5a70877d7ea23d060d/mp3-128/613520785?p=0&ts=1753472562&t=c85eb0c2f2f9855ad3260aee82213b5e600307a0&token=1753472562_b7ee9ce89728f63b8616eb4cc2d6c03143276202"
           },
           "artist": null,
           "title": "HALLOWEEN",
@@ -1785,7 +1316,7 @@
           "id": 2793142509,
           "track_id": 2793142509,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/bdaf7f998a6fad6ba53f6fb83c7a5ac4/mp3-128/2793142509?p=0&ts=1753470767&t=fe218c4ff0fa3eecb3d4eb338eb668ded439abcc&token=1753470767_9e56822d9fccbaf08c6796e15b287cd0ae4934bf"
+            "mp3-128": "https://t4.bcbits.com/stream/bdaf7f998a6fad6ba53f6fb83c7a5ac4/mp3-128/2793142509?p=0&ts=1753472562&t=3101effbd55aaed288ac26ff2f2c5bfbc4f11c22&token=1753472562_2616ee2279b12b552b14b306163385a7b8fc41d2"
           },
           "artist": null,
           "title": "Harvester",
@@ -1824,7 +1355,7 @@
           "id": 932338546,
           "track_id": 932338546,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/66983bdfd5e66d3f515f3812bed7cca3/mp3-128/932338546?p=0&ts=1753470767&t=256ba8aa12e4fc73f64baf54f852faa697374d11&token=1753470767_2795803e2328a62019857500c9de910547a68d15"
+            "mp3-128": "https://t4.bcbits.com/stream/66983bdfd5e66d3f515f3812bed7cca3/mp3-128/932338546?p=0&ts=1753472562&t=1cecdb4c39162880be899dd123cac9b737f8a7be&token=1753472562_b8ffaba2b87142d35515beb5af2b10b3cf66e9f8"
           },
           "artist": null,
           "title": "What's wrong?",
@@ -1863,7 +1394,7 @@
           "id": 2790821750,
           "track_id": 2790821750,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/2f4e62e2b83e4036dad0326334943ca0/mp3-128/2790821750?p=0&ts=1753470767&t=4e8b60e142030a1d72aee26d5841890a48879ab1&token=1753470767_2432c06171de29c86593d6ff0c07435451150dc5"
+            "mp3-128": "https://t4.bcbits.com/stream/2f4e62e2b83e4036dad0326334943ca0/mp3-128/2790821750?p=0&ts=1753472562&t=440aa8755fdf0bed8e2c4e2004969d8a699e34ab&token=1753472562_99309b3f50f5d81c9f7871c38757e77eee4b6971"
           },
           "artist": null,
           "title": "Forist",
@@ -1902,7 +1433,7 @@
           "id": 645053791,
           "track_id": 645053791,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/824446299dc6496cb9b6be96d127c5a1/mp3-128/645053791?p=0&ts=1753470767&t=3beb160f816d419f8720b79d576d505c6193e514&token=1753470767_571bd5464d91f1179a9e597ecbd88af3a14b6d1f"
+            "mp3-128": "https://t4.bcbits.com/stream/824446299dc6496cb9b6be96d127c5a1/mp3-128/645053791?p=0&ts=1753472562&t=c3f641866e3282a7819725cef5e974b801e137b4&token=1753472562_2da4ec21d6511deb715fea58c4df7a7a56a55094"
           },
           "artist": null,
           "title": "Tem",
@@ -1941,7 +1472,7 @@
           "id": 2218059144,
           "track_id": 2218059144,
           "file": {
-            "mp3-128": "https://t4.bcbits.com/stream/c097ab84da64aa759bf86728f6b95b2c/mp3-128/2218059144?p=0&ts=1753470767&t=961a4eaf3eeb7a410a0ae48a57ad66a06c2af147&token=1753470767_31efbd4fa4a273c5424d26e66b0ce73dedd1b827"
+            "mp3-128": "https://t4.bcbits.com/stream/c097ab84da64aa759bf86728f6b95b2c/mp3-128/2218059144?p=0&ts=1753472562&t=782b46066ea4dc0ec2d902f615aa54ee5769b17d&token=1753472562_759a0d4bb07249deb5ff410d5471b3b281d4b820"
           },
           "artist": null,
           "title": "room from above the basement",
@@ -1982,5 +1513,474 @@
       "use_expando_lyrics": false
     },
     "url": "https://kaifathers.bandcamp.com/album/untitled2425-demos"
+  },
+  {
+    "tags": [
+      {
+        "name": "alternative"
+      },
+      {
+        "name": "alternative metal"
+      },
+      {
+        "name": "alternative rock"
+      },
+      {
+        "name": "indie rock"
+      },
+      {
+        "name": "shoegaze"
+      },
+      {
+        "name": "Ottawa"
+      }
+    ],
+    "artist": "Kai Fathers",
+    "title": "Reminiscing the Tall Field Coils",
+    "imageUrl": "https://f4.bcbits.com/img/a1429915257_2.jpg",
+    "tracks": [],
+    "raw": {
+      "for the curious": "https://bandcamp.com/help/audio_basics#steal https://bandcamp.com/terms_of_use",
+      "current": {
+        "audit": 2,
+        "title": "Reminiscing the Tall Field Coils",
+        "new_date": "14 Dec 2024 04:36:01 GMT",
+        "mod_date": "14 Dec 2024 04:36:02 GMT",
+        "publish_date": "14 Dec 2024 04:36:03 GMT",
+        "private": null,
+        "killed": null,
+        "download_pref": 2,
+        "require_email": null,
+        "is_set_price": null,
+        "set_price": 1.5,
+        "minimum_price": 1,
+        "minimum_price_nonzero": 1,
+        "require_email_0": null,
+        "artist": null,
+        "about": null,
+        "credits": null,
+        "auto_repriced": null,
+        "new_desc_format": 1,
+        "band_id": 221792175,
+        "selling_band_id": 221792175,
+        "art_id": 1429915257,
+        "download_desc_id": null,
+        "track_number": null,
+        "release_date": "07 May 2023 00:00:00 GMT",
+        "file_name": null,
+        "lyrics": null,
+        "album_id": null,
+        "encodings_id": 475314754,
+        "pending_encodings_id": null,
+        "license_type": 1,
+        "isrc": "QZK6P2395283",
+        "preorder_download": null,
+        "streaming": 1,
+        "id": 1154323800,
+        "type": "track"
+      },
+      "preorder_count": null,
+      "hasAudio": true,
+      "art_id": 1429915257,
+      "packages": null,
+      "defaultPrice": 1.5,
+      "freeDownloadPage": null,
+      "FREE": 1,
+      "PAID": 2,
+      "artist": "Kai Fathers",
+      "item_type": "track",
+      "id": 1154323800,
+      "last_subscription_item": null,
+      "has_discounts": false,
+      "is_bonus": null,
+      "play_cap_data": {
+        "streaming_limits_enabled": false,
+        "streaming_limit": 3
+      },
+      "is_purchased": null,
+      "items_purchased": null,
+      "is_private_stream": null,
+      "is_band_member": null,
+      "licensed_version_ids": null,
+      "package_associated_license_id": null,
+      "has_video": null,
+      "tralbum_subscriber_only": null,
+      "album_is_preorder": null,
+      "album_release_date": null,
+      "trackinfo": [
+        {
+          "id": 1154323800,
+          "track_id": 1154323800,
+          "file": {
+            "mp3-128": "https://t4.bcbits.com/stream/81e85b882c4954ae31feb1670adefffb/mp3-128/1154323800?p=0&ts=1753472562&t=fdd513e7489a32895e58692caf70598589759585&token=1753472562_c507ee7ae01171d552408e6ebc07bab56936cadc"
+          },
+          "artist": null,
+          "title": "Reminiscing the Tall Field Coils",
+          "encodings_id": 475314754,
+          "license_type": 1,
+          "private": null,
+          "track_num": null,
+          "album_preorder": false,
+          "unreleased_track": false,
+          "title_link": "/track/reminiscing-the-tall-field-coils",
+          "has_lyrics": false,
+          "has_info": false,
+          "streaming": 1,
+          "is_downloadable": true,
+          "has_free_download": null,
+          "free_album_download": false,
+          "duration": 126.593,
+          "lyrics": null,
+          "sizeof_lyrics": 0,
+          "is_draft": false,
+          "video_source_type": null,
+          "video_source_id": null,
+          "video_mobile_url": null,
+          "video_poster_url": null,
+          "video_id": null,
+          "video_caption": null,
+          "video_featured": null,
+          "alt_link": null,
+          "encoding_error": null,
+          "encoding_pending": null,
+          "play_count": null,
+          "is_capped": null,
+          "track_license_id": null
+        }
+      ],
+      "playing_from": "track page",
+      "album_url": null,
+      "album_upsell_url": null,
+      "url": "https://kaifathers.bandcamp.com/track/reminiscing-the-tall-field-coils"
+    },
+    "url": "https://kaifathers.bandcamp.com/track/reminiscing-the-tall-field-coils"
+  },
+  {
+    "tags": [
+      {
+        "name": "alternative"
+      },
+      {
+        "name": "alternative metal"
+      },
+      {
+        "name": "alternative rock"
+      },
+      {
+        "name": "indie rock"
+      },
+      {
+        "name": "shoegaze"
+      },
+      {
+        "name": "Ottawa"
+      }
+    ],
+    "artist": "Kai Fathers",
+    "title": "butterflies that bite",
+    "imageUrl": "https://f4.bcbits.com/img/a2098158222_2.jpg",
+    "tracks": [],
+    "raw": {
+      "for the curious": "https://bandcamp.com/help/audio_basics#steal https://bandcamp.com/terms_of_use",
+      "current": {
+        "audit": 2,
+        "title": "butterflies that bite",
+        "new_date": "14 Dec 2024 04:33:35 GMT",
+        "mod_date": "14 Dec 2024 04:33:36 GMT",
+        "publish_date": "14 Dec 2024 04:33:36 GMT",
+        "private": null,
+        "killed": null,
+        "download_pref": 2,
+        "require_email": null,
+        "is_set_price": null,
+        "set_price": 1.5,
+        "minimum_price": 1,
+        "minimum_price_nonzero": 1,
+        "require_email_0": null,
+        "artist": null,
+        "about": null,
+        "credits": null,
+        "auto_repriced": null,
+        "new_desc_format": 1,
+        "band_id": 221792175,
+        "selling_band_id": 221792175,
+        "art_id": 2098158222,
+        "download_desc_id": null,
+        "track_number": null,
+        "release_date": "17 Jul 2023 00:00:00 GMT",
+        "file_name": null,
+        "lyrics": null,
+        "album_id": null,
+        "encodings_id": 2595127586,
+        "pending_encodings_id": null,
+        "license_type": 1,
+        "isrc": "QZNWU2337958",
+        "preorder_download": null,
+        "streaming": 1,
+        "id": 3599731491,
+        "type": "track"
+      },
+      "preorder_count": null,
+      "hasAudio": true,
+      "art_id": 2098158222,
+      "packages": null,
+      "defaultPrice": 1.5,
+      "freeDownloadPage": null,
+      "FREE": 1,
+      "PAID": 2,
+      "artist": "Kai Fathers",
+      "item_type": "track",
+      "id": 3599731491,
+      "last_subscription_item": null,
+      "has_discounts": false,
+      "is_bonus": null,
+      "play_cap_data": {
+        "streaming_limits_enabled": false,
+        "streaming_limit": 3
+      },
+      "is_purchased": null,
+      "items_purchased": null,
+      "is_private_stream": null,
+      "is_band_member": null,
+      "licensed_version_ids": null,
+      "package_associated_license_id": null,
+      "has_video": null,
+      "tralbum_subscriber_only": null,
+      "album_is_preorder": null,
+      "album_release_date": null,
+      "trackinfo": [
+        {
+          "id": 3599731491,
+          "track_id": 3599731491,
+          "file": {
+            "mp3-128": "https://t4.bcbits.com/stream/8dfcb1450fed5110679819acd5e37b25/mp3-128/3599731491?p=0&ts=1753472562&t=b98c730c6f9fcf472ade200854e755168834364c&token=1753472562_8b69393c560b9aec0d34e732f7d090cd0ef430af"
+          },
+          "artist": null,
+          "title": "butterflies that bite",
+          "encodings_id": 2595127586,
+          "license_type": 1,
+          "private": null,
+          "track_num": null,
+          "album_preorder": false,
+          "unreleased_track": false,
+          "title_link": "/track/butterflies-that-bite",
+          "has_lyrics": false,
+          "has_info": false,
+          "streaming": 1,
+          "is_downloadable": true,
+          "has_free_download": null,
+          "free_album_download": false,
+          "duration": 206.808,
+          "lyrics": null,
+          "sizeof_lyrics": 0,
+          "is_draft": false,
+          "video_source_type": null,
+          "video_source_id": null,
+          "video_mobile_url": null,
+          "video_poster_url": null,
+          "video_id": null,
+          "video_caption": null,
+          "video_featured": null,
+          "alt_link": null,
+          "encoding_error": null,
+          "encoding_pending": null,
+          "play_count": null,
+          "is_capped": null,
+          "track_license_id": null
+        }
+      ],
+      "playing_from": "track page",
+      "album_url": null,
+      "album_upsell_url": null,
+      "url": "https://kaifathers.bandcamp.com/track/butterflies-that-bite"
+    },
+    "url": "https://kaifathers.bandcamp.com/track/butterflies-that-bite"
+  },
+  {
+    "tags": [
+      {
+        "name": "alternative"
+      },
+      {
+        "name": "alternative metal"
+      },
+      {
+        "name": "alternative rock"
+      },
+      {
+        "name": "indie rock"
+      },
+      {
+        "name": "shoegaze"
+      },
+      {
+        "name": "Ottawa"
+      }
+    ],
+    "artist": "Kai Fathers",
+    "title": "Chlorine",
+    "imageUrl": "https://f4.bcbits.com/img/a3358963300_2.jpg",
+    "tracks": [
+      {
+        "name": "Chlorine",
+        "url": "https://kaifathers.bandcamp.com/track/chlorine",
+        "duration": "03:43"
+      },
+      {
+        "name": "Cobalt",
+        "url": "https://kaifathers.bandcamp.com/track/cobalt",
+        "duration": "02:30"
+      }
+    ],
+    "raw": {
+      "for the curious": "https://bandcamp.com/help/audio_basics#steal https://bandcamp.com/terms_of_use",
+      "current": {
+        "audit": 10,
+        "title": "Chlorine",
+        "new_date": "14 Dec 2024 04:34:54 GMT",
+        "mod_date": "14 Dec 2024 04:40:08 GMT",
+        "publish_date": "14 Dec 2024 04:38:19 GMT",
+        "private": null,
+        "killed": null,
+        "download_pref": 2,
+        "require_email": null,
+        "is_set_price": null,
+        "set_price": 9,
+        "minimum_price": 7,
+        "minimum_price_nonzero": 7,
+        "require_email_0": null,
+        "artist": null,
+        "about": null,
+        "credits": null,
+        "auto_repriced": null,
+        "new_desc_format": 1,
+        "band_id": 221792175,
+        "selling_band_id": 221792175,
+        "art_id": 3358963300,
+        "download_desc_id": null,
+        "release_date": "05 May 2023 00:00:00 GMT",
+        "upc": "197813944178",
+        "purchase_url": null,
+        "purchase_title": null,
+        "featured_track_id": 1795237802,
+        "id": 2672584357,
+        "type": "album"
+      },
+      "preorder_count": null,
+      "hasAudio": true,
+      "art_id": 3358963300,
+      "packages": null,
+      "defaultPrice": 9,
+      "freeDownloadPage": null,
+      "FREE": 1,
+      "PAID": 2,
+      "artist": "Kai Fathers",
+      "item_type": "album",
+      "id": 2672584357,
+      "last_subscription_item": null,
+      "has_discounts": false,
+      "is_bonus": null,
+      "play_cap_data": {
+        "streaming_limits_enabled": false,
+        "streaming_limit": 3
+      },
+      "is_purchased": null,
+      "items_purchased": null,
+      "is_private_stream": null,
+      "is_band_member": null,
+      "licensed_version_ids": null,
+      "package_associated_license_id": null,
+      "has_video": null,
+      "tralbum_subscriber_only": false,
+      "featured_track_id": 1795237802,
+      "initial_track_num": null,
+      "is_preorder": false,
+      "album_is_preorder": false,
+      "album_release_date": "05 May 2023 00:00:00 GMT",
+      "trackinfo": [
+        {
+          "id": 1641792595,
+          "track_id": 1641792595,
+          "file": {
+            "mp3-128": "https://t4.bcbits.com/stream/6f14e531cf3b8d9be8c36244b1b9d081/mp3-128/1641792595?p=0&ts=1753472562&t=d28c69d66230decf9642e983d08f7bfdcbfc888e&token=1753472562_3a7cacf692b849c611698cf5426d7f5365875508"
+          },
+          "artist": null,
+          "title": "Chlorine",
+          "encodings_id": 1218571652,
+          "license_type": 1,
+          "private": null,
+          "track_num": 1,
+          "album_preorder": false,
+          "unreleased_track": false,
+          "title_link": "/track/chlorine",
+          "has_lyrics": false,
+          "has_info": false,
+          "streaming": 1,
+          "is_downloadable": true,
+          "has_free_download": null,
+          "free_album_download": false,
+          "duration": 223.2,
+          "lyrics": null,
+          "sizeof_lyrics": 0,
+          "is_draft": false,
+          "video_source_type": null,
+          "video_source_id": null,
+          "video_mobile_url": null,
+          "video_poster_url": null,
+          "video_id": null,
+          "video_caption": null,
+          "video_featured": null,
+          "alt_link": null,
+          "encoding_error": null,
+          "encoding_pending": null,
+          "play_count": null,
+          "is_capped": null,
+          "track_license_id": null
+        },
+        {
+          "id": 1795237802,
+          "track_id": 1795237802,
+          "file": {
+            "mp3-128": "https://t4.bcbits.com/stream/c83fb334b1eddd859664108d6e0e3f14/mp3-128/1795237802?p=0&ts=1753472562&t=1327be0855128acddda34e718633aa26c3f169b7&token=1753472562_dcee27628c5d5b37ffc5ad7586caecea1aac57f8"
+          },
+          "artist": null,
+          "title": "Cobalt",
+          "encodings_id": 880717474,
+          "license_type": 1,
+          "private": null,
+          "track_num": 2,
+          "album_preorder": false,
+          "unreleased_track": false,
+          "title_link": "/track/cobalt",
+          "has_lyrics": false,
+          "has_info": false,
+          "streaming": 1,
+          "is_downloadable": true,
+          "has_free_download": null,
+          "free_album_download": false,
+          "duration": 150.391,
+          "lyrics": null,
+          "sizeof_lyrics": 0,
+          "is_draft": false,
+          "video_source_type": null,
+          "video_source_id": null,
+          "video_mobile_url": null,
+          "video_poster_url": null,
+          "video_id": null,
+          "video_caption": null,
+          "video_featured": null,
+          "alt_link": null,
+          "encoding_error": null,
+          "encoding_pending": null,
+          "play_count": null,
+          "is_capped": null,
+          "track_license_id": null
+        }
+      ],
+      "playing_from": "album page",
+      "url": "https://kaifathers.bandcamp.com/album/chlorine",
+      "use_expando_lyrics": false
+    },
+    "url": "https://kaifathers.bandcamp.com/album/chlorine"
   }
 ]
