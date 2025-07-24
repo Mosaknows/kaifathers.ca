@@ -14,18 +14,32 @@ function slugify(value) {
 
 async function fetchBandcampReleases() {
   const discog = await bcfetch.band.getDiscography({ bandUrl: BANDCAMP_URL });
-  // Fetch full album info for each release
   const releases = [];
   for (const item of discog) {
-    if (item.type === 'album' || item.type === 'track') {
-      const info = await bcfetch.album.getInfo({ albumUrl: item.url });
+    let info;
+    if (item.type === 'album') {
+      info = await bcfetch.album.getInfo({ albumUrl: item.url });
+      if (!info.title) continue;
       releases.push({
-        type: info.tracks.length > 1 ? 'album' : 'single',
+        type: info.tracks && info.tracks.length > 1 ? 'album' : 'single',
         title: info.title,
         slug: slugify(info.title),
         cover_url: info.imageUrl,
-        tracks: info.tracks.map(t => t.title),
-        track_lengths: info.tracks.map(t => t.duration ? `${Math.floor(t.duration/60)}:${String(Math.floor(t.duration%60)).padStart(2, '0')}` : 'N/A'),
+        tracks: info.tracks ? info.tracks.map(t => t.title) : [],
+        track_lengths: info.tracks ? info.tracks.map(t => t.duration ? `${Math.floor(t.duration/60)}:${String(Math.floor(t.duration%60)).padStart(2, '0')}` : 'N/A') : [],
+        bandcamp_url: info.url,
+        release_date: info.releaseDate,
+      });
+    } else if (item.type === 'track') {
+      info = await bcfetch.track.getInfo({ trackUrl: item.url });
+      if (!info.title) continue;
+      releases.push({
+        type: 'single',
+        title: info.title,
+        slug: slugify(info.title),
+        cover_url: info.imageUrl,
+        tracks: [info.title],
+        track_lengths: [info.duration ? `${Math.floor(info.duration/60)}:${String(Math.floor(info.duration%60)).padStart(2, '0')}` : 'N/A'],
         bandcamp_url: info.url,
         release_date: info.releaseDate,
       });
