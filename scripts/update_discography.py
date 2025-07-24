@@ -56,6 +56,8 @@ def fetch_bandcamp_releases():
         release_date = date_tag['content'] if date_tag else ''
         # Get tracklist
         tracks = [t.text.strip() for t in album_soup.select('.track_list .track-title')]
+        # Bandcamp: No reliable way to get track lengths, so use N/A
+        track_lengths = ["N/A"] * len(tracks)
         # Get cover art
         img_tag = album_soup.find('a', class_='popupImage')
         cover_url = img_tag['href'] if img_tag else ''
@@ -67,6 +69,7 @@ def fetch_bandcamp_releases():
             'slug': slugify(title),
             'cover_url': cover_url,
             'tracks': tracks,
+            'track_lengths': track_lengths,
             'description': '',
             'bandcamp_url': album_url,
             'release_date': release_date,
@@ -133,6 +136,7 @@ def fetch_spotify_releases():
             'slug': slugify(item['name']),
             'cover_url': item['images'][0]['url'] if item['images'] else '',
             'tracks': [],  # Will fetch below
+            'track_lengths': [],  # Will fetch below
             'description': '',  # Spotify does not provide description
             'spotify_url': item['external_urls']['spotify'],
             'id': item['id'],
@@ -142,7 +146,15 @@ def fetch_spotify_releases():
         tracks_resp = requests.get(tracks_url, headers=headers)
         tracks_resp.raise_for_status()
         tracks = tracks_resp.json().get('items', [])
-        release['tracks'] = [track['name'] for track in tracks]
+        for track in tracks:
+            release['tracks'].append(track['name'])
+            ms = track.get('duration_ms')
+            if ms is not None:
+                minutes = ms // 60000
+                seconds = (ms % 60000) // 1000
+                release['track_lengths'].append(f"{minutes}:{seconds:02d}")
+            else:
+                release['track_lengths'].append("N/A")
         releases.append(release)
     return releases
 
