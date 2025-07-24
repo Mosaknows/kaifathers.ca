@@ -25,7 +25,7 @@ jobs:
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
-        run: node scripts/update_discography.js
+        run: node scripts/update_discography.cjs
 
       - name: Commit and push changes
         env:
