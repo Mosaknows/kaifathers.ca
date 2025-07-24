@@ -700,11 +700,11 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 78px;
+  font-size: clamp(2rem, 15vw, 8rem);
 }
 
 h2 {
-  font-size: 60px;
+  font-size: clamp(1.5rem, 15vw, 5rem);
 }
 
 /* General text centering */
