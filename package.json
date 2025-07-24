@@ -1,0 +1,15 @@
+{
+  "name": "kaifathers-discography-updater",
+  "version": "1.0.0",
+  "description": "Automated discography updater for Bandcamp and Spotify using Node.js",
+  "main": "update_discography.js",
+  "type": "module",
+  "scripts": {
+    "start": "node update_discography.js"
+  },
+  "dependencies": {
+    "bandcamp-fetch": "^2.0.0",
+    "node-fetch": "^3.3.2",
+    "dotenv": "^16.3.1"
+  }
+} 
