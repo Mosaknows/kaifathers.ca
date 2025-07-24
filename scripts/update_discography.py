@@ -54,10 +54,24 @@ def fetch_bandcamp_releases():
         # Try to get release date
         date_tag = album_soup.find('meta', {'itemprop': 'datePublished'})
         release_date = date_tag['content'] if date_tag else ''
-        # Get tracklist
-        tracks = [t.text.strip() for t in album_soup.select('.track_list .track-title')]
-        # Bandcamp: No reliable way to get track lengths, so use N/A
-        track_lengths = ["N/A"] * len(tracks)
+        # Extract TralbumData JS object for track info
+        tralbum_data_script = album_soup.find('script', text=re.compile('var TralbumData ='))
+        tracks = []
+        track_lengths = []
+        if tralbum_data_script:
+            match = re.search(r"var TralbumData = (\{.*?\});", tralbum_data_script.string, re.DOTALL)
+            if match:
+                import json
+                tralbum_json = json.loads(match.group(1))
+                for track in tralbum_json.get('trackinfo', []):
+                    tracks.append(track.get('title', ''))
+                    dur = track.get('duration')
+                    if dur is not None:
+                        minutes = int(dur // 60)
+                        seconds = int(dur % 60)
+                        track_lengths.append(f"{minutes}:{seconds:02d}")
+                    else:
+                        track_lengths.append("N/A")
         # Get cover art
         img_tag = album_soup.find('a', class_='popupImage')
         cover_url = img_tag['href'] if img_tag else ''
@@ -176,15 +190,14 @@ def main():
         for release in all_releases:
             f.write(f"{release['type'].upper()}: {release['title']}\n")
             f.write(f"  Tracks:\n")
-            # Try to get track lengths if available, else N/A
             tracks = release.get('tracks', [])
             track_lengths = release.get('track_lengths', [])
             for i, track in enumerate(tracks):
                 length = track_lengths[i] if i < len(track_lengths) else 'N/A'
                 f.write(f"    - {track} [{length}]\n")
-            if 'spotify_url' in release:
+            if release.get('spotify_url'):
                 f.write(f"  Spotify: {release['spotify_url']}\n")
-            if 'bandcamp_url' in release:
+            if release.get('bandcamp_url'):
                 f.write(f"  Bandcamp: {release['bandcamp_url']}\n")
             f.write('\n')
     print('Wrote all unique releases to releases.txt.')
