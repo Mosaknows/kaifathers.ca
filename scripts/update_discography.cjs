@@ -111,7 +111,6 @@ function fetchBandcampReleases(callback) {
           });
         }
         if (completed === albumUrls.length) {
-          fs.writeFileSync('bandcamp_raw.json', JSON.stringify(rawAlbums, null, 2));
           callback(allAlbums);
         }
       });
