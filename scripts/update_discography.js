@@ -1,4 +1,5 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
+dotenv.config();
 import bcfetch from 'bandcamp-fetch';
 import fetch from 'node-fetch';
 import fs from 'fs';
