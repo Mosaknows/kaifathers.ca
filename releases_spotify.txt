@@ -3,29 +3,33 @@ SINGLE: HALO (Demo)
     - HALO - Demo [2:47]
   Spotify: https://open.spotify.com/album/5LcQPZxw762pRyrQraRFcm
 
+
 SINGLE: Cactus Car Crash Party (Demo)
   Tracks:
     - Cactus Car Crash Party - Demo [4:19]
   Spotify: https://open.spotify.com/album/5v76Zv3GCjS8zjm7zAyoUv
+
 
 SINGLE: Lilacs, Please (Demo)
   Tracks:
     - Lilacs, Please - Demo [2:01]
   Spotify: https://open.spotify.com/album/6QjuWljwojsMjBNPKe51uo
 
+
 SINGLE: butterflies that bite
   Tracks:
     - butterflies that bite [3:26]
   Spotify: https://open.spotify.com/album/6KD5zTNOKSfzT9uPDKVx6n
+
 
 SINGLE: Reminiscing the Tall Field Coils
   Tracks:
     - Reminiscing the Tall Field Coils [2:06]
   Spotify: https://open.spotify.com/album/4zOw5JMQghJ6fG3Bh28qEx
 
+
 SINGLE: Chlorine
   Tracks:
     - Chlorine [3:43]
     - Cobalt [2:30]
   Spotify: https://open.spotify.com/album/3J3pIUrHRTF9tQqpPJ3qWr
-
