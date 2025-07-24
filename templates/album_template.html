@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ release.title }}</title>
+</head>
+<body>
+    <h1>{{ release.title }}</h1>
+    <img src="{{ release.cover_url }}" alt="Cover art" style="width:300px;">
+    <p>{{ release.description }}</p>
+    <h2>Tracks</h2>
+    <ul>
+    {% for track in release.tracks %}
+        <li>{{ track }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html> 
