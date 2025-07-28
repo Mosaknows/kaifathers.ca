@@ -39,10 +39,14 @@
         <img src="https://i.scdn.co/image/ab67616d0000b2732e0a4464bfc4e85f40d04ad3" alt="Cover art" class="album-cover-scale" style="margin-bottom: 1.5rem;filter:brightness(1.1);">
         <p class="side-projects-text">Type: single</p>
         <p class="side-projects-text">Release Date: 2023-07-17</p>
-        <p>
-          <a href="https://open.spotify.com/album/6KD5zTNOKSfzT9uPDKVx6n" class="btn-default" target="_blank">Listen on Spotify</a> |
-          <a href="https://kaifathers.bandcamp.com/track/butterflies-that-bite" class="btn-default" target="_blank">Listen on Bandcamp</a>
-        </p>
+        <div style="display: flex; justify-content: center; gap: 18px; margin: 20px 0;">
+          <a href="https://open.spotify.com/album/6KD5zTNOKSfzT9uPDKVx6n" class="social-icon-btn outline-white" target="_blank" aria-label="Spotify">
+            <img src="/assets/svg/spotify.svg" width="32" height="32" alt="Spotify">
+          </a>
+          <a href="https://kaifathers.bandcamp.com/track/butterflies-that-bite" class="social-icon-btn outline-white" target="_blank" aria-label="Bandcamp">
+            <img src="/assets/svg/bandcamp.svg" width="32" height="32" alt="Bandcamp">
+          </a>
+        </div>
         <p class="content"></p>
         <div class="embed-responsive-container"><iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3599731491/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://kaifathers.bandcamp.com/track/butterflies-that-bite">butterflies that bite by Kai Fathers</a></iframe></div>
         <h2>Track</h2>
@@ -60,8 +64,8 @@
     <script src="/assets/js/navbar2.js"></script>
                     <style>
                   .embed-responsive-container {
-                    padding-left: clamp(10%, 20vw, 33.33%);
-                    padding-right: clamp(10%, 20vw, 33.33%);
+                    padding-left: calc(10% + (100vw - 550px) * 0.35);
+                    padding-right: calc(10% + (100vw - 550px) * 0.35);
                     box-sizing: border-box;
                     width: 100%;
                     display: flex;
