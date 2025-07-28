@@ -87,20 +87,15 @@ function fetchBandcampReleases(callback) {
               trackId = albumInfo.raw.current.trackinfo[0].id;
             }
           }
-          if (tracks.length === 1) {
-            // Single: use track embed ONLY if trackId exists
-            if (trackId) {
-              embed = `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=${trackId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="${albumInfo.url}">${albumInfo.title} by Kai Fathers</a></iframe>`;
-            } else {
-              embed = '';
-            }
-            // Debug log for singles
-            console.log('Single:', albumInfo.title, 'trackId:', trackId, 'albumId:', albumId, 'embed:', embed);
-          } else if (albumId && trackId && albumInfo.url) {
-            // Album: use album embed with track
+          if (trackId && albumInfo.url && tracks.length === 1) {
+            // Single: use track embed
+            embed = `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=${trackId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="${albumInfo.url}">${albumInfo.title} by Kai Fathers</a></iframe>`;
+            console.log('Single embed generated for:', albumInfo.title, 'trackId:', trackId);
+          } else if (albumId && trackId && albumInfo.url && tracks.length > 1) {
+            // Album: use album embed with track (only for multi-track releases)
             embed = `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=${albumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=${trackId}/transparent=true/" seamless><a href="${albumInfo.url}">${albumInfo.title} by Kai Fathers</a></iframe>`;
-          } else if (albumId && albumInfo.url) {
-            // fallback: album embed without track
+          } else if (albumId && albumInfo.url && tracks.length > 1) {
+            // fallback: album embed without track (only for multi-track releases)
             embed = `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=${albumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="${albumInfo.url}">${albumInfo.title} by Kai Fathers</a></iframe>`;
           }
           let release_date = '';
