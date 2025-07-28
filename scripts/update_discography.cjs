@@ -80,6 +80,8 @@ function fetchBandcampReleases(callback) {
           let embed = '';
           let trackId = null;
           const albumId = albumInfo.raw && albumInfo.raw.current && albumInfo.raw.current.id;
+          // Debug: Export complete raw Bandcamp data to file
+          fs.writeFileSync(`bandcamp_raw_${albumInfo.title.replace(/[^a-z0-9]/gi, '_')}.json`, JSON.stringify(albumInfo, null, 2));
           if (albumInfo.raw && albumInfo.raw.current) {
             if (albumInfo.raw.current.featured_track_id) {
               trackId = albumInfo.raw.current.featured_track_id;
