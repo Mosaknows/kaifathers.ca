@@ -46,7 +46,7 @@
         <p class="content">{{description}}</p>
         <div class="embed-responsive-container">{{embed}}</div>
         <h2>Track</h2>
-        <ul style="list-style: none; padding: 0;">
+        <ul class="tracklist">
           {{tracks}}
         </ul>
     </div>
@@ -65,6 +65,46 @@
       .embed-responsive-container iframe {
         max-width: 100%;
         border-radius: 12px;
+      }
+      .tracklist {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 480px;
+        text-align: left;
+      }
+      .tracklist-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5em 0.75em;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        font-size: 1.1em;
+        color: #fff;
+        transition: background 0.2s;
+      }
+      .tracklist-item:last-child {
+        border-bottom: none;
+      }
+      .track-number {
+        min-width: 2em;
+        opacity: 0.7;
+        font-family: monospace;
+      }
+      .track-title {
+        flex: 1 1 auto;
+        margin: 0 1em;
+        font-weight: 500;
+        word-break: break-word;
+      }
+      .track-length {
+        min-width: 3em;
+        text-align: right;
+        opacity: 0.7;
+        font-family: monospace;
+      }
+      .tracklist-item:hover {
+        background: rgba(255,255,255,0.04);
       }
     </style>
 </body>

@@ -87,11 +87,15 @@ function fetchBandcampReleases(callback) {
               trackId = albumInfo.raw.current.trackinfo[0].id;
             }
           }
-          if (albumId && trackId && albumInfo.url) {
+          if (trackId && albumInfo.url && tracks.length === 1) {
+            // Single: use track embed
+            embed = `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=${trackId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="${albumInfo.url}">${albumInfo.title} by Kai Fathers</a></iframe>`;
+          } else if (albumId && trackId && albumInfo.url) {
+            // Album: use album embed with track
             embed = `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=${albumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=${trackId}/transparent=true/" seamless><a href="${albumInfo.url}">${albumInfo.title} by Kai Fathers</a></iframe>`;
           } else if (albumId && albumInfo.url) {
             // fallback: album embed without track
-            embed = `<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=${albumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/\" seamless><a href=\"${albumInfo.url}\">${albumInfo.title} by Kai Fathers</a></iframe>`;
+            embed = `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=${albumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="${albumInfo.url}">${albumInfo.title} by Kai Fathers</a></iframe>`;
           }
           let release_date = '';
           if (albumInfo.raw && albumInfo.raw.current && albumInfo.raw.current.release_date) {
@@ -183,7 +187,12 @@ function generateReleasePages(releases) {
     const outFile = path.join(outDir, `${slug}.html`);
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
     const template = isAlbum ? albumTemplate : singleTemplate;
-    const tracksHtml = rel.tracks.map(t => `<li>${t.title} <span>${t.length}</span></li>`).join('\n');
+    const tracksHtml = rel.tracks.map((t, i) => `
+      <li class="tracklist-item">
+        <span class="track-number">${i + 1}.</span>
+        <span class="track-title">${t.title}</span>
+        <span class="track-length">${t.length}</span>
+      </li>`).join('');
     // Prioritize Bandcamp embed if it exists, otherwise use Spotify embed if it exists
     let embed = '';
     if (rel.embed && rel.embed.trim()) {
