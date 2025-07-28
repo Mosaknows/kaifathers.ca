@@ -1,0 +1,187 @@
+{
+  "tags": [
+    {
+      "name": "alternative"
+    },
+    {
+      "name": "alternative metal"
+    },
+    {
+      "name": "alternative rock"
+    },
+    {
+      "name": "indie rock"
+    },
+    {
+      "name": "shoegaze"
+    },
+    {
+      "name": "Ottawa"
+    }
+  ],
+  "artist": "Kai Fathers",
+  "title": "Chlorine",
+  "imageUrl": "https://f4.bcbits.com/img/a3358963300_2.jpg",
+  "tracks": [
+    {
+      "name": "Chlorine",
+      "url": "https://kaifathers.bandcamp.com/track/chlorine",
+      "duration": "03:43"
+    },
+    {
+      "name": "Cobalt",
+      "url": "https://kaifathers.bandcamp.com/track/cobalt",
+      "duration": "02:30"
+    }
+  ],
+  "raw": {
+    "for the curious": "https://bandcamp.com/help/audio_basics#steal https://bandcamp.com/terms_of_use",
+    "current": {
+      "audit": 10,
+      "title": "Chlorine",
+      "new_date": "14 Dec 2024 04:34:54 GMT",
+      "mod_date": "14 Dec 2024 04:40:08 GMT",
+      "publish_date": "14 Dec 2024 04:38:19 GMT",
+      "private": null,
+      "killed": null,
+      "download_pref": 2,
+      "require_email": null,
+      "is_set_price": null,
+      "set_price": 9,
+      "minimum_price": 7,
+      "minimum_price_nonzero": 7,
+      "require_email_0": null,
+      "artist": null,
+      "about": null,
+      "credits": null,
+      "auto_repriced": null,
+      "new_desc_format": 1,
+      "band_id": 221792175,
+      "selling_band_id": 221792175,
+      "art_id": 3358963300,
+      "download_desc_id": null,
+      "release_date": "05 May 2023 00:00:00 GMT",
+      "upc": "197813944178",
+      "purchase_url": null,
+      "purchase_title": null,
+      "featured_track_id": 1795237802,
+      "id": 2672584357,
+      "type": "album"
+    },
+    "preorder_count": null,
+    "hasAudio": true,
+    "art_id": 3358963300,
+    "packages": null,
+    "defaultPrice": 9,
+    "freeDownloadPage": null,
+    "FREE": 1,
+    "PAID": 2,
+    "artist": "Kai Fathers",
+    "item_type": "album",
+    "id": 2672584357,
+    "last_subscription_item": null,
+    "has_discounts": false,
+    "is_bonus": null,
+    "play_cap_data": {
+      "streaming_limits_enabled": false,
+      "streaming_limit": 3
+    },
+    "is_purchased": null,
+    "items_purchased": null,
+    "is_private_stream": null,
+    "is_band_member": null,
+    "licensed_version_ids": null,
+    "package_associated_license_id": null,
+    "has_video": null,
+    "tralbum_subscriber_only": false,
+    "featured_track_id": 1795237802,
+    "initial_track_num": null,
+    "is_preorder": false,
+    "album_is_preorder": false,
+    "album_release_date": "05 May 2023 00:00:00 GMT",
+    "trackinfo": [
+      {
+        "id": 1641792595,
+        "track_id": 1641792595,
+        "file": {
+          "mp3-128": "https://t4.bcbits.com/stream/6f14e531cf3b8d9be8c36244b1b9d081/mp3-128/1641792595?p=0&ts=1753812976&t=7334b71ca6281091b7a257648abc0d08650f4694&token=1753812976_437783d29caef6b30203423aff79e6125b6ab820"
+        },
+        "artist": null,
+        "title": "Chlorine",
+        "encodings_id": 1218571652,
+        "license_type": 1,
+        "private": null,
+        "track_num": 1,
+        "album_preorder": false,
+        "unreleased_track": false,
+        "title_link": "/track/chlorine",
+        "has_lyrics": false,
+        "has_info": false,
+        "streaming": 1,
+        "is_downloadable": true,
+        "has_free_download": null,
+        "free_album_download": false,
+        "duration": 223.2,
+        "lyrics": null,
+        "sizeof_lyrics": 0,
+        "is_draft": false,
+        "video_source_type": null,
+        "video_source_id": null,
+        "video_mobile_url": null,
+        "video_poster_url": null,
+        "video_id": null,
+        "video_caption": null,
+        "video_featured": null,
+        "alt_link": null,
+        "encoding_error": null,
+        "encoding_pending": null,
+        "play_count": null,
+        "is_capped": null,
+        "track_license_id": null
+      },
+      {
+        "id": 1795237802,
+        "track_id": 1795237802,
+        "file": {
+          "mp3-128": "https://t4.bcbits.com/stream/c83fb334b1eddd859664108d6e0e3f14/mp3-128/1795237802?p=0&ts=1753812976&t=7993b004e728189b502f0229edcd7dda7223258b&token=1753812976_19f854eafc2412fc6b10a2c1519cc60423e2636b"
+        },
+        "artist": null,
+        "title": "Cobalt",
+        "encodings_id": 880717474,
+        "license_type": 1,
+        "private": null,
+        "track_num": 2,
+        "album_preorder": false,
+        "unreleased_track": false,
+        "title_link": "/track/cobalt",
+        "has_lyrics": false,
+        "has_info": false,
+        "streaming": 1,
+        "is_downloadable": true,
+        "has_free_download": null,
+        "free_album_download": false,
+        "duration": 150.391,
+        "lyrics": null,
+        "sizeof_lyrics": 0,
+        "is_draft": false,
+        "video_source_type": null,
+        "video_source_id": null,
+        "video_mobile_url": null,
+        "video_poster_url": null,
+        "video_id": null,
+        "video_caption": null,
+        "video_featured": null,
+        "alt_link": null,
+        "encoding_error": null,
+        "encoding_pending": null,
+        "play_count": null,
+        "is_capped": null,
+        "track_license_id": null
+      }
+    ],
+    "playing_from": "album page",
+    "url": "https://kaifathers.bandcamp.com/album/chlorine",
+    "use_expando_lyrics": false
+  },
+  "url": "https://kaifathers.bandcamp.com/album/chlorine"
+}
