@@ -39,10 +39,14 @@
         <img src="{{cover_url}}" alt="Cover art" class="album-cover-scale" style="margin-bottom: 1.5rem;filter:brightness(1.1);">
         <p class="side-projects-text">Type: {{type}}</p>
         <p class="side-projects-text">Release Date: {{release_date}}</p>
-        <p>
-          <a href="{{spotify_url}}" class="btn-default" target="_blank">Listen on Spotify</a> |
-          <a href="{{bandcamp_url}}" class="btn-default" target="_blank">Listen on Bandcamp</a>
-        </p>
+        <div style="display: flex; justify-content: center; gap: 18px; margin: 20px 0;">
+          <a href="{{spotify_url}}" class="social-icon-btn outline-white" target="_blank" aria-label="Spotify">
+            <img src="/assets/svg/spotify.svg" width="32" height="32" alt="Spotify">
+          </a>
+          <a href="{{bandcamp_url}}" class="social-icon-btn outline-white" target="_blank" aria-label="Bandcamp">
+            <img src="/assets/svg/bandcamp.svg" width="32" height="32" alt="Bandcamp">
+          </a>
+        </div>
         <p class="content">{{description}}</p>
         <div class="embed-responsive-container">{{embed}}</div>
         <h2>Tracks</h2>
@@ -55,8 +59,8 @@
     <script src="/assets/js/navbar2.js"></script>
                     <style>
                   .embed-responsive-container {
-                    padding-left: calc(10% + (100vw - 320px) * 0.0001);
-                    padding-right: calc(10% + (100vw - 320px) * 0.0001);
+                    padding-left: calc(10% + (100vw - 550px) * 0.35);
+                    padding-right: calc(10% + (100vw - 550px) * 0.35);
                     box-sizing: border-box;
                     width: 100%;
                     display: flex;
