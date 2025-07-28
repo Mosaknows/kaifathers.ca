@@ -225,6 +225,7 @@ function generateReleasePages(releases) {
     });
     fs.writeFileSync(outFile, html);
   }
+  console.log('Generating release pages for', releases.length, 'releases');
 }
 
 async function getSpotifyAccessToken() {
