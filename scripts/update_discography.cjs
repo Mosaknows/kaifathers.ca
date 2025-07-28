@@ -69,40 +69,56 @@ function fetchBandcampReleases(callback) {
           rawAlbums.push(albumInfo); // Save raw for debugging
           let tracks = [];
           let track_lengths = [];
-          if (Array.isArray(albumInfo.trackInfo) && albumInfo.trackInfo.length > 0) {
-            tracks = albumInfo.trackInfo.map(t => t.title || t.name);
-            track_lengths = albumInfo.trackInfo.map(t => t.duration);
-          } else if (Array.isArray(albumInfo.tracks) && albumInfo.tracks.length > 0) {
-            tracks = albumInfo.tracks.map(t => t.title || t.name);
-            track_lengths = albumInfo.tracks.map(t => t.duration);
-          }
-          let description = albumInfo.about || (albumInfo.raw && albumInfo.raw.current && albumInfo.raw.current.about) || '';
-          let embed = '';
           let trackId = null;
           const albumId = albumInfo.raw && albumInfo.raw.current && albumInfo.raw.current.id;
-          // Debug: Export complete raw Bandcamp data to file
-          fs.writeFileSync(`bandcamp_raw_${albumInfo.title.replace(/[^a-z0-9]/gi, '_')}.json`, JSON.stringify(albumInfo, null, 2));
-          if (albumInfo.raw && albumInfo.raw.current) {
-            if (albumInfo.raw.current.featured_track_id) {
-              trackId = albumInfo.raw.current.featured_track_id;
-            } else if (Array.isArray(albumInfo.raw.current.trackinfo) && albumInfo.raw.current.trackinfo.length > 0 && albumInfo.raw.current.trackinfo[0].id) {
-              trackId = albumInfo.raw.current.trackinfo[0].id;
+          const isTrack = albumInfo.raw && albumInfo.raw.current && albumInfo.raw.current.type === 'track';
+          
+          if (isTrack) {
+            // Single track - get info from raw.trackinfo
+            if (Array.isArray(albumInfo.raw.trackinfo) && albumInfo.raw.trackinfo.length > 0) {
+              const track = albumInfo.raw.trackinfo[0];
+              tracks = [track.title];
+              track_lengths = [track.duration ? Math.floor(track.duration / 60) + ':' + String(Math.floor(track.duration % 60)).padStart(2, '0') : 'N/A'];
+              trackId = track.id || track.track_id;
+            }
+          } else {
+            // Album - get info from tracks (preferred) or trackInfo
+            if (Array.isArray(albumInfo.tracks) && albumInfo.tracks.length > 0) {
+              tracks = albumInfo.tracks.map(t => t.name);
+              track_lengths = albumInfo.tracks.map(t => t.duration);
+            } else if (Array.isArray(albumInfo.trackInfo) && albumInfo.trackInfo.length > 0) {
+              tracks = albumInfo.trackInfo.map(t => t.title || t.name);
+              track_lengths = albumInfo.trackInfo.map(t => t.duration);
+            }
+            
+            // Get trackId for albums - prefer featured_track_id, fallback to first track
+            if (albumInfo.raw && albumInfo.raw.current) {
+              if (albumInfo.raw.current.featured_track_id) {
+                trackId = albumInfo.raw.current.featured_track_id;
+              } else if (Array.isArray(albumInfo.raw.trackinfo) && albumInfo.raw.trackinfo.length > 0) {
+                trackId = albumInfo.raw.trackinfo[0].id || albumInfo.raw.trackinfo[0].track_id;
+              }
             }
           }
-          if (trackId && albumInfo.url && tracks.length === 1) {
+          
+          let description = albumInfo.about || (albumInfo.raw && albumInfo.raw.current && albumInfo.raw.current.about) || '';
+          let embed = '';
+          // Debug: Export complete raw Bandcamp data to file
+          fs.writeFileSync(`bandcamp_raw_${albumInfo.title.replace(/[^a-z0-9]/gi, '_')}.json`, JSON.stringify(albumInfo, null, 2));
+          if (isTrack && trackId && albumInfo.url) {
             // Single: use track embed
             embed = `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=${trackId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="${albumInfo.url}">${albumInfo.title} by Kai Fathers</a></iframe>`;
             console.log('Single embed generated for:', albumInfo.title, 'trackId:', trackId);
-          } else if (albumId && trackId && albumInfo.url && tracks.length > 1) {
-            // Album: use album embed with track (only for multi-track releases)
+          } else if (!isTrack && albumId && trackId && albumInfo.url) {
+            // Album: use album embed with track
             embed = `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=${albumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=${trackId}/transparent=true/" seamless><a href="${albumInfo.url}">${albumInfo.title} by Kai Fathers</a></iframe>`;
             console.log('Album embed with track generated for:', albumInfo.title, 'albumId:', albumId, 'trackId:', trackId);
-          } else if (albumId && albumInfo.url && tracks.length > 1) {
-            // fallback: album embed without track (only for multi-track releases)
+          } else if (!isTrack && albumId && albumInfo.url) {
+            // fallback: album embed without track
             embed = `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=${albumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="${albumInfo.url}">${albumInfo.title} by Kai Fathers</a></iframe>`;
             console.log('Album embed without track generated for:', albumInfo.title, 'albumId:', albumId);
           } else {
-            console.log('No Bandcamp embed generated for:', albumInfo.title, 'trackId:', trackId, 'albumId:', albumId, 'tracks.length:', tracks.length);
+            console.log('No Bandcamp embed generated for:', albumInfo.title, 'isTrack:', isTrack, 'trackId:', trackId, 'albumId:', albumId);
           }
           let release_date = '';
           if (albumInfo.raw && albumInfo.raw.current && albumInfo.raw.current.release_date) {
