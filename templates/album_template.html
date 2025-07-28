@@ -2,32 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>{{title}}</title>
-    <style>
-      .title-img-container {
-        display: inline-block;
-      }
-      .title-img-container img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coral+Pixels&amp;display=swap">
+    <link rel="stylesheet" href="/assets/css/Styles.css">
+    <link rel="stylesheet" href="/assets/css/navbar2.css">
 </head>
-<body>
-    <h1><span class="title-img-container">{{title}}</span></h1>
-    <img src="{{cover_url}}" alt="Cover art" style="width:300px;">
-    <p>Type: {{type}}</p>
-    <p>Release Date: {{release_date}}</p>
-    <p>
-      <a href="{{spotify_url}}">Listen on Spotify</a> |
-      <a href="{{bandcamp_url}}">Listen on Bandcamp</a>
-    </p>
-    <p>{{description}}</p>
-    {{embed}}
-    <h2>Tracks</h2>
-    <ul>
-      {{tracks}}
-    </ul>
+<body id="page-top" style="background-color:rgb(0,0,0);">
+    <!-- Burger menu button -->
+    <button class="burger-btn" onclick="toggleMobileMenu()">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+    </button>
+    <!-- Single Navbar for both desktop and mobile -->
+    <nav class="navbar" id="mainNavbar">
+        <a href="/home#socials" class="nav-pill"><span class="nav-pill-text">MUSIC & SOCIALS</span></a>
+        <a href="/home#proj" class="nav-pill"><span class="nav-pill-text">LATEST</span></a>
+        <a href="/home#music" class="nav-pill"><span class="nav-pill-text">STREAM</span></a>
+        <a href="/discography" class="nav-pill"><span class="nav-pill-text">DISCOGRAPHY</span></a>
+        <a href="/biography" class="nav-pill"><span class="nav-pill-text">BIO</span></a>
+        <a href="/side-projects" class="nav-pill"><span class="nav-pill-text">SIDE PROJECTS</span></a>
+    </nav>
+    <a href="/home" class="pill-logo-link" style="position:fixed;top:32px;left:32px;z-index:2000;display:inline-block;height:54px;">
+      <img src="/assets/img/apple-touch-icon.png" alt="Kai Fathers Logo" style="border-radius:12px;vertical-align:middle;width:64px;height:64px;object-fit:cover;display:block;margin-top:-5px;">
+    </a>
+    <div class="content-section text-center" style="background:#000;min-height:100vh;padding-top:120px;">
+        <h1>{{title}}</h1>
+        <img src="{{cover_url}}" alt="Cover art" class="album-cover-scale" style="margin-bottom: 1.5rem;">
+        <p class="side-projects-text">Type: {{type}}</p>
+        <p class="side-projects-text">Release Date: {{release_date}}</p>
+        <p>
+          <a href="{{spotify_url}}" class="btn-default" target="_blank">Listen on Spotify</a> |
+          <a href="{{bandcamp_url}}" class="btn-default" target="_blank">Listen on Bandcamp</a>
+        </p>
+        <p class="content">{{description}}</p>
+        {{embed}}
+        <h2>Tracks</h2>
+        <ul style="list-style: none; padding: 0;">
+          {{tracks}}
+        </ul>
+    </div>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/navbar2.js"></script>
 </body>
 </html> 
