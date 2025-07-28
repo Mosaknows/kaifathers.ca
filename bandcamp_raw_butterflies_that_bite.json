@@ -1,0 +1,141 @@
+{
+  "tags": [
+    {
+      "name": "alternative"
+    },
+    {
+      "name": "alternative metal"
+    },
+    {
+      "name": "alternative rock"
+    },
+    {
+      "name": "indie rock"
+    },
+    {
+      "name": "shoegaze"
+    },
+    {
+      "name": "Ottawa"
+    }
+  ],
+  "artist": "Kai Fathers",
+  "title": "butterflies that bite",
+  "imageUrl": "https://f4.bcbits.com/img/a2098158222_2.jpg",
+  "tracks": [],
+  "raw": {
+    "for the curious": "https://bandcamp.com/help/audio_basics#steal https://bandcamp.com/terms_of_use",
+    "current": {
+      "audit": 2,
+      "title": "butterflies that bite",
+      "new_date": "14 Dec 2024 04:33:35 GMT",
+      "mod_date": "14 Dec 2024 04:33:36 GMT",
+      "publish_date": "14 Dec 2024 04:33:36 GMT",
+      "private": null,
+      "killed": null,
+      "download_pref": 2,
+      "require_email": null,
+      "is_set_price": null,
+      "set_price": 1.5,
+      "minimum_price": 1,
+      "minimum_price_nonzero": 1,
+      "require_email_0": null,
+      "artist": null,
+      "about": null,
+      "credits": null,
+      "auto_repriced": null,
+      "new_desc_format": 1,
+      "band_id": 221792175,
+      "selling_band_id": 221792175,
+      "art_id": 2098158222,
+      "download_desc_id": null,
+      "track_number": null,
+      "release_date": "17 Jul 2023 00:00:00 GMT",
+      "file_name": null,
+      "lyrics": null,
+      "album_id": null,
+      "encodings_id": 2595127586,
+      "pending_encodings_id": null,
+      "license_type": 1,
+      "isrc": "QZNWU2337958",
+      "preorder_download": null,
+      "streaming": 1,
+      "id": 3599731491,
+      "type": "track"
+    },
+    "preorder_count": null,
+    "hasAudio": true,
+    "art_id": 2098158222,
+    "packages": null,
+    "defaultPrice": 1.5,
+    "freeDownloadPage": null,
+    "FREE": 1,
+    "PAID": 2,
+    "artist": "Kai Fathers",
+    "item_type": "track",
+    "id": 3599731491,
+    "last_subscription_item": null,
+    "has_discounts": false,
+    "is_bonus": null,
+    "play_cap_data": {
+      "streaming_limits_enabled": false,
+      "streaming_limit": 3
+    },
+    "is_purchased": null,
+    "items_purchased": null,
+    "is_private_stream": null,
+    "is_band_member": null,
+    "licensed_version_ids": null,
+    "package_associated_license_id": null,
+    "has_video": null,
+    "tralbum_subscriber_only": null,
+    "album_is_preorder": null,
+    "album_release_date": null,
+    "trackinfo": [
+      {
+        "id": 3599731491,
+        "track_id": 3599731491,
+        "file": {
+          "mp3-128": "https://t4.bcbits.com/stream/8dfcb1450fed5110679819acd5e37b25/mp3-128/3599731491?p=0&ts=1753805096&t=2a3f0b61becc069772885887b266f6c4341b3a4d&token=1753805096_4a0d9c230b40291df426ed831dbcb68ff74f9821"
+        },
+        "artist": null,
+        "title": "butterflies that bite",
+        "encodings_id": 2595127586,
+        "license_type": 1,
+        "private": null,
+        "track_num": null,
+        "album_preorder": false,
+        "unreleased_track": false,
+        "title_link": "/track/butterflies-that-bite",
+        "has_lyrics": false,
+        "has_info": false,
+        "streaming": 1,
+        "is_downloadable": true,
+        "has_free_download": null,
+        "free_album_download": false,
+        "duration": 206.808,
+        "lyrics": null,
+        "sizeof_lyrics": 0,
+        "is_draft": false,
+        "video_source_type": null,
+        "video_source_id": null,
+        "video_mobile_url": null,
+        "video_poster_url": null,
+        "video_id": null,
+        "video_caption": null,
+        "video_featured": null,
+        "alt_link": null,
+        "encoding_error": null,
+        "encoding_pending": null,
+        "play_count": null,
+        "is_capped": null,
+        "track_license_id": null
+      }
+    ],
+    "playing_from": "track page",
+    "album_url": null,
+    "album_upsell_url": null,
+    "url": "https://kaifathers.bandcamp.com/track/butterflies-that-bite"
+  },
+  "url": "https://kaifathers.bandcamp.com/track/butterflies-that-bite"
+}
