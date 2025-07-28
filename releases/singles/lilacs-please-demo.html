@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Lilacs, Please (Demo)</title>
+    <title></title>
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
@@ -35,11 +35,7 @@
       <img src="/assets/img/apple-touch-icon.png" alt="Kai Fathers Logo" style="border-radius:12px;vertical-align:middle;width:64px;height:64px;object-fit:cover;display:block;margin-top:-5px;">
     </a>
     <div class="content-section text-center" style="background:#000;min-height:100vh;padding-top:120px;">
-        {% if title_img_url %}
-          <h1><img src="" alt="Lilacs, Please (Demo)" style="max-width:90%;height:auto;filter:invert(1);display:inline-block;"></h1>
-        {% else %}
-          <h1 style="color:#fff;">Lilacs, Please (Demo)</h1>
-        {% endif %}
+        <h1><span style="color:#fff;">Lilacs, Please (Demo)</span></h1>
         <img src="https://i.scdn.co/image/ab67616d0000b273ea352d37274745487b58b47d" alt="Cover art" class="album-cover-scale" style="margin-bottom: 1.5rem;filter:brightness(1.1);">
         <p class="side-projects-text">Type: single</p>
         <p class="side-projects-text">Release Date: 2023-07-24</p>
@@ -50,8 +46,13 @@
         <p class="content"></p>
         <div class="embed-responsive-container"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6QjuWljwojsMjBNPKe51uo?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
         <h2>Track</h2>
-        <ul style="list-style: none; padding: 0;">
-          <li>Lilacs, Please - Demo <span>2:01</span></li>
+        <ul class="tracklist">
+          
+      <li class="tracklist-item">
+        <span class="track-number">1.</span>
+        <span class="track-title">Lilacs, Please - Demo</span>
+        <span class="track-length">2:01</span>
+      </li>
         </ul>
     </div>
     <script src="/assets/js/jquery.min.js"></script>
@@ -69,6 +70,46 @@
       .embed-responsive-container iframe {
         max-width: 100%;
         border-radius: 12px;
+      }
+      .tracklist {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 480px;
+        text-align: left;
+      }
+      .tracklist-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5em 0.75em;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        font-size: 1.1em;
+        color: #fff;
+        transition: background 0.2s;
+      }
+      .tracklist-item:last-child {
+        border-bottom: none;
+      }
+      .track-number {
+        min-width: 2em;
+        opacity: 0.7;
+        font-family: monospace;
+      }
+      .track-title {
+        flex: 1 1 auto;
+        margin: 0 1em;
+        font-weight: 500;
+        word-break: break-word;
+      }
+      .track-length {
+        min-width: 3em;
+        text-align: right;
+        opacity: 0.7;
+        font-family: monospace;
+      }
+      .tracklist-item:hover {
+        background: rgba(255,255,255,0.04);
       }
     </style>
 </body>
