@@ -77,18 +77,67 @@ function fetchBandcampReleases(callback) {
             // Single track - get info from raw.trackinfo
             if (Array.isArray(albumInfo.raw.trackinfo) && albumInfo.raw.trackinfo.length > 0) {
               const track = albumInfo.raw.trackinfo[0];
-              tracks = [track.title];
-              track_lengths = [track.duration ? Math.floor(track.duration / 60) + ':' + String(Math.floor(track.duration % 60)).padStart(2, '0') : 'N/A'];
+              // Convert seconds to MM:SS format
+              const seconds = track.duration;
+              let length;
+              if (typeof seconds === 'number') {
+                const minutes = Math.floor(seconds / 60);
+                const remainingSeconds = Math.floor(seconds % 60);
+                length = `${minutes}:${String(remainingSeconds).padStart(2, '0')}`;
+              } else {
+                length = track.duration ? Math.floor(track.duration / 60) + ':' + String(Math.floor(track.duration % 60)).padStart(2, '0') : 'N/A';
+              }
+              tracks = [{ title: track.title, length }];
+              track_lengths = [length];
               trackId = track.id || track.track_id;
             }
           } else {
-            // Album - get info from tracks (preferred) or trackInfo
-            if (Array.isArray(albumInfo.tracks) && albumInfo.tracks.length > 0) {
-              tracks = albumInfo.tracks.map(t => t.name);
-              track_lengths = albumInfo.tracks.map(t => t.duration);
+            // Album - get info from raw.trackinfo (most reliable source)
+            if (Array.isArray(albumInfo.raw.trackinfo) && albumInfo.raw.trackinfo.length > 0) {
+              tracks = albumInfo.raw.trackinfo.map(track => {
+                // Convert seconds to MM:SS format
+                const seconds = track.duration;
+                let length;
+                if (typeof seconds === 'number') {
+                  const minutes = Math.floor(seconds / 60);
+                  const remainingSeconds = Math.floor(seconds % 60);
+                  length = `${minutes}:${String(remainingSeconds).padStart(2, '0')}`;
+                } else {
+                  length = '0:00';
+                }
+                return { title: track.title, length };
+              });
+              track_lengths = tracks.map(t => t.length);
+            } else if (Array.isArray(albumInfo.tracks) && albumInfo.tracks.length > 0) {
+              tracks = albumInfo.tracks.map(t => {
+                // Convert seconds to MM:SS format
+                const seconds = t.duration;
+                let length;
+                if (typeof seconds === 'number') {
+                  const minutes = Math.floor(seconds / 60);
+                  const remainingSeconds = Math.floor(seconds % 60);
+                  length = `${minutes}:${String(remainingSeconds).padStart(2, '0')}`;
+                } else {
+                  length = t.duration || '0:00';
+                }
+                return { title: t.name, length };
+              });
+              track_lengths = tracks.map(t => t.length);
             } else if (Array.isArray(albumInfo.trackInfo) && albumInfo.trackInfo.length > 0) {
-              tracks = albumInfo.trackInfo.map(t => t.title || t.name);
-              track_lengths = albumInfo.trackInfo.map(t => t.duration);
+              tracks = albumInfo.trackInfo.map(t => {
+                // Convert seconds to MM:SS format
+                const seconds = t.duration;
+                let length;
+                if (typeof seconds === 'number') {
+                  const minutes = Math.floor(seconds / 60);
+                  const remainingSeconds = Math.floor(seconds % 60);
+                  length = `${minutes}:${String(remainingSeconds).padStart(2, '0')}`;
+                } else {
+                  length = t.duration || '0:00';
+                }
+                return { title: t.title || t.name, length };
+              });
+              track_lengths = tracks.map(t => t.length);
             }
             
             // Get trackId for albums - prefer featured_track_id, fallback to first track
@@ -101,10 +150,8 @@ function fetchBandcampReleases(callback) {
             }
           }
           
-          let description = albumInfo.about || (albumInfo.raw && albumInfo.raw.current && albumInfo.raw.current.about) || '';
-          let embed = '';
-          // Debug: Export complete raw Bandcamp data to file
-          fs.writeFileSync(`bandcamp_raw_${albumInfo.title.replace(/[^a-z0-9]/gi, '_')}.json`, JSON.stringify(albumInfo, null, 2));
+                          let description = albumInfo.about || (albumInfo.raw && albumInfo.raw.current && albumInfo.raw.current.about) || '';
+                let embed = '';
           if (isTrack && trackId && albumInfo.url) {
             // Single: use track embed
             embed = `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=${trackId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="${albumInfo.url}">${albumInfo.title} by Kai Fathers</a></iframe>`;
@@ -354,15 +401,18 @@ function updateDiscographyHtml(releases) {
     const isAlbum = rel.tracks.length > 3;
     const link = isAlbum ? `/releases/lp-ep/${slug}.html` : `/releases/singles/${slug}.html`;
     
-    // Calculate type directly for filtering
-    const trackCount = rel.tracks.length;
-    const totalSeconds = rel.tracks.reduce((sum, t) => sum + parseDuration(t.length), 0);
+    // Calculate type directly for filtering based on duration only
+    // Calculate total seconds from track lengths (they're in MM:SS format)
+    const totalSeconds = rel.tracks.reduce((sum, t) => {
+      const length = t.length || '0:00';
+      return sum + parseDuration(length);
+    }, 0);
     let releaseType;
-    if (trackCount <= 3) {
+    if (totalSeconds <= 10 * 60) { // 10 minutes or less = single
       releaseType = 'single';
-    } else if (trackCount >= 4 && trackCount <= 6 && totalSeconds <= 30 * 60) {
+    } else if (totalSeconds <= 30 * 60) { // 10-30 minutes = EP
       releaseType = 'ep';
-    } else {
+    } else { // Over 30 minutes = album
       releaseType = 'album';
     }
     
