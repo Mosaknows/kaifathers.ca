@@ -35,11 +35,7 @@
       <img src="/assets/img/apple-touch-icon.png" alt="Kai Fathers Logo" style="border-radius:12px;vertical-align:middle;width:64px;height:64px;object-fit:cover;display:block;margin-top:-5px;">
     </a>
     <div class="content-section text-center" style="background:#000;min-height:100vh;padding-top:120px;">
-        {% if title_img_url %}
-          <h1><img src="{{title_img_url}}" alt="{{title}}" style="max-width:90%;height:auto;filter:invert(1);display:inline-block;"></h1>
-        {% else %}
-          <h1 style="color:#fff;">{{title}}</h1>
-        {% endif %}
+        <h1>{{title_html}}</h1>
         <img src="{{cover_url}}" alt="Cover art" class="album-cover-scale" style="margin-bottom: 1.5rem;filter:brightness(1.1);">
         <p class="side-projects-text">Type: {{type}}</p>
         <p class="side-projects-text">Release Date: {{release_date}}</p>

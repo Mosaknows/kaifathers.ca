@@ -184,31 +184,34 @@ function generateReleasePages(releases) {
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
     const template = isAlbum ? albumTemplate : singleTemplate;
     const tracksHtml = rel.tracks.map(t => `<li>${t.title} <span>${t.length}</span></li>`).join('\n');
-    // If no Bandcamp embed, try Spotify embed
-    let embed = rel.embed;
-    if (!embed && rel.spotify_url && rel.spotify_url !== 'N/A') {
+    // Prioritize Bandcamp embed if it exists, otherwise use Spotify embed if it exists
+    let embed = '';
+    if (rel.embed && rel.embed.trim()) {
+      embed = rel.embed; // Bandcamp
+    } else if (rel.spotify_url && rel.spotify_url !== 'N/A') {
       const match = rel.spotify_url.match(/album\/([a-zA-Z0-9]+)/);
       if (match) {
         const spotifyId = match[1];
         embed = `<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/${spotifyId}?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>`;
       }
     }
-    // Use PNG title image if it exists, else just the title
+    // Title image/text logic: output a single title_html variable
     const titleImgPath = path.join(__dirname, `../assets/img/titles/${slug}.png`);
-    let title_img_url = null;
+    let title_html = '';
     if (fs.existsSync(titleImgPath)) {
-      title_img_url = `/assets/img/titles/${slug}.png`;
+      title_html = `<img src=\"/assets/img/titles/${slug}.png\" alt=\"${rel.title}\" style=\"max-width:90%;height:auto;filter:invert(1);display:inline-block;\">`;
+    } else {
+      title_html = `<span style=\"color:#fff;\">${rel.title}</span>`;
     }
     const html = fillTemplate(template, {
-      title: rel.title,
-      title_img_url,
+      title_html,
       cover_url: rel.cover_url,
       spotify_url: rel.spotify_url,
       bandcamp_url: rel.bandcamp_url,
       tracks: tracksHtml,
       type: rel.type,
       description: rel.description,
-      embed: embed || '',
+      embed: embed,
       release_date: formatDateOnly(rel.release_date)
     });
     fs.writeFileSync(outFile, html);
