@@ -193,16 +193,15 @@ function generateReleasePages(releases) {
         embed = `<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/${spotifyId}?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>`;
       }
     }
-    // Use PNG title image if it exists
+    // Use PNG title image if it exists, else just the title
     const titleImgPath = path.join(__dirname, `../assets/img/titles/${slug}.png`);
-    let titleHtml;
+    let title_img_url = null;
     if (fs.existsSync(titleImgPath)) {
-      titleHtml = `<img src="/assets/img/titles/${slug}.png" alt="${rel.title} Title" style="max-width:100%;height:auto;">`;
-    } else {
-      titleHtml = rel.title;
+      title_img_url = `/assets/img/titles/${slug}.png`;
     }
     const html = fillTemplate(template, {
-      title: titleHtml,
+      title: rel.title,
+      title_img_url,
       cover_url: rel.cover_url,
       spotify_url: rel.spotify_url,
       bandcamp_url: rel.bandcamp_url,

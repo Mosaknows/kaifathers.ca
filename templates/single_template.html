@@ -35,8 +35,12 @@
       <img src="/assets/img/apple-touch-icon.png" alt="Kai Fathers Logo" style="border-radius:12px;vertical-align:middle;width:64px;height:64px;object-fit:cover;display:block;margin-top:-5px;">
     </a>
     <div class="content-section text-center" style="background:#000;min-height:100vh;padding-top:120px;">
-        <h1>{{title}}</h1>
-        <img src="{{cover_url}}" alt="Cover art" class="album-cover-scale" style="margin-bottom: 1.5rem;">
+        {% if title_img_url %}
+          <h1><img src="{{title_img_url}}" alt="{{title}}" style="max-width:90%;height:auto;filter:invert(1);display:inline-block;"></h1>
+        {% else %}
+          <h1 style="color:#fff;">{{title}}</h1>
+        {% endif %}
+        <img src="{{cover_url}}" alt="Cover art" class="album-cover-scale" style="margin-bottom: 1.5rem;filter:brightness(1.1);">
         <p class="side-projects-text">Type: {{type}}</p>
         <p class="side-projects-text">Release Date: {{release_date}}</p>
         <p>
@@ -44,7 +48,7 @@
           <a href="{{bandcamp_url}}" class="btn-default" target="_blank">Listen on Bandcamp</a>
         </p>
         <p class="content">{{description}}</p>
-        {{embed}}
+        <div class="embed-responsive-container">{{embed}}</div>
         <h2>Track</h2>
         <ul style="list-style: none; padding: 0;">
           {{tracks}}
@@ -53,5 +57,19 @@
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="/assets/js/navbar2.js"></script>
+    <style>
+      .embed-responsive-container {
+        padding-left: max(5vw, 16px);
+        padding-right: max(5vw, 16px);
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .embed-responsive-container iframe {
+        max-width: 100%;
+        border-radius: 12px;
+      }
+    </style>
 </body>
 </html> 
