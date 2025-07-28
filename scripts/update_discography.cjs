@@ -94,9 +94,13 @@ function fetchBandcampReleases(callback) {
           } else if (albumId && trackId && albumInfo.url && tracks.length > 1) {
             // Album: use album embed with track (only for multi-track releases)
             embed = `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=${albumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=${trackId}/transparent=true/" seamless><a href="${albumInfo.url}">${albumInfo.title} by Kai Fathers</a></iframe>`;
+            console.log('Album embed with track generated for:', albumInfo.title, 'albumId:', albumId, 'trackId:', trackId);
           } else if (albumId && albumInfo.url && tracks.length > 1) {
             // fallback: album embed without track (only for multi-track releases)
             embed = `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=${albumId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="${albumInfo.url}">${albumInfo.title} by Kai Fathers</a></iframe>`;
+            console.log('Album embed without track generated for:', albumInfo.title, 'albumId:', albumId);
+          } else {
+            console.log('No Bandcamp embed generated for:', albumInfo.title, 'trackId:', trackId, 'albumId:', albumId, 'tracks.length:', tracks.length);
           }
           let release_date = '';
           if (albumInfo.raw && albumInfo.raw.current && albumInfo.raw.current.release_date) {
@@ -198,12 +202,16 @@ function generateReleasePages(releases) {
     let embed = '';
     if (rel.embed && rel.embed.trim()) {
       embed = rel.embed; // Bandcamp
+      console.log('Using Bandcamp embed for:', rel.title);
     } else if (rel.spotify_url && rel.spotify_url !== 'N/A') {
       const match = rel.spotify_url.match(/album\/([a-zA-Z0-9]+)/);
       if (match) {
         const spotifyId = match[1];
         embed = `<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/${spotifyId}?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>`;
+        console.log('Using Spotify embed for:', rel.title, 'Bandcamp embed was empty');
       }
+    } else {
+      console.log('No embed available for:', rel.title, 'Bandcamp embed:', rel.embed ? 'exists' : 'empty', 'Spotify URL:', rel.spotify_url);
     }
     // Title image/text logic: output a single title_html variable
     const titleImgPath = path.join(__dirname, `../assets/img/titles/${slug}.png`);
