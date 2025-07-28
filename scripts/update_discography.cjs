@@ -103,8 +103,6 @@ function fetchBandcampReleases(callback) {
           
           let description = albumInfo.about || (albumInfo.raw && albumInfo.raw.current && albumInfo.raw.current.about) || '';
           let embed = '';
-          // Debug: Export complete raw Bandcamp data to file
-          fs.writeFileSync(`bandcamp_raw_${albumInfo.title.replace(/[^a-z0-9]/gi, '_')}.json`, JSON.stringify(albumInfo, null, 2));
           if (isTrack && trackId && albumInfo.url) {
             // Single: use track embed
             embed = `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=${trackId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="${albumInfo.url}">${albumInfo.title} by Kai Fathers</a></iframe>`;
