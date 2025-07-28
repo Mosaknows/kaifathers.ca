@@ -103,6 +103,8 @@ function fetchBandcampReleases(callback) {
           
           let description = albumInfo.about || (albumInfo.raw && albumInfo.raw.current && albumInfo.raw.current.about) || '';
           let embed = '';
+          // Debug: Export complete raw Bandcamp data to file
+          fs.writeFileSync(`bandcamp_raw_${albumInfo.title.replace(/[^a-z0-9]/gi, '_')}.json`, JSON.stringify(albumInfo, null, 2));
           if (isTrack && trackId && albumInfo.url) {
             // Single: use track embed
             embed = `<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=${trackId}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="${albumInfo.url}">${albumInfo.title} by Kai Fathers</a></iframe>`;
@@ -351,6 +353,19 @@ function updateDiscographyHtml(releases) {
     const slug = slugifyForFile(rel.title);
     const isAlbum = rel.tracks.length > 3;
     const link = isAlbum ? `/releases/lp-ep/${slug}.html` : `/releases/singles/${slug}.html`;
+    
+    // Calculate type directly for filtering
+    const trackCount = rel.tracks.length;
+    const totalSeconds = rel.tracks.reduce((sum, t) => sum + parseDuration(t.length), 0);
+    let releaseType;
+    if (trackCount <= 3) {
+      releaseType = 'single';
+    } else if (trackCount >= 4 && trackCount <= 6 && totalSeconds <= 30 * 60) {
+      releaseType = 'ep';
+    } else {
+      releaseType = 'album';
+    }
+    
     // Use PNG title image if it exists
     const titleImgPath = path.join(__dirname, `../assets/img/titles/${slug}.png`);
     let titleHtml;
@@ -359,7 +374,7 @@ function updateDiscographyHtml(releases) {
     } else {
       titleHtml = rel.title;
     }
-    return `<div class=\"gallery-item\"><a href=\"${link}\">\n      <div class=\"img-container\"><img src=\"${rel.cover_url}\" alt=\"${rel.title} Cover\"></div>\n      <p class=\"album-title\">${titleHtml}</p>\n    </a></div>`;
+    return `<div class=\"gallery-item\" data-type=\"${releaseType}\"><a href=\"${link}\">\n      <div class=\"img-container\"><img src=\"${rel.cover_url}\" alt=\"${rel.title} Cover\"></div>\n      <p class=\"album-title\">${titleHtml}</p>\n    </a></div>`;
   }).join('\n');
   const newHtml = before + '\n' + gallery + '\n' + after;
   try {
