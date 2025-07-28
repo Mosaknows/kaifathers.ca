@@ -78,6 +78,7 @@ permalink: /discography/
             padding-top: 100%; /* 1:1 Aspect Ratio */
             overflow: hidden;
             margin-bottom: 10px;
+            border-radius: 12px;
         }
 
         .img-container img {
@@ -92,6 +93,50 @@ permalink: /discography/
 
         .img-container:hover img {
             transform: scale(1.05);
+        }
+        
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .filter-btn {
+            flex: 1;
+            background: transparent;
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 0.75em 1em;
+            cursor: pointer;
+            font-family: 'Cabin', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 0.9em;
+            transition: background 0.2s;
+            border-radius: 0;
+            margin: 0;
+        }
+        
+        .filter-btn:first-child {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        
+        .filter-btn:last-child {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        
+        .filter-btn:hover {
+            background: rgba(255,255,255,0.04);
+        }
+        
+        .filter-btn.active {
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            border-color: rgba(255,255,255,0.4);
         }
         
         @media (max-width: 768px) {
@@ -131,11 +176,11 @@ permalink: /discography/
     <section id="gallery" style="padding: 100px 20px;">
         <div class="container-fluid">
             <!-- Filter Buttons -->
-            <div style="text-align: center; margin-bottom: 40px;">
-                <button class="filter-btn active" data-filter="all" style="background: #fff; color: #000; border: 2px solid #fff; padding: 10px 20px; margin: 0 10px; border-radius: 25px; cursor: pointer; font-family: 'Cabin', Arial, sans-serif; font-weight: bold; transition: all 0.3s ease;">ALL</button>
-                <button class="filter-btn" data-filter="album" style="background: transparent; color: #fff; border: 2px solid #fff; padding: 10px 20px; margin: 0 10px; border-radius: 25px; cursor: pointer; font-family: 'Cabin', Arial, sans-serif; font-weight: bold; transition: all 0.3s ease;">ALBUMS</button>
-                <button class="filter-btn" data-filter="ep" style="background: transparent; color: #fff; border: 2px solid #fff; padding: 10px 20px; margin: 0 10px; border-radius: 25px; cursor: pointer; font-family: 'Cabin', Arial, sans-serif; font-weight: bold; transition: all 0.3s ease;">EPS</button>
-                <button class="filter-btn" data-filter="single" style="background: transparent; color: #fff; border: 2px solid #fff; padding: 10px 20px; margin: 0 10px; border-radius: 25px; cursor: pointer; font-family: 'Cabin', Arial, sans-serif; font-weight: bold; transition: all 0.3s ease;">SINGLES</button>
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="album">ALBUMS</button>
+                <button class="filter-btn" data-filter="ep">EPS</button>
+                <button class="filter-btn" data-filter="single">SINGLES</button>
             </div>
             <div class="gallery-grid">
                 <!-- DISC_START -->
@@ -221,19 +266,15 @@ document.addEventListener("DOMContentLoaded", function() {
   const filterButtons = document.querySelectorAll('.filter-btn');
   const galleryItems = document.querySelectorAll('.gallery-item');
 
-  filterButtons.forEach(button => {
+    filterButtons.forEach(button => {
     button.addEventListener('click', () => {
       // Remove active class from all buttons
       filterButtons.forEach(btn => {
         btn.classList.remove('active');
-        btn.style.background = 'transparent';
-        btn.style.color = '#fff';
       });
-      
+
       // Add active class to clicked button
       button.classList.add('active');
-      button.style.background = '#fff';
-      button.style.color = '#000';
       
       const filterValue = button.getAttribute('data-filter');
       
