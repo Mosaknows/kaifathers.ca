@@ -15,8 +15,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
+  width: min(56px, 10vw);
+  height: min(56px, 10vw);
   border-radius: 50%;
   background: transparent;
   font-size: 2.1rem;
@@ -24,6 +24,24 @@
   margin: 0 6px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.social-icon-btn img {
+  width: 60%;
+  height: 60%;
+  max-width: 40px;
+  max-height: 40px;
+  min-width: 24px;
+  min-height: 24px;
+}
+@media (max-width: 600px) {
+  .social-icon-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .social-icon-btn img {
+    max-width: 28px;
+    max-height: 28px;
+  }
 }
 
 /* White outline, white icon, fills to white bg/black icon on hover */

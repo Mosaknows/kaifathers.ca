@@ -814,6 +814,13 @@
   transform: translateY(100px);
 }
 
+[data-aos=fade-up-text] {
+  transform: translateY(500px) !important;
+}
+[data-aos=fade-down-text] {
+  transform: translateY(-500px) !important;
+}
+
 [data-aos=fade-down] {
   transform: translateY(-100px);
 }
@@ -952,4 +959,3 @@
 [data-aos=flip-down].aos-animate {
   transform: perspective(2500px) rotateX(0);
 }
-
