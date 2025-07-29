@@ -54,19 +54,15 @@ function fetchBandcampReleases(callback) {
       return;
     }
     const allAlbums = [];
-    const rawAlbums = [];
-    let completed = 0;
     if (albumUrls.length === 0) {
       callback([]);
       return;
     }
     albumUrls.forEach(albumUrl => {
       bandcamp.getAlbumInfo(albumUrl, (err, albumInfo) => {
-        completed++;
         if (err) {
           console.error('Error fetching album info:', err);
         } else {
-          rawAlbums.push(albumInfo); // Save raw for debugging
           let tracks = [];
           let track_lengths = [];
           let trackId = null;
