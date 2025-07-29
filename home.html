@@ -40,10 +40,19 @@ permalink: /home/
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coral+Pixels&amp;display=swap">
     <link rel="stylesheet" href="/assets/css/Styles.css">
     <link rel="stylesheet" href="/assets/css/navbar2.css">
+    <link rel="stylesheet" href="/assets/css/loading.css">
     <link rel="preload" href="https://fonts.gstatic.com/s/anton/v24/1Ptgg87LROyAm3Kz-C8.woff2" as="font" type="font/woff2" crossorigin>
+    <script>
+        // Hide html immediately to prevent FOUC
+        document.documentElement.classList.add('hidden');
+    </script>
 </head>
 
 <body id="page-top" style="background-color:rgb(0,0,0);">
+    <!-- Loading screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-spinner"></div>
+    </div>
     <!-- Burger menu button -->
     <button class="burger-btn" onclick="toggleMobileMenu()">
         <div class="burger-line"></div>
@@ -188,4 +197,5 @@ permalink: /home/
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/loading.js"></script>
     <script src="/assets/js/jquery.min.js"></script><script src="/assets/bootstrap/js/bootstrap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script src="/assets/js/script.min.js"></script></body></html>

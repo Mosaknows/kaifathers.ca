@@ -40,8 +40,17 @@ permalink: /side-projects/
     <link rel="stylesheet" href="/assets/css/Styles.css">
     <link rel="stylesheet" href="/assets/css/navbar2.css">
     <link rel="stylesheet" href="/assets/css/aos.min.css">
+    <link rel="stylesheet" href="/assets/css/loading.css">
+    <script>
+        // Hide html immediately to prevent FOUC
+        document.documentElement.classList.add('hidden');
+    </script>
 </head>
 <body id="page-top" style="background-color:rgb(0,0,0);">
+    <!-- Loading screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-spinner"></div>
+    </div>
     <!-- Burger menu button -->
     <button class="burger-btn" onclick="toggleMobileMenu()">
         <div class="burger-line"></div>
@@ -159,4 +168,5 @@ permalink: /side-projects/
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="/assets/js/scripts.js"></script>
     <script src="/assets/js/navbar2.js"></script>
+    <script src="/assets/js/loading.js"></script>
 </body></html>
