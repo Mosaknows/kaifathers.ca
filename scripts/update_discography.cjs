@@ -54,6 +54,7 @@ function fetchBandcampReleases(callback) {
       return;
     }
     const allAlbums = [];
+    let completed = 0;
     if (albumUrls.length === 0) {
       callback([]);
       return;
@@ -180,6 +181,7 @@ function fetchBandcampReleases(callback) {
             release_date
           });
         }
+        completed++;
         if (completed === albumUrls.length) {
           callback(allAlbums);
         }
