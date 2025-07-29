@@ -26,7 +26,19 @@ function determineType(trackCount, totalSeconds) {
 
 function minifyRelease({ title, cover_url, tracks, track_lengths, spotify_url, bandcamp_url, type, description, release_date, embed }) {
   // Calculate type if not set
-  const trackObjs = tracks.map((t, i) => ({ title: t, length: track_lengths[i] }));
+  // Handle both string arrays (Spotify) and object arrays (Bandcamp)
+  const trackObjs = tracks.map((t, i) => {
+    if (typeof t === 'string') {
+      // Spotify format: tracks are strings, lengths are in track_lengths
+      return { title: t, length: track_lengths[i] || 'N/A' };
+    } else if (t && typeof t === 'object' && t.title) {
+      // Bandcamp format: tracks are already objects with title and length
+      return { title: t.title, length: t.length || 'N/A' };
+    } else {
+      // Fallback
+      return { title: String(t), length: track_lengths[i] || 'N/A' };
+    }
+  });
   const trackCount = trackObjs.length;
   const totalSeconds = trackObjs.reduce((sum, t) => sum + parseDuration(t.length), 0);
   let finalType = type;

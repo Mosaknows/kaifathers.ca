@@ -734,7 +734,7 @@ p, .content {
     font-family: Georgia, serif;
     font-weight: 400;
     font-style: normal;
-    font-size: clamp(0.1rem, 3.5vw, 6rem);
+    font-size: clamp(0.1rem, 3.5vw, 3rem);
     white-space: normal;
     word-break: break-word;
     overflow-wrap: break-word;
@@ -794,7 +794,7 @@ body:not(.side-projects-page) .btn-default {
 }
 
 .album-cover-scale {
-  width: clamp(80px, 30vw, 600px);
+  width: clamp(80px, 30vw, 400px);
   height: auto;
   transition: width 0.4s cubic-bezier(.4,0,.2,1), max-width 0.4s cubic-bezier(.4,0,.2,1);
   display: block;
