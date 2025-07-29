@@ -29,7 +29,6 @@ document.querySelector('.biography').classList.add('activeLink');
 if (normalizedPath === "side-projects") {
 document.querySelector('.side-projects').classList.add('activeLink');
 }
-console.log(normalizedPath); // Now this will work
 
 
 (function($) {
