@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .social-icon-btn {
   display: inline-flex;
   align-items: center;
@@ -168,11 +175,6 @@ header video {
   transform: translateX(-50%) translateY(-50%);
 }
 
-header .container {
-  position: relative;
-  z-index: 2;
-}
-
 header .overlay {
   position: absolute;
   top: 0;
@@ -292,13 +294,6 @@ header .overlay {
   header video {
     display: none;
   }
-}
-
-.container {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
 }
 
 body {
