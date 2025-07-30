@@ -12,7 +12,36 @@ window.addEventListener('load', function() {
             loadingScreen.classList.add('fade-out');
             setTimeout(() => {
                 loadingScreen.style.display = 'none';
+                // Initialize AOS after loading screen is completely hidden
+                if ('AOS' in window) {
+                    console.log('Initializing AOS...');
+                    AOS.init({
+                        duration: 1000,
+                        easing: 'ease-in-out',
+                        once: true,
+                        offset: 100,
+                        delay: 0
+                    });
+                    console.log('AOS initialized successfully');
+                } else {
+                    console.log('AOS not found in window');
+                }
             }, 300);
         }, 100);
+    } else {
+        // If no loading screen, initialize AOS immediately
+        if ('AOS' in window) {
+            console.log('Initializing AOS (no loading screen)...');
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-in-out',
+                once: true,
+                offset: 100,
+                delay: 0
+            });
+            console.log('AOS initialized successfully');
+        } else {
+            console.log('AOS not found in window');
+        }
     }
 }); 

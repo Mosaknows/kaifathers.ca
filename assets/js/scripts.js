@@ -29,6 +29,7 @@ document.querySelector('.biography').classList.add('activeLink');
 if (normalizedPath === "side-projects") {
 document.querySelector('.side-projects').classList.add('activeLink');
 }
+console.log(normalizedPath); // Now this will work
 
 
 (function($) {
@@ -89,8 +90,4 @@ $('.js-scroll-trigger').click(function (event) {
 
 })(jQuery); // End of use strict
 
-/* this part to init AOS function */
-$(function() {  /* this is the jQuery equivalent of document.ready */
-    AOS.init({
-    });
-});
+/* AOS initialization moved to bs-init.js to avoid conflicts */

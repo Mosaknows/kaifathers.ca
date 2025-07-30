@@ -10,10 +10,8 @@ if (window.innerWidth < 768) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-	if ('AOS' in window) {
-		AOS.init();
-	}
-
+	// AOS initialization moved to loading.js to ensure proper timing
+	
 	var hoverAnimationTriggerList = [].slice.call(document.querySelectorAll('[data-bss-hover-animate]'));
 	var hoverAnimationList = hoverAnimationTriggerList.forEach(function (hoverAnimationEl) {
 		hoverAnimationEl.addEventListener('mouseenter', function(e){ e.target.classList.add('animated', e.target.dataset.bssHoverAnimate) });

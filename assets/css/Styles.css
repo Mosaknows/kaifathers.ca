@@ -107,7 +107,8 @@ h1[data-aos], h2[data-aos] {
   z-index: 10;
   position: relative;
 }
-/* Custom scroll-triggered off-screen slide-in animations */
+/* Custom scroll-triggered off-screen slide-in animations - DISABLED to prevent AOS conflicts */
+/*
 .slide-in-from-top {
   opacity: 0;
   transform: translateY(-120vh);
@@ -162,6 +163,7 @@ h1[data-aos], h2[data-aos] {
 .slide-in-right {
   animation: slideInFromRight 1.5s cubic-bezier(.77,0,.18,1) both;
 }
+*/
 .masthead {
   background-image: url("caca.png");
   background-size: cover;
