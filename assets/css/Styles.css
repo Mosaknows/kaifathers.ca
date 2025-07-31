@@ -15,8 +15,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: min(56px, 10vw);
-  height: min(56px, 10vw);
+  width: clamp(25px, 12vw, 64px);
+  height: clamp(25px, 12vw, 64px);
   border-radius: 50%;
   background: transparent;
   font-size: 2.1rem;
@@ -28,20 +28,10 @@
 .social-icon-btn img {
   width: 60%;
   height: 60%;
-  max-width: 40px;
-  max-height: 40px;
-  min-width: 24px;
-  min-height: 24px;
-}
-@media (max-width: 600px) {
-  .social-icon-btn {
-    width: 40px;
-    height: 40px;
-  }
-  .social-icon-btn img {
-    max-width: 28px;
-    max-height: 28px;
-  }
+  max-width: 48px;
+  max-height: 48px;
+  min-width: 25px;
+  min-height: 25px;
 }
 
 /* White outline, white icon, fills to white bg/black icon on hover */
@@ -479,6 +469,10 @@ html, body {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
+    filter: opacity(0.5);
+    gap: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .track-row {
@@ -494,19 +488,22 @@ html, body {
     display: flex;
     align-items: center;
     min-height: 0;
-    transform: scaleY(1.5);
-    line-height: 0.8;
-    margin: -10px 0;
+    line-height: 0.6;
+    margin: 0;
+    padding: 0;
+    height: calc(100vh / 20);
+    box-sizing: border-box;
+    transform: scaleY(1);
 }
 
 /* Upside down rows */
 .track-row.upside-down {
-    transform: rotate(180deg);
+    transform: scaleY(1) rotate(180deg);
 }
 
 /* Backwards rows */
 .track-row.backwards {
-    transform: scaleX(-1);
+    transform: scaleY(1) scaleX(-1);
 }
 
 .track-scroll {
@@ -515,123 +512,123 @@ html, body {
     animation-fill-mode: both;
 }
 
-/* Row 1: Left to right */
+/* Row 1: Left to right - Fast */
 .track-row:nth-child(1) .track-scroll {
-    animation: scroll-seamless-left 300s linear infinite;
+    animation: scroll-seamless-left 180s linear infinite;
 }
 
-/* Row 2: Right to left */
+/* Row 2: Right to left - Very slow */
 .track-row:nth-child(2) .track-scroll {
-    animation: scroll-seamless-right 320s linear infinite;
-    animation-delay: -160s;
+    animation: scroll-seamless-right 720s linear infinite;
+    animation-delay: -360s;
 }
 
-/* Row 3: Left to right */
+/* Row 3: Left to right - Medium */
 .track-row:nth-child(3) .track-scroll {
-    animation: scroll-seamless-left 340s linear infinite;
-    animation-delay: -170s;
-}
-
-/* Row 4: Right to left */
-.track-row:nth-child(4) .track-scroll {
-    animation: scroll-seamless-right 360s linear infinite;
-    animation-delay: -180s;
-}
-
-/* Row 5: Left to right */
-.track-row:nth-child(5) .track-scroll {
-    animation: scroll-seamless-left 380s linear infinite;
-    animation-delay: -190s;
-}
-
-/* Row 6: Right to left */
-.track-row:nth-child(6) .track-scroll {
-    animation: scroll-seamless-right 400s linear infinite;
-    animation-delay: -200s;
-}
-
-/* Row 7: Left to right */
-.track-row:nth-child(7) .track-scroll {
     animation: scroll-seamless-left 420s linear infinite;
     animation-delay: -210s;
 }
 
-/* Row 8: Right to left */
+/* Row 4: Right to left - Fast */
+.track-row:nth-child(4) .track-scroll {
+    animation: scroll-seamless-right 240s linear infinite;
+    animation-delay: -120s;
+}
+
+/* Row 5: Left to right - Very fast */
+.track-row:nth-child(5) .track-scroll {
+    animation: scroll-seamless-left 120s linear infinite;
+    animation-delay: -60s;
+}
+
+/* Row 6: Right to left - Slow */
+.track-row:nth-child(6) .track-scroll {
+    animation: scroll-seamless-right 600s linear infinite;
+    animation-delay: -300s;
+}
+
+/* Row 7: Left to right - Medium fast */
+.track-row:nth-child(7) .track-scroll {
+    animation: scroll-seamless-left 360s linear infinite;
+    animation-delay: -180s;
+}
+
+/* Row 8: Right to left - Very slow */
 .track-row:nth-child(8) .track-scroll {
-    animation: scroll-seamless-right 440s linear infinite;
-    animation-delay: -220s;
+    animation: scroll-seamless-right 840s linear infinite;
+    animation-delay: -420s;
 }
 
-/* Row 9: Left to right */
+/* Row 9: Left to right - Fast */
 .track-row:nth-child(9) .track-scroll {
-    animation: scroll-seamless-left 460s linear infinite;
-    animation-delay: -230s;
+    animation: scroll-seamless-left 200s linear infinite;
+    animation-delay: -100s;
 }
 
-/* Row 10: Right to left */
+/* Row 10: Right to left - Medium */
 .track-row:nth-child(10) .track-scroll {
     animation: scroll-seamless-right 480s linear infinite;
     animation-delay: -240s;
 }
 
-/* Row 11: Left to right */
+/* Row 11: Left to right - Very fast */
 .track-row:nth-child(11) .track-scroll {
-    animation: scroll-seamless-left 500s linear infinite;
-    animation-delay: -250s;
+    animation: scroll-seamless-left 150s linear infinite;
+    animation-delay: -75s;
 }
 
-/* Row 12: Right to left (backwards) */
+/* Row 12: Right to left (backwards) - Medium fast */
 .track-row:nth-child(12) .track-scroll {
-    animation: scroll-seamless-right 520s linear infinite;
-    animation-delay: -260s;
+    animation: scroll-seamless-right 320s linear infinite;
+    animation-delay: -160s;
 }
 
-/* Row 13: Left to right (upside down) */
+/* Row 13: Left to right (upside down) - Very slow */
 .track-row:nth-child(13) .track-scroll {
+    animation: scroll-seamless-left 900s linear infinite;
+    animation-delay: -450s;
+}
+
+/* Row 14: Right to left - Fast */
+.track-row:nth-child(14) .track-scroll {
+    animation: scroll-seamless-right 160s linear infinite;
+    animation-delay: -80s;
+}
+
+/* Row 15: Left to right (backwards) - Medium */
+.track-row:nth-child(15) .track-scroll {
     animation: scroll-seamless-left 540s linear infinite;
     animation-delay: -270s;
 }
 
-/* Row 14: Right to left */
-.track-row:nth-child(14) .track-scroll {
-    animation: scroll-seamless-right 560s linear infinite;
-    animation-delay: -280s;
-}
-
-/* Row 15: Left to right (backwards) */
-.track-row:nth-child(15) .track-scroll {
-    animation: scroll-seamless-left 580s linear infinite;
-    animation-delay: -290s;
-}
-
-/* Row 16: Right to left (upside down) */
+/* Row 16: Right to left (upside down) - Very fast */
 .track-row:nth-child(16) .track-scroll {
-    animation: scroll-seamless-right 600s linear infinite;
-    animation-delay: -300s;
+    animation: scroll-seamless-right 90s linear infinite;
+    animation-delay: -45s;
 }
 
-/* Row 17: Left to right */
+/* Row 17: Left to right - Slow */
 .track-row:nth-child(17) .track-scroll {
-    animation: scroll-seamless-left 620s linear infinite;
-    animation-delay: -310s;
-}
-
-/* Row 18: Right to left (backwards) */
-.track-row:nth-child(18) .track-scroll {
-    animation: scroll-seamless-right 640s linear infinite;
-    animation-delay: -320s;
-}
-
-/* Row 19: Left to right (upside down) */
-.track-row:nth-child(19) .track-scroll {
     animation: scroll-seamless-left 660s linear infinite;
     animation-delay: -330s;
 }
 
-/* Row 20: Right to left */
+/* Row 18: Right to left (backwards) - Medium fast */
+.track-row:nth-child(18) .track-scroll {
+    animation: scroll-seamless-right 280s linear infinite;
+    animation-delay: -140s;
+}
+
+/* Row 19: Left to right (upside down) - Fast */
+.track-row:nth-child(19) .track-scroll {
+    animation: scroll-seamless-left 220s linear infinite;
+    animation-delay: -110s;
+}
+
+/* Row 20: Right to left - Very slow */
 .track-row:nth-child(20) .track-scroll {
-    animation: scroll-seamless-right 680s linear infinite;
-    animation-delay: -340s;
+    animation: scroll-seamless-right 780s linear infinite;
+    animation-delay: -390s;
 }
 
 @keyframes scroll-seamless-left {
@@ -712,6 +709,8 @@ h1, h2 {
     text-align: center;
     color: rgb(0,0,0);
     text-transform: uppercase;
+    font-stretch: condensed;
+    letter-spacing: -0.07em;
 }
 
 h1 {
