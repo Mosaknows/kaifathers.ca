@@ -53,20 +53,6 @@ Tracks:
   - Cobalt [2:30]
 
 -----------------------------
-ALBUM: Lautia
-Cover: https://f4.bcbits.com/img/a3768468221_2.jpg
-Spotify: N/A
-Bandcamp: https://kaifathers.bandcamp.com/album/lautia
-Release Date: 23 Jul 2025
-Tracks:
-  - Lilacs, Please [2:01]
-  - Wailing a Thousand Voices (Demo) [4:01]
-  - Green Heartache (Demo) [3:21]
-  - Untidal (Demo) [4:10]
-  - Cactus Car Crash Party [4:19]
-  - Memento [3:28]
-
------------------------------
 ALBUM: UNTITLED2425 (Demos)
 Cover: https://f4.bcbits.com/img/a2212726040_2.jpg
 Spotify: N/A
@@ -91,5 +77,19 @@ Tracks:
   - HALLOWEEN [2:11]
   - What's wrong? [1:39]
   - tiledeath [2:55]
-  - Montée du Gore [4:18]
+  - Weapons [4:18]
   - room from above the basement [4:13]
+
+-----------------------------
+ALBUM: Lautia
+Cover: https://f4.bcbits.com/img/a3768468221_2.jpg
+Spotify: N/A
+Bandcamp: https://kaifathers.bandcamp.com/album/lautia
+Release Date: 23 Jul 2025
+Tracks:
+  - Lilacs, Please [2:01]
+  - Wailing a Thousand Voices (Demo) [4:01]
+  - Green Heartache (Demo) [3:21]
+  - Untidal (Demo) [4:10]
+  - Cactus Car Crash Party [4:19]
+  - Memento [3:28]
