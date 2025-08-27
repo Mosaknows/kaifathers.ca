@@ -28,7 +28,7 @@ Tracks:
 ALBUM: butterflies that bite
 Cover: https://i.scdn.co/image/ab67616d0000b2732e0a4464bfc4e85f40d04ad3
 Spotify: https://open.spotify.com/album/6KD5zTNOKSfzT9uPDKVx6n
-Bandcamp: https://kaifathers.bandcamp.com/track/butterflies-that-bite
+Bandcamp: N/A
 Release Date: 2023-07-17
 Tracks:
   - butterflies that bite [3:26]
@@ -37,7 +37,7 @@ Tracks:
 ALBUM: Reminiscing the Tall Field Coils
 Cover: https://i.scdn.co/image/ab67616d0000b273c15ab8f237ba3136973d4da2
 Spotify: https://open.spotify.com/album/4zOw5JMQghJ6fG3Bh28qEx
-Bandcamp: https://kaifathers.bandcamp.com/track/reminiscing-the-tall-field-coils
+Bandcamp: N/A
 Release Date: 2023-05-07
 Tracks:
   - Reminiscing the Tall Field Coils [2:06]
@@ -46,51 +46,8 @@ Tracks:
 ALBUM: Chlorine
 Cover: https://i.scdn.co/image/ab67616d0000b27375252e6d37715b57ec5aff0a
 Spotify: https://open.spotify.com/album/3J3pIUrHRTF9tQqpPJ3qWr
-Bandcamp: https://kaifathers.bandcamp.com/album/chlorine
+Bandcamp: N/A
 Release Date: 2023-05-05
 Tracks:
   - Chlorine [3:43]
   - Cobalt [2:30]
-
------------------------------
-ALBUM: Lautia
-Cover: https://f4.bcbits.com/img/a3768468221_2.jpg
-Spotify: N/A
-Bandcamp: https://kaifathers.bandcamp.com/album/lautia
-Release Date: 23 Jul 2025
-Tracks:
-  - Lilacs, Please [2:01]
-  - Wailing a Thousand Voices (Demo) [4:01]
-  - Green Heartache (Demo) [3:21]
-  - Untidal (Demo) [4:10]
-  - Silver (Untidal - alt ver) [1:21]
-  - Cactus Car Crash Party [4:19]
-  - Memento [3:28]
-
------------------------------
-ALBUM: UNTITLED2425 (Demos)
-Cover: https://f4.bcbits.com/img/a2212726040_2.jpg
-Spotify: N/A
-Bandcamp: https://kaifathers.bandcamp.com/album/untitled2425-demos
-Release Date: 24 Jul 2025
-Tracks:
-  - NAILWURM [2:19]
-  - And everything in between [2:46]
-  - gesture [1:35]
-  - whisper [2:01]
-  - Chispas [3:16]
-  - HALO [3:11]
-  - Bodies fall on bodies [3:22]
-  - count your sheep [3:52]
-  - Lush with Decay [4:10]
-  - NEIGHBORHOOD SPEED CAMERA [3:19]
-  - I saw the streetlights turn on again, but now it's the middle of winter and I'm cold [0:51]
-  - ediose douse [1:04]
-  - semaphore [0:45]
-  - Loom [0:48]
-  - Does anyone notice when the streetlights turn on? [2:00]
-  - HALLOWEEN [2:11]
-  - What's wrong? [1:39]
-  - tiledeath [2:55]
-  - Weapons [4:18]
-  - room from above the basement [4:13]
