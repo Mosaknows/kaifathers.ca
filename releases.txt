@@ -21,20 +21,11 @@ Tracks:
   - Loom [0:48]
   - Does anyone notice when the streetlights turn on? [2:00]
   - HALLOWEEN [2:11]
-  - What's wrong? [1:39]
+  - RED? [1:30]
   - tiledeath [3:28]
   - Weapons [4:28]
   - urethane [1:55]
   - room from above the basement [4:13]
-
------------------------------
-ALBUM: butterflies that bite
-Cover: https://f4.bcbits.com/img/a2098158222_2.jpg
-Spotify: N/A
-Bandcamp: https://kaifathers.bandcamp.com/track/butterflies-that-bite
-Release Date: 17 Jul 2023
-Tracks:
-  - butterflies that bite [3:26]
 
 -----------------------------
 ALBUM: Reminiscing the Tall Field Coils
@@ -44,6 +35,15 @@ Bandcamp: https://kaifathers.bandcamp.com/track/reminiscing-the-tall-field-coils
 Release Date: 07 May 2023
 Tracks:
   - Reminiscing the Tall Field Coils [2:06]
+
+-----------------------------
+ALBUM: butterflies that bite
+Cover: https://f4.bcbits.com/img/a2098158222_2.jpg
+Spotify: N/A
+Bandcamp: https://kaifathers.bandcamp.com/track/butterflies-that-bite
+Release Date: 17 Jul 2023
+Tracks:
+  - butterflies that bite [3:26]
 
 -----------------------------
 ALBUM: Chlorine
