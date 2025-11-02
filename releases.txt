@@ -16,16 +16,6 @@ Tracks:
   - butterflies that bite [3:26]
 
 -----------------------------
-ALBUM: Chlorine
-Cover: https://f4.bcbits.com/img/a3358963300_2.jpg
-Spotify: N/A
-Bandcamp: https://kaifathers.bandcamp.com/album/chlorine
-Release Date: 05 May 2023
-Tracks:
-  - Chlorine [3:43]
-  - Cobalt [2:30]
-
------------------------------
 ALBUM: Lautia
 Cover: https://f4.bcbits.com/img/a3768468221_2.jpg
 Spotify: N/A
@@ -67,7 +57,17 @@ Tracks:
   - RED? [1:30]
   - tiledeath [3:28]
   - Weapons [4:28]
-  - +Limb [1:20]
+  - +Bad Limbs [1:20]
   - urethane [1:55]
   - hardly a snowman [2:00]
   - room from above the basement [4:13]
+
+-----------------------------
+ALBUM: Chlorine
+Cover: https://f4.bcbits.com/img/a3358963300_2.jpg
+Spotify: N/A
+Bandcamp: https://kaifathers.bandcamp.com/album/chlorine
+Release Date: 05 May 2023
+Tracks:
+  - Chlorine [3:43]
+  - Cobalt [2:30]
