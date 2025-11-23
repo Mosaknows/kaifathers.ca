@@ -13,6 +13,15 @@ Tracks:
   - Memento [3:28]
 
 -----------------------------
+ALBUM: butterflies that bite
+Cover: https://f4.bcbits.com/img/a2098158222_2.jpg
+Spotify: N/A
+Bandcamp: https://kaifathers.bandcamp.com/track/butterflies-that-bite
+Release Date: 17 Jul 2023
+Tracks:
+  - butterflies that bite [3:26]
+
+-----------------------------
 ALBUM: Reminiscing the Tall Field Coils
 Cover: https://f4.bcbits.com/img/a1429915257_2.jpg
 Spotify: N/A
@@ -30,15 +39,6 @@ Release Date: 05 May 2023
 Tracks:
   - Chlorine [3:43]
   - Cobalt [2:30]
-
------------------------------
-ALBUM: butterflies that bite
-Cover: https://f4.bcbits.com/img/a2098158222_2.jpg
-Spotify: N/A
-Bandcamp: https://kaifathers.bandcamp.com/track/butterflies-that-bite
-Release Date: 17 Jul 2023
-Tracks:
-  - butterflies that bite [3:26]
 
 -----------------------------
 ALBUM: UNTITLED2425 (Demos)
