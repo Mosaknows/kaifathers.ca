@@ -1,21 +1,3 @@
-ALBUM: butterflies that bite
-Cover: https://f4.bcbits.com/img/a2098158222_2.jpg
-Spotify: N/A
-Bandcamp: https://kaifathers.bandcamp.com/track/butterflies-that-bite
-Release Date: 17 Jul 2023
-Tracks:
-  - butterflies that bite [3:26]
-
------------------------------
-ALBUM: Reminiscing the Tall Field Coils
-Cover: https://f4.bcbits.com/img/a1429915257_2.jpg
-Spotify: N/A
-Bandcamp: https://kaifathers.bandcamp.com/track/reminiscing-the-tall-field-coils
-Release Date: 07 May 2023
-Tracks:
-  - Reminiscing the Tall Field Coils [2:06]
-
------------------------------
 ALBUM: Lautia
 Cover: https://f4.bcbits.com/img/a3768468221_2.jpg
 Spotify: N/A
@@ -29,6 +11,34 @@ Tracks:
   - Silver (Untidal - alt ver) [1:21]
   - Cactus Car Crash Party [4:19]
   - Memento [3:28]
+
+-----------------------------
+ALBUM: butterflies that bite
+Cover: https://f4.bcbits.com/img/a2098158222_2.jpg
+Spotify: N/A
+Bandcamp: https://kaifathers.bandcamp.com/track/butterflies-that-bite
+Release Date: 17 Jul 2023
+Tracks:
+  - butterflies that bite [3:26]
+
+-----------------------------
+ALBUM: Chlorine
+Cover: https://f4.bcbits.com/img/a3358963300_2.jpg
+Spotify: N/A
+Bandcamp: https://kaifathers.bandcamp.com/album/chlorine
+Release Date: 05 May 2023
+Tracks:
+  - Chlorine [3:43]
+  - Cobalt [2:30]
+
+-----------------------------
+ALBUM: Reminiscing the Tall Field Coils
+Cover: https://f4.bcbits.com/img/a1429915257_2.jpg
+Spotify: N/A
+Bandcamp: https://kaifathers.bandcamp.com/track/reminiscing-the-tall-field-coils
+Release Date: 07 May 2023
+Tracks:
+  - Reminiscing the Tall Field Coils [2:06]
 
 -----------------------------
 ALBUM: UNTITLED2425 (Demos)
@@ -63,13 +73,3 @@ Tracks:
   - HAINE [1:04]
   - hardly a snowman [2:00]
   - room above the basement [4:13]
-
------------------------------
-ALBUM: Chlorine
-Cover: https://f4.bcbits.com/img/a3358963300_2.jpg
-Spotify: N/A
-Bandcamp: https://kaifathers.bandcamp.com/album/chlorine
-Release Date: 05 May 2023
-Tracks:
-  - Chlorine [3:43]
-  - Cobalt [2:30]
