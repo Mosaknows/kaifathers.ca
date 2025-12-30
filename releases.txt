@@ -13,6 +13,15 @@ Tracks:
   - Memento [3:28]
 
 -----------------------------
+ALBUM: butterflies that bite
+Cover: https://f4.bcbits.com/img/a2098158222_2.jpg
+Spotify: N/A
+Bandcamp: https://kaifathers.bandcamp.com/track/butterflies-that-bite
+Release Date: 17 Jul 2023
+Tracks:
+  - butterflies that bite [3:26]
+
+-----------------------------
 ALBUM: Reminiscing the Tall Field Coils
 Cover: https://f4.bcbits.com/img/a1429915257_2.jpg
 Spotify: N/A
@@ -54,15 +63,6 @@ Tracks:
   - HAINE [1:04]
   - hardly a snowman [2:00]
   - room above the basement [4:13]
-
------------------------------
-ALBUM: butterflies that bite
-Cover: https://f4.bcbits.com/img/a2098158222_2.jpg
-Spotify: N/A
-Bandcamp: https://kaifathers.bandcamp.com/track/butterflies-that-bite
-Release Date: 17 Jul 2023
-Tracks:
-  - butterflies that bite [3:26]
 
 -----------------------------
 ALBUM: Chlorine
