@@ -1,56 +1,19 @@
-ALBUM: HALO (Demo)
-Cover: https://i.scdn.co/image/ab67616d0000b2735040c7abd402e912d6a419b6
-Spotify: https://open.spotify.com/album/5LcQPZxw762pRyrQraRFcm
-Bandcamp: N/A
-Release Date: 2024-07-30
-Tracks:
-  - HALO - Demo [2:47]
-
------------------------------
-ALBUM: Cactus Car Crash Party (Demo)
-Cover: https://i.scdn.co/image/ab67616d0000b27349fe62960a0f2bf8d7ce7c17
-Spotify: https://open.spotify.com/album/5v76Zv3GCjS8zjm7zAyoUv
-Bandcamp: N/A
-Release Date: 2024-03-28
-Tracks:
-  - Cactus Car Crash Party - Demo [4:19]
-
------------------------------
-ALBUM: Lilacs, Please (Demo)
-Cover: https://i.scdn.co/image/ab67616d0000b273ea352d37274745487b58b47d
-Spotify: https://open.spotify.com/album/6QjuWljwojsMjBNPKe51uo
-Bandcamp: N/A
-Release Date: 2023-07-24
-Tracks:
-  - Lilacs, Please - Demo [2:01]
-
------------------------------
 ALBUM: butterflies that bite
-Cover: https://i.scdn.co/image/ab67616d0000b2732e0a4464bfc4e85f40d04ad3
-Spotify: https://open.spotify.com/album/6KD5zTNOKSfzT9uPDKVx6n
+Cover: https://f4.bcbits.com/img/a2098158222_2.jpg
+Spotify: N/A
 Bandcamp: https://kaifathers.bandcamp.com/track/butterflies-that-bite
-Release Date: 2023-07-17
+Release Date: 17 Jul 2023
 Tracks:
   - butterflies that bite [3:26]
 
 -----------------------------
 ALBUM: Reminiscing the Tall Field Coils
-Cover: https://i.scdn.co/image/ab67616d0000b273c15ab8f237ba3136973d4da2
-Spotify: https://open.spotify.com/album/4zOw5JMQghJ6fG3Bh28qEx
+Cover: https://f4.bcbits.com/img/a1429915257_2.jpg
+Spotify: N/A
 Bandcamp: https://kaifathers.bandcamp.com/track/reminiscing-the-tall-field-coils
-Release Date: 2023-05-07
+Release Date: 07 May 2023
 Tracks:
   - Reminiscing the Tall Field Coils [2:06]
-
------------------------------
-ALBUM: Chlorine
-Cover: https://i.scdn.co/image/ab67616d0000b27375252e6d37715b57ec5aff0a
-Spotify: https://open.spotify.com/album/3J3pIUrHRTF9tQqpPJ3qWr
-Bandcamp: https://kaifathers.bandcamp.com/album/chlorine
-Release Date: 2023-05-05
-Tracks:
-  - Chlorine [3:43]
-  - Cobalt [2:30]
 
 -----------------------------
 ALBUM: UNTITLED2425 (Demos)
@@ -60,10 +23,9 @@ Bandcamp: https://kaifathers.bandcamp.com/album/untitled2425-demos
 Release Date: 24 Jul 2025
 Tracks:
   - NAILWURM [2:19]
-  - Take a walk with me [1:24]
+  - Antihistamine [3:34]
   - And everything in between [2:46]
   - gesture [1:35]
-  - tri-tip dagger [1:00]
   - whisper [2:01]
   - Chispas [3:16]
   - HALO [3:11]
@@ -78,11 +40,24 @@ Tracks:
   - Panopticism [2:08]
   - Does anyone notice when the streetlights turn on? [2:00]
   - HALLOWEEN [2:11]
-  - Harvester [0:43]
-  - What's wrong? [1:39]
-  - Montée de GORE [4:08]
-  - Tem [1:47]
-  - room from above the basement [4:13]
+  - flood below the bodies [1:30]
+  - tiledeath [3:28]
+  - Weapons [4:28]
+  - the man who died in the palm of his hands [1:44]
+  - wired to god [1:55]
+  - Fetid Barnacle [1:07]
+  - hardly a snowman [2:00]
+  - room above the basement [4:13]
+
+-----------------------------
+ALBUM: Chlorine
+Cover: https://f4.bcbits.com/img/a3358963300_2.jpg
+Spotify: N/A
+Bandcamp: https://kaifathers.bandcamp.com/album/chlorine
+Release Date: 05 May 2023
+Tracks:
+  - Chlorine [3:43]
+  - Cobalt [2:30]
 
 -----------------------------
 ALBUM: Lautia
@@ -95,5 +70,6 @@ Tracks:
   - Wailing a Thousand Voices (Demo) [4:01]
   - Green Heartache (Demo) [3:21]
   - Untidal (Demo) [4:10]
+  - Silver (Untidal - alt ver) [1:21]
   - Cactus Car Crash Party [4:19]
   - Memento [3:28]
