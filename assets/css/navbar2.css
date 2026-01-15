@@ -32,10 +32,10 @@
     font-family: 'Cabin', Arial, sans-serif !important;
     font-weight: 700 !important;
     font-size: 20px !important;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0) !important;
     font-weight: 500;
     font-size: 14px;
-    background-blend-mode: difference;
+    mix-blend-mode: normal;
 }
 
 .nav-pill:hover {
